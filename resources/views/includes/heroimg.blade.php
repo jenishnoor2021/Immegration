@@ -1,0 +1,1 @@
+<div class="wptb-page-heading" style="background-image: url('{{ asset('assets/img/background/page-header-bg.jpg') }}');">
