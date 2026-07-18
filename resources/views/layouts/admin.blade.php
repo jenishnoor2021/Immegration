@@ -187,7 +187,6 @@ $countnewenqiry = Enquirey::where('is_show', 0)->count();
       @yield('content')
    </div>
    <!-- ./wrapper -->
-   @yield('script')
 
    <!-- read more button in database -->
    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>

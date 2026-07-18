@@ -54,6 +54,12 @@
                         @endif
                      </div>
                   </div>
+                  <div class="form-group">
+                     <label class="col-sm-2 control-label">Display Order</label>
+                     <div class="col-sm-4">
+                        <p class="form-control-static">Assigned automatically to the last position</p>
+                     </div>
+                  </div>
 
                   <div class="form-group">
                      <label for="facebook" class="col-sm-2 control-label">Facebook Link</label>

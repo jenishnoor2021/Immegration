@@ -17,11 +17,5 @@ class quatation extends Model
     {
 
         parent::boot();
-
-        static::created(function ($item) {
-
-            $adminEmail = "jenish.noor2021@gmail.com";
-            Mail::to($adminEmail)->send(new QuatationMail($item));
-        });
     }
 }

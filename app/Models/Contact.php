@@ -13,14 +13,9 @@ class Contact extends Model
 
     protected $guarded = [];
 
-    public static function boot() {
-  
+    public static function boot()
+    {
+
         parent::boot();
-  
-        static::created(function ($item) {
-                
-            $adminEmail = "jenish.noor2021@gmail.com";
-            Mail::to($adminEmail)->send(new ContactMail($item));
-        });
     }
 }

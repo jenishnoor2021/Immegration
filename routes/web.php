@@ -119,6 +119,7 @@ Route::group(['middleware' => ['auth', 'usersession']], function () {
     Route::get('admin/team/edit/{id}', [AdminTeamController::class, 'edit'])->name('admin.team.edit');
     Route::patch('admin/team/update/{id}', [AdminTeamController::class, 'update'])->name('admin.team.update');
     Route::get('admin/team/destroy/{id}', [AdminTeamController::class, 'destroy'])->name('admin.team.destroy');
+    Route::post('admin/team/reorder', [AdminTeamController::class, 'reorder'])->name('admin.team.reorder');
     Route::delete('/myteamDeleteAll', [AdminTeamController::class, 'deleteteamAll'])->name('deleteteamAll');
     Route::get("admin/team/searchtestompnial", [AdminTeamController::class, 'searchteam'])->name('admin.team.search');
     Route::get('admin/team/statusupdate/{id}', [AdminTeamController::class, 'statusUpdate'])->name('admin.team.status');

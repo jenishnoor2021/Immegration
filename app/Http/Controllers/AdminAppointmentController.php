@@ -38,11 +38,11 @@ class AdminAppointmentController extends Controller
     {
         $input = $request->all();
 
-        if (isset($input['email'])) {
-            \Mail::send('emails.quatation', $input, function ($message) use ($input) {
-                $message->from('jenish.noor2021@gmail.com', 'sevencountries')->to($input['email'])->subject('response');
-            });
-        }
+        // if (isset($input['email'])) {
+        //     \Mail::send('emails.quatation', $input, function ($message) use ($input) {
+        //         $message->from('jenish.noor2021@gmail.com', 'sevencountries')->to($input['email'])->subject('response');
+        //     });
+        // }
 
         Appointment::create($input);
         return redirect()->back()->with('alert', 'Appoinment request send Successfully');

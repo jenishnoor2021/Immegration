@@ -23,6 +23,7 @@ class CreateTeamsTable extends Migration
             $table->string('twitter')->nullable();
             $table->string('linkdin')->nullable();
             $table->boolean('is_show')->default(0);
+            $table->integer('sort_order')->default(0)->after('is_show');
             $table->timestamps();
         });
     }

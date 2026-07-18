@@ -16,7 +16,7 @@ class AdminTeamController extends Controller
      */
     public function index()
     {
-        $team = Team::orderBy('id', 'DESC')->paginate(10);
+        $team = Team::orderBy('sort_order', 'asc')->paginate(25);
         return view('admin.team.index', compact('team'));
     }
 
@@ -49,11 +49,11 @@ class AdminTeamController extends Controller
         ]);
 
         if ($validator->fails()) {
-
             return Redirect::back()->withErrors($validator);
         }
 
         $input = $request->all();
+        $input['sort_order'] = Team::max('sort_order') + 1;
         if ($file = $request->file('file')) {
 
             $str = $file->getClientOriginalName();
@@ -125,13 +125,13 @@ class AdminTeamController extends Controller
         ]);
 
         if ($validator->fails()) {
-
             return Redirect::back()->withErrors($validator);
         }
 
         $push = Team::findOrFail($id);
 
         $input = $request->all();
+        unset($input['sort_order']);
 
         if ($file = $request->file('file')) {
 
@@ -175,6 +175,20 @@ class AdminTeamController extends Controller
         $backimg->delete();
 
         return  Redirect::back();
+    }
+
+    public function reorder(Request $request)
+    {
+        $order = $request->input('order');
+        if (!is_array($order)) {
+            return response()->json(['status' => 'error', 'message' => 'Invalid order data'], 400);
+        }
+
+        foreach ($order as $position => $id) {
+            Team::where('id', $id)->update(['sort_order' => $position + 1]);
+        }
+
+        return response()->json(['status' => 'success']);
     }
 
     public function statusUpdate(Request $request, $id)

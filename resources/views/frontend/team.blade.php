@@ -2,7 +2,7 @@
 
 use App\Models\Team;
 
-$teams = Team::where('is_show', 1)->get();
+$teams = Team::where('is_show', 1)->orderBy('sort_order', 'asc')->get();
 
 ?>
 

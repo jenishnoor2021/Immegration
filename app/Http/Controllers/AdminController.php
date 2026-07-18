@@ -153,11 +153,11 @@ class AdminController extends Controller
     {
         $input = $request->all();
 
-        if (isset($input['email'])) {
-            \Mail::send('emails.quatation', $input, function ($message) use ($input) {
-                $message->from('jenish.noor2021@gmail.com', 'sevencountries')->to($input['email'])->subject('response');
-            });
-        }
+        // if (isset($input['email'])) {
+        //     \Mail::send('emails.quatation', $input, function ($message) use ($input) {
+        //         $message->from('jenish.noor2021@gmail.com', 'sevencountries')->to($input['email'])->subject('response');
+        //     });
+        // }
 
         Enquirey::create($input);
         return redirect()->back()->with('alert', 'Enquiry send Successfully');
@@ -167,9 +167,9 @@ class AdminController extends Controller
     {
         $input = $request->all();
 
-        \Mail::send('emails.quatation', $input, function ($message) use ($input) {
-            $message->from('jenish.noor2021@gmail.com', 'sevencountries')->to($input['email'])->subject('response');
-        });
+        // \Mail::send('emails.quatation', $input, function ($message) use ($input) {
+        //     $message->from('jenish.noor2021@gmail.com', 'sevencountries')->to($input['email'])->subject('response');
+        // });
 
         Contact::create($input);
         // return redirect()->back();
@@ -190,18 +190,14 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-    }
+    public function index() {}
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-    }
+    public function create() {}
 
     /**
      * Store a newly created resource in storage.
@@ -209,9 +205,7 @@ class AdminController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-    }
+    public function store(Request $request) {}
 
     /**
      * Display the specified resource.
@@ -230,9 +224,7 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-    }
+    public function edit($id) {}
 
     /**
      * Update the specified resource in storage.
@@ -241,9 +233,7 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-    }
+    public function update(Request $request, $id) {}
 
     /**
      * Remove the specified resource from storage.
@@ -251,7 +241,5 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-    }
+    public function destroy($id) {}
 }

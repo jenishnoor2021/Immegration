@@ -2,7 +2,7 @@
 
 use App\Models\Team;
 
-$teams = Team::where('is_show', 1)->paginate(4);
+$teams = Team::where('is_show', 1)->orderBy('sort_order', 'asc')->paginate(4);
 
 ?>
 

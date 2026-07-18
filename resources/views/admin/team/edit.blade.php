@@ -57,6 +57,13 @@
                         @endif
                      </div>
                   </div>
+                  <div class="form-group">
+                     <label class="col-sm-2 control-label">Display Order</label>
+                     <div class="col-sm-4">
+                        <input type="number" class="form-control border border-dark mb-2" value="{{$body['team']['sort_order']}}" disabled>
+                        <p class="help-block">Order is updated from the team list page only.</p>
+                     </div>
+                  </div>
 
                   <div class="form-group">
                      <label for="facebook" class="col-sm-2 control-label">Facebook Link</label>

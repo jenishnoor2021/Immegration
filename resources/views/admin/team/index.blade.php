@@ -28,19 +28,22 @@
                <!-- /.box-header -->
                <div class="box-body" style="overflow-x:auto;margin-top:15px">
                   @if(count($team)>0)
-                  <table id="example1" class="table table-bordered table-striped">
+                  <table id="team-table" class="table table-bordered table-striped">
                      <thead>
                         <tr>
+                           <th>Drag</th>
                            <th>Action</th>
                            <th>Name</th>
                            <th>Image</th>
                            <th>Occupation</th>
+                           <th>Order</th>
                            <th>Show/ Hide</th>
                         </tr>
                      </thead>
                      <tbody>
                         @foreach($team as $emp)
-                        <tr id="tr_{{$emp->id}}">
+                        <tr data-id="{{$emp->id}}">
+                           <td class="drag-handle text-center" style="cursor:move; width:40px;"><i class="fa fa-arrows-alt"></i></td>
                            <td>
                               <a href="{{route('admin.team.edit', $emp->id)}}"><i class="fa fa-edit" style="color:white;font-size:15px;background-color:#0275d8;padding:8px;border-radius:200px;"></i></a>
                               <a href="{{route('admin.team.destroy', $emp->id)}}" onclick="return confirm('Sure ! You want to delete this ?');"><i class="fa fa-trash" style="color:white;font-size:15px;background-color:red;padding:8px;border-radius:200px;"></i></a>
@@ -53,6 +56,9 @@
                            </td>
                            <td>
                               {{$emp->occupation}}
+                           </td>
+                           <td class="order-value">
+                              {{$emp->sort_order}}
                            </td>
                            <td>
                               @if($emp->is_show == 0)
@@ -82,4 +88,40 @@
    </section>
    <!-- /.content -->
 </div>
+
+@section('script')
+<script>
+   $(function() {
+      $('#team-table tbody').sortable({
+         handle: '.drag-handle',
+         axis: 'y',
+         update: function(event, ui) {
+            var order = [];
+            $('#team-table tbody tr').each(function() {
+               order.push($(this).data('id'));
+            });
+
+            $.ajax({
+               url: '{{ route('
+               admin.team.reorder ') }}',
+               method: 'POST',
+               data: {
+                  order: order,
+                  _token: '{{ csrf_token() }}'
+               },
+               success: function(response) {
+                  if (response.status === 'success') {
+                     $('#team-table tbody tr').each(function(index) {
+                        $(this).find('.order-value').text(index + 1);
+                     });
+                  }
+               },
+               error: function() {
+                  alert('Unable to update team order.');
+               }
+            });
+         }
+      }).disableSelection();
+   });
+</script>
 @endsection
