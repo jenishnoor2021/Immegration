@@ -17,5 +17,6 @@ class Enquirey extends Model
     {
 
         parent::boot();
+
     }
 }

@@ -110,6 +110,7 @@ Ready Components Stylesheet
 .wptb-page-heading .wptb-item--title {
     color: var(--color-white);
     font-size: 70px;
+    line-height: 80px;
     font-weight: 400;
     margin-bottom: 0px;
 }
@@ -3149,6 +3150,13 @@ svg.radial-progress {
 	-o-transition: var(--transition-base);
 }
 
+.wptb-team-grid2.v2 .wptb-item--inner img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
 .wptb-team-grid2 .wptb-item--inner img {
     width: 100%;
 }
@@ -3228,7 +3236,7 @@ svg.radial-progress {
 .wptb-team-grid2 .wptb-item--inner .wptb-item--meta .wptb-item--position {
     font-size: 16px;
     line-height: 24px;
-    color: var(--color-one);
+    color: var(--color-four);
     margin-bottom: 0px;
 }
 
@@ -3760,7 +3768,7 @@ svg.radial-progress {
 /* Details */
 .wptb-country-tab .wptb-country-tab--details {
     position: relative;
-    padding: 120px;
+    padding: 50px;
     color: var(--color-white);
     transition: var(--transition-base);
     opacity: 0;

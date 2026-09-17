@@ -3,8 +3,7 @@
     <div class="wptb-item--inner">
       <div class="row align-items-center">
         <div class="col-md-6 mb-4 mb-md-0">
-          <h1 class="wptb-item--title wow fadeInLeft">Subscribe To Seven Countries
-            For All the offers</h1>
+          <h1 class="wptb-item--title wow fadeInLeft">Connect with US and Stay Updated about all our Offers/Discounts.</h1>
         </div>
         <div class="col-md-6">
           <form method="POST" action="/inquireystore" id="quotation_form" name="quotation_form" class="newsletter-form">

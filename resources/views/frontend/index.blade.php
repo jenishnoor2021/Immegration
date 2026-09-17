@@ -23,8 +23,8 @@ $branchs = branch::get();
                      <div class="col-lg-12">
                         <div class="wptb-heading more-padding">
                            <div class="wptb-item--inner text-center">
-                              <h6 class="wptb-item--subtitle"> WELCOME TO Seven Countries VISA AGENCY </h6>
-                              <h1 class="wptb-item--title"> Dedicated Immigration & visa <br>
+                              <h6 class="wptb-item--subtitle"> Welcome to Seven Countries Visa Agency</h6>
+                              <h1 class="wptb-item--title"> Dedicated Immigration & Visa <br>
                                  Consultancy Services</h1>
                            </div>
                         </div>
@@ -45,8 +45,8 @@ $branchs = branch::get();
                      <div class="col-xxl-7 col-lg-6 col-md-10 col-sm-12">
                         <div class="wptb-heading">
                            <div class="wptb-item--inner">
-                              <h6 class="wptb-item--subtitle"> WELCOME TO Seven Countries VISA AGENCY </h6>
-                              <h1 class="wptb-item--title"> We Ensure Great <span class="active">Lifestyle</span> For your family</h1>
+                              <h6 class="wptb-item--subtitle"> Welcome to Seven Countries Visa Agency </h6>
+                              <h1 class="wptb-item--title"> We Ensure Great <span class="active">Lifestyle</span> For your Family</h1>
                               <p class="wptb-item--description">We provide a complete immigration & visa services for America,
                                  Canada & Australia for travel & education</p>
                               <div class="wptb-item--button"> <a class="btn-readmore style-default" href="{{URL::to('/services')}}"> <span class="btn-readmore--text"> Get Started </span> </a></div>
@@ -69,7 +69,7 @@ $branchs = branch::get();
                      <div class="col-xxl-7 col-lg-6 col-md-10 col-sm-12">
                         <div class="wptb-heading">
                            <div class="wptb-item--inner">
-                              <h6 class="wptb-item--subtitle"> WELCOME TO Seven Countries VISA AGENCY </h6>
+                              <h6 class="wptb-item--subtitle">Welcome to Seven Countries Visa Agency </h6>
                               <h1 class="wptb-item--title"> We Help You to Explore the worlds with <span class="active">Seven Countries</span></h1>
                               <p class="wptb-item--description">We provide a complete immigration & visa services for America,
                                  Canada & Australia for travel & education</p>
@@ -116,10 +116,12 @@ $branchs = branch::get();
                         </span>
                         About Our Company
                      </h6>
-                     <h1 class="wptb-item--title has-line"> <span>We help Making your <br>
-                           dream into Reality</span></h1>
+                     <h1 class="wptb-item--title has-line"> <span>WELCOME TO SEVEN COUNTRIES <br>
+                           IMMIGRATION AND EDUCATION PVT LTD</span></h1>
                      <p class="wptb-item--description">
-                        Seven Countries Visa Consultancy was created to provide uniquely designed premium services in the world of education and migration.As people are dreaming more hands-on experience.
+                        SEVEN COUNTRIES IMMIGRATION AND EDUCATION PVT LTD is a consulting firm in India, specializing in different aspects of International Education works with educational institutions, Governmental & Non-Governmental organizations in India & Abroad.
+                     <p class="wptb-item--description">
+                        We deal in all categories of immigration be it Student Visa, Tourist Visa, Dependant Visa and all such immigration matters. We understand that immigrating to any of above said countries can offer people a superior quality of life as well as the freedom to pursue personal and professional goals that might not be otherwise available to them in the countries in which they presently reside.
                      </p>
                   </div>
                </div>
@@ -164,8 +166,8 @@ $branchs = branch::get();
                <div class="wptb-item--button">
                   <a href="{{URL::to('/aboutus')}}" class="btn">
                      <span class="btn-wrap">
-                        <span class="text-first">Get Started</span>
-                        <span class="text-second">Get Started</span>
+                        <span class="text-first">Let’s Get Started</span>
+                        <span class="text-second">Let’s Get Started</span>
                      </span>
                   </a>
                </div>
@@ -178,18 +180,6 @@ $branchs = branch::get();
                <div class="wptb-item--inner">
                   <div class="wptb-item--image">
                      <img src="{{asset('assets/img/3.png')}}" alt="img" class="image-main">
-
-                     <div class="wptb-client-review3 wow fadeInLeft">
-                        <div class="wptb-item--inner">
-                           <div class="wptb-piechart wow fadeInLeft" data-wow-delay="600ms">
-                              <div class="wrap-meta">
-                                 <div class="wrap-meta--inner">
-                                    <span class="wptb--counter-number"> <span class="wptb--counter-value odometer" data-count="20"></span> </span> <span class="wptb--rating-label"> Years of Experience </span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
                   </div>
 
                </div>
@@ -224,7 +214,7 @@ $branchs = branch::get();
                <div class="wptb-image-box1 wow fadeInLeft">
                   <div class="wptb-item--inner">
                      <div class="wptb-item--image">
-                        <a href="{{URL::to('/services')}}" class="wptb-item-link"><img src="{{asset('assets/img/services/1.jpg')}}" alt="img"></a>
+                        <a href="{{URL::to('/tourist-visa')}}" class="wptb-item-link"><img src="{{asset('assets/img/services/1.jpg')}}" alt="img"></a>
                      </div>
                      <div class="wptb-item--holder">
                         <div class="wptb-item--icon">
@@ -236,14 +226,14 @@ $branchs = branch::get();
                               <path d="M9 9C3 9 0.5 3 0 0V9H9Z"></path>
                            </svg>
                         </div>
-                        <h4 class="wptb-item--title"><a href="{{URL::to('/services')}}">Tourist Visa Processing</a></h4>
+                        <h4 class="wptb-item--title"><a href="{{URL::to('/tourist-visa')}}">Tourist Visa Processing</a></h4>
                         <div class="wptb-line-paper"></div>
                         <p class="wptb-item--description"> Seven Countries Visa Consultancy takes great
                            pride in its commitment for helping interna
                            tional students from all over...</p>
 
                         <div class="wptb-item--button">
-                           <a class="btn--readmore" href="{{URL::to('/services')}}">
+                           <a class="btn--readmore" href="{{URL::to('/tourist-visa')}}">
                               <span class="btn-readmore--text"> View More </span> <span class="btn-readmore--icon text-white"> <i class="bi bi-arrow-right"></i> </span>
                            </a>
                         </div>
@@ -411,7 +401,7 @@ $branchs = branch::get();
                         </svg>
                      </div>
                      <h3 class="wptb-item--title">Global Connection</h3>
-                     <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                     <p class="wptb-item--description mb-0"> We collaborate with trusted universities, employers, and legal experts across countries like Canada, USA, UK, Australia, and more. These global connections allow us to offer faster, smarter, and more reliable immigration solutions tailored to your goals. Wherever you dream to go — we have the right connections to get you there.</p>
                   </div>
                </div>
             </div>
@@ -458,8 +448,8 @@ $branchs = branch::get();
                            </defs>
                         </svg>
                      </div>
-                     <h3 class="wptb-item--title">Expertise visa Processing</h3>
-                     <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                     <h3 class="wptb-item--title">Personalized Approach</h3>
+                     <p class="wptb-item--description mb-0"> Every client is unique. We tailor our strategies based on your profile, goals, and country of interest — no one-size-fits-all.</p>
                   </div>
                </div>
             </div>
@@ -483,8 +473,8 @@ $branchs = branch::get();
                            </defs>
                         </svg>
                      </div>
-                     <h3 class="wptb-item--title">Fastest Working Process</h3>
-                     <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                     <h3 class="wptb-item--title">Affordable & Transparent Pricing</h3>
+                     <p class="wptb-item--description mb-0"> No hidden charges. You pay only for what you need with complete clarity.</p>
                   </div>
                </div>
             </div>
@@ -520,7 +510,7 @@ $branchs = branch::get();
                         </svg>
                      </div>
                      <h3 class="wptb-item--title">Expert Support Panel</h3>
-                     <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                     <p class="wptb-item--description mb-0"> Our certified immigration consultants and legal advisors stay updated with the latest immigration laws, ensuring accurate and reliable advice. </p>
                   </div>
                </div>
             </div>
@@ -568,8 +558,8 @@ $branchs = branch::get();
                            </defs>
                         </svg>
                      </div>
-                     <h3 class="wptb-item--title">Expertise visa Processing</h3>
-                     <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                     <h3 class="wptb-item--title">Visa Success ration</h3>
+                     <p class="wptb-item--description mb-0"> Our transparent process, attention to detail, and proactive follow-ups have resulted in a strong track record of visa approvals.</p>
                   </div>
                </div>
             </div>
@@ -604,8 +594,8 @@ $branchs = branch::get();
                            </defs>
                         </svg>
                      </div>
-                     <h3 class="wptb-item--title">Expert Support Panel</h3>
-                     <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                     <h3 class="wptb-item--title">End-to-End Support</h3>
+                     <p class="wptb-item--description mb-0"> From eligibility checks to visa interviews, document preparation, and post-landing support — we walk with you every step of the way.</p>
                   </div>
                </div>
             </div>
@@ -783,7 +773,7 @@ $branchs = branch::get();
                         <div class="wptb-heading">
                            <div class="wptb-item--inner">
                               <h6 class="wptb-item--subtitle">Or just Give us a call</h6>
-                              <h1 class="wptb-item--title"> <span>+ 098 765 432111 </span></h1>
+                              <h1 class="wptb-item--title"> <span>+91 9979865666</span></h1>
                               <p class="wptb-item--description"> <span>The Support Centre is abailable 24/7</span></p>
                            </div>
                         </div>
@@ -842,126 +832,126 @@ $branchs = branch::get();
 
 
 <!-- our branches -->
-<section class="wptb-why-choose-three bg-image bd-class-area bd-class-branches" style="background-image: url('assets/img/background/bg-14.jpg');">
-   <div class="container">
-      <div class="wptb-heading">
-         <div class="wptb-item--inner text-center">
-            <h6 class="wptb-item--subtitle">
-               <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                     <path d="M14.9119 2.10726L0.787131 7.08487C0.559931 7.16487 0.509531 7.36087 0.779131 7.46806L3.81593 8.68486L5.61593 9.40566L14.4031 2.95286C14.5215 2.86646 14.6575 3.02886 14.5719 3.12166L8.27513 9.93207V9.93366L7.91353 10.3361L8.39273 10.5937L12.3783 12.7393C12.6111 12.8641 12.9127 12.7609 12.9799 12.4721L15.3047 2.45206C15.3679 2.17766 15.1863 2.01046 14.9119 2.10726ZM5.59993 13.7297C5.59993 13.9265 5.71113 13.9817 5.86473 13.8425C6.06553 13.6593 8.14473 11.7937 8.14473 11.7937L5.59993 10.4785V13.7297Z" fill="#2282FF" />
-                  </svg>
-               </span>
-               Seven Countries
-            </h6>
-            <h1 class="wptb-item--title"> <span>Our Branches</span></h1>
-         </div>
-      </div>
+<!--<section class="wptb-why-choose-three bg-image bd-class-area bd-class-branches" style="background-image: url('assets/img/background/bg-14.jpg');">-->
+<!--   <div class="container">-->
+<!--      <div class="wptb-heading">-->
+<!--         <div class="wptb-item--inner text-center">-->
+<!--            <h6 class="wptb-item--subtitle">-->
+<!--               <span>-->
+<!--                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">-->
+<!--                     <path d="M14.9119 2.10726L0.787131 7.08487C0.559931 7.16487 0.509531 7.36087 0.779131 7.46806L3.81593 8.68486L5.61593 9.40566L14.4031 2.95286C14.5215 2.86646 14.6575 3.02886 14.5719 3.12166L8.27513 9.93207V9.93366L7.91353 10.3361L8.39273 10.5937L12.3783 12.7393C12.6111 12.8641 12.9127 12.7609 12.9799 12.4721L15.3047 2.45206C15.3679 2.17766 15.1863 2.01046 14.9119 2.10726ZM5.59993 13.7297C5.59993 13.9265 5.71113 13.9817 5.86473 13.8425C6.06553 13.6593 8.14473 11.7937 8.14473 11.7937L5.59993 10.4785V13.7297Z" fill="#2282FF" />-->
+<!--                  </svg>-->
+<!--               </span>-->
+<!--               Seven Countries-->
+<!--            </h6>-->
+<!--            <h1 class="wptb-item--title"> <span>Our Branches</span></h1>-->
+<!--         </div>-->
+<!--      </div>-->
 
-      <div class="wptb-why-choose--inner">
-         <div class="row">
-            @foreach($branchs as $branch)
-            <div class="col-xl-3 col-lg-6 col-md-6">
-               <div class="branches_item">
-                  <div class="bd-branch-title">
-                     <div class="bd-main-heading">{{ $branch->country }}</div>
-                  </div>
-                  <div class="bd-class-content-3 clr-1 theme-bg-6 ">
-                     <h3 class="bd-class-title-3 title_color_1">Seven Countries({{ $branch->country }})</h3>
-                     <div class="bd-branch-details head">
-                        <i class="bi bi-person-fill"></i>
-                        <h6>Branch Of Head :</h6>
-                        <p>{{ $branch->name }}</p>
-                     </div>
-                     <div class="bd-branch-details">
-                        <i class="bi bi-geo-fill"></i>
-                        <p>{{ $branch->address }}
-                        </p>
-                     </div>
-                     <div class="bd-branch-details call">
-                        <i class="bi bi-telephone-fill"></i>
-                        <p><a href="tel:+01234 56789">Mo. {{ $branch->mobile }}</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            @endforeach
+<!--      <div class="wptb-why-choose--inner">-->
+<!--         <div class="row">-->
+<!--            @foreach($branchs as $branch)-->
+<!--            <div class="col-xl-3 col-lg-6 col-md-6">-->
+<!--               <div class="branches_item">-->
+<!--                  <div class="bd-branch-title">-->
+<!--                     <div class="bd-main-heading">{{ $branch->country }}</div>-->
+<!--                  </div>-->
+<!--                  <div class="bd-class-content-3 clr-1 theme-bg-6 ">-->
+<!--                     <h3 class="bd-class-title-3 title_color_1">Seven Countries({{ $branch->country }})</h3>-->
+<!--                     <div class="bd-branch-details head">-->
+<!--                        <i class="bi bi-person-fill"></i>-->
+<!--                        <h6>Branch Of Head :</h6>-->
+<!--                        <p>{{ $branch->name }}</p>-->
+<!--                     </div>-->
+<!--                     <div class="bd-branch-details">-->
+<!--                        <i class="bi bi-geo-fill"></i>-->
+<!--                        <p>{{ $branch->address }}-->
+<!--                        </p>-->
+<!--                     </div>-->
+<!--                     <div class="bd-branch-details call">-->
+<!--                        <i class="bi bi-telephone-fill"></i>-->
+<!--                        <p><a href="tel:+919979865666">Mo. {{ $branch->mobile }}</a></p>-->
+<!--                     </div>-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--            @endforeach-->
             <!-- <div class="col-xl-3 col-lg-6 col-md-6">
-               <div class="branches_item">
-                  <div class="bd-branch-title">
-                     <div class="bd-main-heading">Australia Office</div>
-                  </div>
-                  <div class="bd-class-content-3 clr-1 theme-bg-6 ">
-                     <h3 class="bd-class-title-3 title_color_1">Seven Countries(Australia)</h3>
-                     <div class="bd-branch-details head">
-                        <i class="bi bi-person-fill"></i>
-                        <h6>Branch Of Head :</h6>
-                        <p>John Smith</p>
-                     </div>
-                     <div class="bd-branch-details">
-                        <i class="bi bi-geo-fill"></i>
-                        <p>australia office address
-                        </p>
-                     </div>
-                     <div class="bd-branch-details call">
-                        <i class="bi bi-telephone-fill"></i>
-                        <p><a href="tel:+01234 56789">Mo. 01234 56789</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6">
-               <div class="branches_item">
-                  <div class="bd-branch-title">
-                     <div class="bd-main-heading">UK Office</div>
-                  </div>
-                  <div class="bd-class-content-3 clr-1 theme-bg-6 ">
-                     <h3 class="bd-class-title-3 title_color_1">Seven Countries(UK)</h3>
-                     <div class="bd-branch-details head">
-                        <i class="bi bi-person-fill"></i>
-                        <h6>Branch Of Head :</h6>
-                        <p>John Smith</p>
-                     </div>
-                     <div class="bd-branch-details">
-                        <i class="bi bi-geo-fill"></i>
-                        <p>uk office address
-                        </p>
-                     </div>
-                     <div class="bd-branch-details call">
-                        <i class="bi bi-telephone-fill"></i>
-                        <p><a href="tel:+01234 56789">Mo. 01234 56789</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6">
-               <div class="branches_item">
-                  <div class="bd-branch-title">
-                     <div class="bd-main-heading">US Office</div>
-                  </div>
-                  <div class="bd-class-content-3 clr-1 theme-bg-6 ">
-                     <h3 class="bd-class-title-3 title_color_1">Seven Countries(US)</h3>
-                     <div class="bd-branch-details head">
-                        <i class="bi bi-person-fill"></i>
-                        <h6>Branch Of Head :</h6>
-                        <p>John Smith</p>
-                     </div>
-                     <div class="bd-branch-details">
-                        <i class="bi bi-geo-fill"></i>
-                        <p>us office address
-                        </p>
-                     </div>
-                     <div class="bd-branch-details call">
-                        <i class="bi bi-telephone-fill"></i>
-                        <p><a href="tel:+01234 56789">Mo. 01234 56789</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div> -->
-         </div>
-      </div>
-   </div>
-</section>
+<!--               <div class="branches_item">-->
+<!--                  <div class="bd-branch-title">-->
+<!--                     <div class="bd-main-heading">Australia Office</div>-->
+<!--                  </div>-->
+<!--                  <div class="bd-class-content-3 clr-1 theme-bg-6 ">-->
+<!--                     <h3 class="bd-class-title-3 title_color_1">Seven Countries(Australia)</h3>-->
+<!--                     <div class="bd-branch-details head">-->
+<!--                        <i class="bi bi-person-fill"></i>-->
+<!--                        <h6>Branch Of Head :</h6>-->
+<!--                        <p>John Smith</p>-->
+<!--                     </div>-->
+<!--                     <div class="bd-branch-details">-->
+<!--                        <i class="bi bi-geo-fill"></i>-->
+<!--                        <p>australia office address-->
+<!--                        </p>-->
+<!--                     </div>-->
+<!--                     <div class="bd-branch-details call">-->
+<!--                        <i class="bi bi-telephone-fill"></i>-->
+<!--                        <p><a href="tel:+01234 56789">Mo. 01234 56789</a></p>-->
+<!--                     </div>-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--            <div class="col-xl-3 col-lg-6 col-md-6">-->
+<!--               <div class="branches_item">-->
+<!--                  <div class="bd-branch-title">-->
+<!--                     <div class="bd-main-heading">UK Office</div>-->
+<!--                  </div>-->
+<!--                  <div class="bd-class-content-3 clr-1 theme-bg-6 ">-->
+<!--                     <h3 class="bd-class-title-3 title_color_1">Seven Countries(UK)</h3>-->
+<!--                     <div class="bd-branch-details head">-->
+<!--                        <i class="bi bi-person-fill"></i>-->
+<!--                        <h6>Branch Of Head :</h6>-->
+<!--                        <p>John Smith</p>-->
+<!--                     </div>-->
+<!--                     <div class="bd-branch-details">-->
+<!--                        <i class="bi bi-geo-fill"></i>-->
+<!--                        <p>uk office address-->
+<!--                        </p>-->
+<!--                     </div>-->
+<!--                     <div class="bd-branch-details call">-->
+<!--                        <i class="bi bi-telephone-fill"></i>-->
+<!--                        <p><a href="tel:+01234 56789">Mo. 01234 56789</a></p>-->
+<!--                     </div>-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--            <div class="col-xl-3 col-lg-6 col-md-6">-->
+<!--               <div class="branches_item">-->
+<!--                  <div class="bd-branch-title">-->
+<!--                     <div class="bd-main-heading">US Office</div>-->
+<!--                  </div>-->
+<!--                  <div class="bd-class-content-3 clr-1 theme-bg-6 ">-->
+<!--                     <h3 class="bd-class-title-3 title_color_1">Seven Countries(US)</h3>-->
+<!--                     <div class="bd-branch-details head">-->
+<!--                        <i class="bi bi-person-fill"></i>-->
+<!--                        <h6>Branch Of Head :</h6>-->
+<!--                        <p>John Smith</p>-->
+<!--                     </div>-->
+<!--                     <div class="bd-branch-details">-->
+<!--                        <i class="bi bi-geo-fill"></i>-->
+<!--                        <p>us office address-->
+<!--                        </p>-->
+<!--                     </div>-->
+<!--                     <div class="bd-branch-details call">-->
+<!--                        <i class="bi bi-telephone-fill"></i>-->
+<!--                        <p><a href="tel:+01234 56789">Mo. 01234 56789</a></p>-->
+<!--                     </div>-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--            </div> -->-->
+<!--         </div>-->
+<!--      </div>-->
+<!--   </div>-->
+<!--</section>-->
 
 <!-- FAQ's -->
 <section class="wptb-faq-two p-0">

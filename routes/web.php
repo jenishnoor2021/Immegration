@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\AdminTeamController;
-use App\Http\Controllers\AdminBranchsController;
 use App\Http\Controllers\AdminTestominalController;
+use App\Http\Controllers\AdminBranchsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +48,9 @@ Route::get('/visa-list', [App\Http\Controllers\AdminController::class, 'visaList
 Route::get('/tourist-visa', [App\Http\Controllers\AdminController::class, 'touristVisa'])->name('tourist-visa');
 Route::get('/services', [App\Http\Controllers\AdminController::class, 'services'])->name('services');
 
+Route::get('/page1', [App\Http\Controllers\AdminController::class, 'page1'])->name('services');
+Route::get('/page2', [App\Http\Controllers\AdminController::class, 'page2'])->name('services');
+
 
 
 Route::post('/inquireystore', [App\Http\Controllers\AdminController::class, 'storeInquiry'])->name('storeInquiry');
@@ -83,14 +86,6 @@ Route::group(['middleware' => ['auth', 'usersession']], function () {
     Route::get("admin/testomonial/searchtestompnial", [AdminTestominalController::class, 'searchTestomonial'])->name('admin.testomonial.search');
     Route::get('admin/testomonial/statusupdate/{id}', [AdminTestominalController::class, 'statusUpdate'])->name('admin.testomonial.status');
 
-    Route::get("admin/branch", [AdminBranchsController::class, 'index'])->name('admin.branch.index');
-    Route::get('admin/branch/create', [AdminBranchsController::class, 'create'])->name('admin.branch.create');
-    Route::post('admin/branch/store', [AdminBranchsController::class, 'store'])->name('admin.branch.store');
-    Route::get('admin/branch/edit/{id}', [AdminBranchsController::class, 'edit'])->name('admin.branch.edit');
-    Route::patch('admin/branch/update/{id}', [AdminBranchsController::class, 'update'])->name('admin.branch.update');
-    Route::get('admin/branch/destroy/{id}', [AdminBranchsController::class, 'destroy'])->name('admin.branch.destroy');
-    Route::get('admin/branch/statusupdate/{id}', [AdminBranchsController::class, 'statusUpdate'])->name('admin.branch.status');
-
     Route::get('admin/contact', [App\Http\Controllers\AdminContactController::class, 'index'])->name('admin.contact');
     Route::get('admin/contact/create', [App\Http\Controllers\AdminContactController::class, 'create'])->name('admin.contact.create');
     Route::post('admin/contact/store', [App\Http\Controllers\AdminContactController::class, 'store'])->name('admin.contact.store');
@@ -119,10 +114,18 @@ Route::group(['middleware' => ['auth', 'usersession']], function () {
     Route::get('admin/team/edit/{id}', [AdminTeamController::class, 'edit'])->name('admin.team.edit');
     Route::patch('admin/team/update/{id}', [AdminTeamController::class, 'update'])->name('admin.team.update');
     Route::get('admin/team/destroy/{id}', [AdminTeamController::class, 'destroy'])->name('admin.team.destroy');
-    Route::post('admin/team/reorder', [AdminTeamController::class, 'reorder'])->name('admin.team.reorder');
     Route::delete('/myteamDeleteAll', [AdminTeamController::class, 'deleteteamAll'])->name('deleteteamAll');
     Route::get("admin/team/searchtestompnial", [AdminTeamController::class, 'searchteam'])->name('admin.team.search');
     Route::get('admin/team/statusupdate/{id}', [AdminTeamController::class, 'statusUpdate'])->name('admin.team.status');
+    Route::post('admin/team/reorder', [AdminTeamController::class, 'reorder'])->name('admin.team.reorder');
+    
+    Route::get("admin/branch", [AdminBranchsController::class, 'index'])->name('admin.branch.index');
+    Route::get('admin/branch/create', [AdminBranchsController::class, 'create'])->name('admin.branch.create');
+    Route::post('admin/branch/store', [AdminBranchsController::class, 'store'])->name('admin.branch.store');
+    Route::get('admin/branch/edit/{id}', [AdminBranchsController::class, 'edit'])->name('admin.branch.edit');
+    Route::patch('admin/branch/update/{id}', [AdminBranchsController::class, 'update'])->name('admin.branch.update');
+    Route::get('admin/branch/destroy/{id}', [AdminBranchsController::class, 'destroy'])->name('admin.branch.destroy');
+    Route::get('admin/branch/statusupdate/{id}', [AdminBranchsController::class, 'statusUpdate'])->name('admin.branch.status');
 
 
     Route::get('admin/quatation', [App\Http\Controllers\AdminQuatationController::class, 'index'])->name('admin.quatation');

@@ -17,5 +17,6 @@ class quatation extends Model
     {
 
         parent::boot();
+
     }
 }

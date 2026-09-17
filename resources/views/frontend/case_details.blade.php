@@ -74,7 +74,7 @@
                                  <i class="bi bi-telephone-fill"></i>
                               </div>
                               <span class="wptb-item--desc">Need Help? Book Lab Visit</span>
-                              <h5 class="wptb-item--number">+234 567 811 99</h5>
+                              <h5 class="wptb-item--number">+91 9879476666</h5>
                            </div>
                         </div>
                      </div>

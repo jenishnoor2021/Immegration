@@ -29,6 +29,9 @@
       @endif
 
       <div class="wptb-contact-infos">
+      <h2 style="text-align:center;margin-bottom:20px;">Contact Us</h2>
+      <p style="text-align:center;margin-bottom:20px;"<b>SEVEN COUNTRIES IMMIGRATION AND EDUCATION</b> is a true leader when it comes to realizing the students’ dream of studying abroad. We owe our organization’s phenomenal growth to the dedication and sincerity of our employees.</p>
+         <p style="text-align:center;margin-bottom:20px;">We endeavour to provide an enriching work environment and we understand that only a satisfied employee will put his best foot forward. Thus, <b>SEVEN COUNTRIES IMMIGRATION AND EDUCATION</b> has taken definite steps to ensure that it is ‘Great Place to Work’ in Organization.</p>
          <div class="row">
             <div class="col-lg-4 col-md-6">
                <div class="wptb-image-box1 wow fadeInLeft">
@@ -42,8 +45,7 @@
                         </div>
                         <h4 class="wptb-item--title">Send Us Mail</h4>
                         <p class="wptb-item--description">
-                           <a href="mailto:immgway.care@email.com">immgway.care@email.com</a> <br>
-                           <a href="mailto:info.sevencountries@email.com">info.sevencountries@email.com</a>
+                           <a href="sevencountriesvisa@gmail.com">sevencountriesvisa@gmail.com</a>
                         </p>
                      </div>
                   </div>
@@ -62,8 +64,7 @@
                         </div>
                         <h4 class="wptb-item--title">Call Us Anytime</h4>
                         <p class="wptb-item--description">
-                           <a href="tel:+98765432122811">(+987) 654 321 228 11</a> <br>
-                           <a href="tel:+98765432122814">(+987) 654 321 228 14</a>
+                           <a href="tel:+91 9879476666">+91 9879476666 / +91 9979865666</a>
                         </p>
                      </div>
                   </div>
@@ -81,14 +82,16 @@
                            <img src="{{asset('assets/img/more/map-pin.png')}}" alt="icon">
                         </div>
                         <h4 class="wptb-item--title">Visit Our Office</h4>
-                        <p class="wptb-item--description"> 28 Street, New York City <br>
-                           Untes States of America</p>
+                        <p class="wptb-item--description"> 222-224, Prime Shoppers,<br>
+                           Opp.Safal Square, Vesu Surat.</p>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.117832781197!2d72.76343387503498!3d21.147708480531662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0536223182ce3%3A0xc3f728e224c80356!2sSeven%20Countries%20Immigration%20and%20Education%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1738679493985!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       <div class="wptb-contact-form-one">
          <div class="wptb-form--wrapper">
@@ -99,8 +102,8 @@
                      <div class="wptb-form--inner">
                         <div class="wptb-heading">
                            <div class="wptb-item--inner text-center">
-                              <h2 class="wptb-item--title"> <span>Drop Us A line</span></h2>
-                              <p class="wptb-item--description"> Seven Countries Visa Agency will help you to solve your problem</p>
+                              <h2 class="wptb-item--title"> <span>Get in touch with us</span></h2>
+                              <p class="wptb-item--description"> Don’t hesitate to contact with us for inquires!</p>
                            </div>
                         </div>
 
@@ -125,13 +128,13 @@
 
                            <div class="col-lg-6 col-md-6 mb-4">
                               <div class="form-group">
-                                 <input type="text" name="fname" class="form-control" placeholder="Subject" required>
+                                 <input type="text" name="fname" class="form-control" placeholder="city" required>
                               </div>
                            </div>
 
                            <div class="col-md-12 col-lg-12 mb-4">
                               <div class="form-group">
-                                 <textarea name="fdetail" class="form-control" placeholder="Text" required></textarea>
+                                 <textarea name="fdetail" class="form-control" placeholder="Your Message" required></textarea>
                               </div>
                            </div>
 
@@ -157,6 +160,7 @@
 @include('includes.newsletter')
 
 @endsection
+
 
 @section('script')
 <script>

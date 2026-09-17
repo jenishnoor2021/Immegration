@@ -49,6 +49,7 @@ class AdminTeamController extends Controller
         ]);
 
         if ($validator->fails()) {
+
             return Redirect::back()->withErrors($validator);
         }
 
@@ -125,6 +126,7 @@ class AdminTeamController extends Controller
         ]);
 
         if ($validator->fails()) {
+
             return Redirect::back()->withErrors($validator);
         }
 
@@ -177,6 +179,19 @@ class AdminTeamController extends Controller
         return  Redirect::back();
     }
 
+    public function statusUpdate(Request $request, $id)
+    {
+        $token = Team::findOrFail($id);
+        $tokenstatus = $token->is_show;
+        if ($tokenstatus == 0) {
+            $token->is_show = 1;
+        } else {
+            $token->is_show = 0;
+        }
+        $token->save();
+        return Redirect::back();
+    }
+    
     public function reorder(Request $request)
     {
         $order = $request->input('order');
@@ -189,18 +204,5 @@ class AdminTeamController extends Controller
         }
 
         return response()->json(['status' => 'success']);
-    }
-
-    public function statusUpdate(Request $request, $id)
-    {
-        $token = Team::findOrFail($id);
-        $tokenstatus = $token->is_show;
-        if ($tokenstatus == 0) {
-            $token->is_show = 1;
-        } else {
-            $token->is_show = 0;
-        }
-        $token->save();
-        return Redirect::back();
     }
 }

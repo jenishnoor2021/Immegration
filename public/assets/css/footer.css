@@ -131,7 +131,7 @@
 .footer-upper-contact .wptb-icon-box1 .wptb-item--inner {
     border-right: 1px solid var(--color-white);
     margin-right: 25px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .footer-upper-contact .wptb-icon-box1 .wptb-item--icon {
@@ -305,5 +305,10 @@
     }
     .wptb-item--holder {
         width: calc(100% - 50px);
+    }
+}
+@media(max-width: 767px) {
+    .footer .btn {
+        padding: 12px 30px;
     }
 }

@@ -9,6 +9,17 @@ $teams = Team::where('is_show', 1)->orderBy('sort_order', 'asc')->paginate(4);
 @extends('layouts.front')
 @section('content')
 
+<style>
+        .teamImage {
+            height:400px !important;
+        }
+        
+        .wptb-item--description-comp {
+            /*max-height: 100px;*/
+            /*overflow: hidden;*/
+        }
+  </style>
+
 <!-- Page Header -->
 @include('includes.heroimg')
 <div class="container">
@@ -40,19 +51,17 @@ $teams = Team::where('is_show', 1)->orderBy('sort_order', 'asc')->paginate(4);
                      </span>
                      Company Intro
                   </h6>
-                  <h1 class="wptb-item--title"> <span>We help Making your <br>
-                        dream into Reality</span></h1>
+                  <h1 class="wptb-item--title"> <span>WELCOME TO SEVEN COUNTRIES<br>
+                        IMMIGRATION AND EDUCATION PVT LTD</span></h1>
                </div>
             </div>
 
             <div class="col-md-6">
-               <p class="wptb-item--description">Seven Countries Visa Consultancy was created to provide uniquely des
-                  igned premium services in the world of education and migration.
-                  As people are dreaming more.</p>
-
-               <p class="wptb-item--description">Seven Countries Visa Consultancy was created to provide uniquely des
-                  igned premium services in the world of education and migration.
-                  As people are dreaming more.</p>
+               <p class="wptb-item--description-comp">we are your trusted partners in global immigration. With deep expertise and a wide network of international connections, we help individuals, students, and professionals achieve their dreams abroad.</p>
+               <p class="wptb-item--description-comp">We specialize in immigration services for Canada, USA, United Kingdom, Australia, New Zealand, Germany, and Ireland — offering end-to-end support from consultation to visa approval.</p>
+               <p class="wptb-item--description-comp">Whether you're aiming for higher education, permanent residency, work permits, or family sponsorship, our dedicated team ensures a smooth, transparent, and successful journey.</p>
+               <p class="wptb-item--description-comp">Join the thousands who have turned their global dreams into reality with us.</p>
+               <p class="wptb-item--description-comp">Your journey begins here. Let’s take the first step together.</p>
             </div>
          </div>
       </div>
@@ -90,7 +99,7 @@ $teams = Team::where('is_show', 1)->orderBy('sort_order', 'asc')->paginate(4);
                               <div class="wptb-item--holder">
                                  <h5 class="wptb-item--title">Call For Consultation</h5>
                                  <p class="wptb-item--description">
-                                    <a href="tel:+01 567 114 3312">+01 567 114 3312</a>
+                                    <a href="tel:+91 9879476666">+91 9879476666 / 9979865666</a>
                                  </p>
                               </div>
                            </div>
@@ -135,10 +144,13 @@ $teams = Team::where('is_show', 1)->orderBy('sort_order', 'asc')->paginate(4);
                         </span>
                         About Our Company
                      </h6>
-                     <h1 class="wptb-item--title has-line"> <span>We help Making your <br>
-                           dream into Reality</span></h1>
-                     <p class="wptb-item--description">
-                        Seven Countries Visa Consultancy was created to provide uniquely designed premium services in the world of education and migration.As people are dreaming more hands-on experience.
+                     <h1 class="wptb-item--title has-line"> <span>We help making your <br>
+                           dream into reality</span></h1>
+                     <p class="wptb-item--description-comp">
+                        Our mission is simple: to turn your educational dreams into tangible realities. With personalized support and expert guidance, we navigate the complexities of immigration and education systems, ensuring a seamless transition to your chosen destination. From selecting the perfect academic program to assisting with visa applications and settling into your new environment, we're here every step of the way. Let us be your partner in transforming aspirations into achievements, making your educational journey unforgettable and fulfilling.
+                     </p>
+                     <p class="wptb-item--description-comp">
+                      Embodies our commitment to turning your educational aspirations into tangible achievements. With personalized guidance and comprehensive support, we empower you to navigate the intricacies of immigration and education in your chosen country. From selecting the right academic institution to assisting with visa applications and cultural adaptation, we are dedicated to making your dream of studying abroad a reality. Let us be your trusted partner on this transformative journey, ensuring that every step you take brings you closer to realizing your educational dreams.
                      </p>
                   </div>
                </div>
@@ -183,8 +195,8 @@ $teams = Team::where('is_show', 1)->orderBy('sort_order', 'asc')->paginate(4);
                <div class="wptb-item--button">
                   <a href="{{URL::to('/aboutus')}}" class="btn">
                      <span class="btn-wrap">
-                        <span class="text-first">Get Started</span>
-                        <span class="text-second">Get Started</span>
+                        <span class="text-first">Book an Appointment</span>
+                        <span class="text-second">Book an Appointment</span>
                      </span>
                   </a>
                </div>
@@ -218,8 +230,16 @@ $teams = Team::where('is_show', 1)->orderBy('sort_order', 'asc')->paginate(4);
                <div class="wptb-item--inner">
                   <div class="wptb-item--icon"><img src="{{asset('assets/img/services/icon-14.png')}}" alt="icon"></div>
                   <div class="wptb-item--holder">
-                     <h4 class="wptb-item--title">Quality Visa Service</h4>
-                     <p class="wptb-item--description">Lorem ipsum dolor sit amet, consectetur sad ipiscing elit,sed dominus lorem ipsum dolor consectetur </p>
+                     <h4 class="wptb-item--title">1) Quality Visa Service</h4>
+                     <ul class="point-order">
+                        <li><b>Expert Guidance:</b> Leverage our extensive expertise and years of experience in immigration and education consulting.</li>
+                        <li><b>Personalized Solutions:</b> Receive tailored services that cater to your specific needs and aspirations.</li>
+                        <li><b>High Success Rate:</b> Benefit from our proven track record of successful visa approvals and educational placements.</li>
+                        <li><b>Comprehensive Support:</b> Enjoy end-to-end support, from application to settlement, ensuring a smooth journey.</li>
+                        <li><b>Transparent Processes:</b> Trust our commitment to transparency and integrity in all our services.</li>
+                        <li><b>Timely Responses:</b> Experience efficient handling of your applications with our prompt and proactive approach.</li>
+                        <li><b>Exceptional Customer Service:</b> Rely on our dedicated team for continuous support and guidance at every step.</li>
+                     </ul>
                   </div>
                </div>
             </div>
@@ -228,8 +248,8 @@ $teams = Team::where('is_show', 1)->orderBy('sort_order', 'asc')->paginate(4);
                <div class="wptb-item--inner">
                   <div class="wptb-item--icon"><img src="{{asset('assets/img/services/icon-15.png')}}" alt="icon"></div>
                   <div class="wptb-item--holder">
-                     <h4 class="wptb-item--title">100% Satisfaction Guaranteed</h4>
-                     <p class="wptb-item--description">Lorem ipsum dolor sit amet, consectetur sad ipiscing elit,sed dominus lorem ipsum dolor consectetur </p>
+                     <h4 class="wptb-item--title">2) 100% Satisfaction Guaranteed</h4>
+                     <p class="wptb-item--description">we are committed to ensuring your complete satisfaction. Our dedicated team provides expert guidance, personalized solutions, and comprehensive support every step of the way. We pride ourselves on our transparency, efficiency, and exceptional customer service, guaranteeing a seamless and successful experience for all our clients. Your satisfaction is our top priority.</p>
                   </div>
                </div>
             </div>
@@ -238,8 +258,8 @@ $teams = Team::where('is_show', 1)->orderBy('sort_order', 'asc')->paginate(4);
                <div class="wptb-item--inner">
                   <div class="wptb-item--icon"><img src="{{asset('assets/img/services/icon-16.png')}}" alt="icon"></div>
                   <div class="wptb-item--holder">
-                     <h4 class="wptb-item--title">Expert Support Panel</h4>
-                     <p class="wptb-item--description">Lorem ipsum dolor sit amet, consectetur sad ipiscing elit,sed dominus lorem ipsum dolor consectetur </p>
+                     <h4 class="wptb-item--title">3) Expert Support Panel</h4>
+                     <p class="wptb-item--description">Our <b>Expert Support Panel</b> at Quality Visa Service comprises seasoned professionals with extensive experience in immigration and education consulting. They provide personalized advice, meticulous guidance, and proactive solutions to ensure your success at every stage of your journey. Trust our experts to make your international dreams a reality.</p>
                   </div>
                </div>
             </div>
@@ -288,28 +308,28 @@ $teams = Team::where('is_show', 1)->orderBy('sort_order', 'asc')->paginate(4);
 
          <!-- Team Block -->
          @foreach ($teams as $team)
-         <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="wptb-team-grid1">
-               <div class="wptb-item--inner">
-                  <div class="wptb-item--image">
-                     <img src="{{$team->file}}" alt="img">
-                  </div>
-
-                  <div class="wptb-item--holder">
-                     <div class="wptb-item--social">
-                        <li><a href="{{$team->facebook}}" class="bi bi-facebook"></a></li>
-                        <li><a href="{{$team->instagram}}" class="bi bi-instagram"></a></li>
-                        <li><a href="{{$team->twitter}}" class="bi bi-twitter-x"></a></li>
-                        <li><a href="{{$team->linkdin}}" class="bi bi-linkedin"></a></li>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+               <div class="wptb-team-grid1">
+                  <div class="wptb-item--inner">
+                     <div class="wptb-item--image">
+                        <img src="{{$team->file}}" alt="img" class="teamImage">
                      </div>
-                     <div class="wptb-item--meta">
-                        <h5 class="wptb-item--title"><a href="{{URL::to('/team')}}">{{$team->name}}</a></h5>
-                        <p class="wptb-item--position">{{$team->occupation}}</p>
+
+                     <div class="wptb-item--holder">
+                        <div class="wptb-item--social">
+                           <li><a href="{{$team->facebook}}" class="bi bi-facebook"></a></li>
+                           <li><a href="{{$team->instagram}}" class="bi bi-instagram"></a></li>
+                           <li><a href="{{$team->twitter}}" class="bi bi-twitter-x"></a></li>
+                           <li><a href="{{$team->linkdin}}" class="bi bi-linkedin"></a></li>
+                        </div>
+                        <div class="wptb-item--meta">
+                           <h5 class="wptb-item--title"><a href="{{URL::to('/team')}}">{{$team->name}}</a></h5>
+                           <p class="wptb-item--position">{{$team->occupation}}</p>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
          @endforeach
 
       </div>

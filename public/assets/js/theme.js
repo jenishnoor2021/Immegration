@@ -467,6 +467,24 @@ Description: Immigway - Immigration & Visa Solutions Template
         $(".visa_content .blog-details-inner").hide();
         $(".visa_content .blog-details-inner[data-visa='" + dataVisa + "']").show();
     });
+    
+    $(".read_more").on("click", function(){
+        alert();
+        var TextValue = $(this).text();
+        if(TextValue == "Read More") {
+           $(this).text("Read Less");
+           $(this).parents(".wptb-process").find(".wptb-item--description").css({
+               'overflow': 'visible',
+               'max-height': '100%'
+           }); 
+        } else {
+           $(this).text("Read More");
+           $(this).parents(".wptb-process").find(".wptb-item--description").css({
+               'overflow': 'hidden',
+               'max-height': '100px'
+           }); 
+        }
+    });
 })(jQuery);
 
 // Hide header on scroll down

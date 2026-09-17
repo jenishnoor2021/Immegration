@@ -49,28 +49,53 @@ $teams = Team::where('is_show', 1)->orderBy('sort_order', 'asc')->get();
 
             <!-- Team Block -->
             @foreach ($teams as $team)
-            <div class="col-lg-3 col-md-4 col-sm-6">
-               <div class="wptb-team-grid2">
-                  <div class="wptb-item--inner">
-                     <div class="wptb-item--image">
-                        <img src="{{$team->file}}" alt="img">
-                     </div>
+               @if ($loop->index == 2 || $loop->index == 3 || $loop->index == 4 || $loop->index == 5 || $loop->index == 6 || $loop->index == 7 || $loop->index == 8 || $loop->index == 9 || $loop->index == 10)
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                     <div class="wptb-team-grid2 v2">
+                        <div class="wptb-item--inner">
+                           <div class="wptb-item--image">
+                              <img src="{{$team->file}}" alt="img">
+                           </div>
 
-                     <div class="wptb-item--holder">
-                        <div class="wptb-item--social">
-                           <a href="{{$team->facebook}}"><i class="bi bi-facebook"></i></a>
-                           <a href="{{$team->instagram}}"><i class="bi bi-twitter"></i></a>
-                           <a href="{{$team->twitter}}"><i class="bi bi-instagram"></i></a>
-                           <a href="{{$team->linkdin}}"><i class="bi bi-linkedin"></i></a>
-                        </div>
-                        <div class="wptb-item--meta">
-                           <h5 class="wptb-item--title">{{$team->name}}</h5>
-                           <p class="wptb-item--position">{{$team->occupation}}</p>
+                           <div class="wptb-item--holder">
+                              <div class="wptb-item--social">
+                                 <a href="{{$team->facebook}}"><i class="bi bi-facebook"></i></a>
+                                 <a href="{{$team->instagram}}"><i class="bi bi-twitter"></i></a>
+                                 <a href="{{$team->twitter}}"><i class="bi bi-instagram"></i></a>
+                                 <a href="{{$team->linkdin}}"><i class="bi bi-linkedin"></i></a>
+                              </div>
+                              <div class="wptb-item--meta">
+                                 <h5 class="wptb-item--title">{{$team->name}}</h5>
+                                 <p class="wptb-item--position"><b>{{$team->occupation}}</b></p>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
-               </div>
-            </div>
+               @else
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                     <div class="wptb-team-grid2">
+                        <div class="wptb-item--inner">
+                           <div class="wptb-item--image">
+                              <img src="{{$team->file}}" alt="img">
+                           </div>
+
+                           <div class="wptb-item--holder">
+                              <div class="wptb-item--social">
+                                 <a href="{{$team->facebook}}"><i class="bi bi-facebook"></i></a>
+                                 <a href="{{$team->instagram}}"><i class="bi bi-twitter"></i></a>
+                                 <a href="{{$team->twitter}}"><i class="bi bi-instagram"></i></a>
+                                 <a href="{{$team->linkdin}}"><i class="bi bi-linkedin"></i></a>
+                              </div>
+                              <div class="wptb-item--meta">
+                                 <h5 class="wptb-item--title">{{$team->name}}</h5>
+                                 <p class="wptb-item--position"><b>{{$team->occupation}}</b></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               @endif
             @endforeach
 
          </div>

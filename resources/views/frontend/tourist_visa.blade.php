@@ -116,39 +116,6 @@
                         </div>
                      </li>
 
-                     <li class="menu-item" data-visa="transit">
-                        <div class="menu-item_inner d-flex align-items-center justify-content-between">
-                           <span>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="28" viewBox="0 0 31 28" fill="none">
-                                 <g clip-path="url(#clip0_50_24756)">
-                                    <path d="M24.1645 10.3418C21.0185 10.3418 18.459 12.9013 18.459 16.0475C18.459 19.1936 21.0185 21.7531 24.1645 21.7531C27.3106 21.7531 29.87 19.1936 29.87 16.0475C29.87 12.9013 27.3106 10.3418 24.1645 10.3418ZM27.5687 15.0385L23.8977 18.7096C23.6332 18.9741 23.2961 19.1146 22.9329 19.1146C22.8706 19.1146 22.8066 19.1107 22.7427 19.102C22.3085 19.0444 21.9477 18.8044 21.729 18.4246L20.57 16.4169C20.4098 16.139 20.3671 15.8138 20.4508 15.5019C20.5345 15.1901 20.7335 14.9303 21.0114 14.7701C21.2892 14.6098 21.6145 14.5672 21.9264 14.6501C22.2382 14.7337 22.4987 14.9327 22.659 15.2114L23.1437 16.0522L25.8635 13.3332C26.09 13.1058 26.3932 12.9811 26.7161 12.9811C27.039 12.9811 27.3414 13.1066 27.5687 13.3332C27.7961 13.5606 27.9208 13.8629 27.9208 14.1858C27.9208 14.5087 27.7953 14.8111 27.5687 15.0385Z" fill="#E13833" />
-                                    <path d="M20.7881 7.93982C21.2452 7.6335 21.617 7.2348 21.8941 6.754C22.3733 5.92346 22.5012 4.95554 22.2525 4.02867C22.1925 3.80525 22.1128 3.59129 22.0141 3.3876L21.4607 4.34684C21.0881 4.99106 20.4107 5.35186 19.7152 5.35186C19.3741 5.35186 19.0283 5.26502 18.7125 5.08265C17.7518 4.52842 17.4218 3.29523 17.976 2.33521L18.5302 1.37598C18.3044 1.39256 18.0786 1.42966 17.8552 1.48966C16.9283 1.73756 16.1546 2.33205 15.6746 3.1626C15.3975 3.64261 15.2381 4.16447 15.201 4.71316C15.0075 7.5806 14.3049 9.99171 12.9336 12.4723L15.2018 13.7821C16.6654 11.3544 18.4015 9.54012 20.7881 7.93982Z" fill="#E13833" />
-                                    <path d="M14.7843 17.8865C15.0764 17.3804 14.9027 16.7307 14.3966 16.4386L11.0343 14.4972C10.7903 14.3559 10.5053 14.3196 10.2306 14.393C9.95585 14.4664 9.7269 14.6409 9.58638 14.8856L9.05664 15.8038L14.2545 18.8047L14.7843 17.8865Z" fill="#E13833" />
-                                    <mask id="mask0_50_24756" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="31" height="28">
-                                       <path d="M30.7793 0.5H0.779297V27.5007H30.7793V0.5Z" fill="white" />
-                                    </mask>
-                                    <g mask="url(#mask0_50_24756)">
-                                       <path d="M1.93641 18.7535C1.83378 18.9311 1.89536 19.1593 2.07299 19.2619L14.7551 26.5845C14.8404 26.6334 14.9406 26.6468 15.0369 26.6208C15.1333 26.5947 15.2138 26.5339 15.2627 26.4487L15.8659 25.4034L2.53957 17.709L1.93641 18.7535Z" fill="#E13833" />
-                                    </g>
-                                    <mask id="mask1_50_24756" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="31" height="28">
-                                       <path d="M30.7793 0.5H0.779297V27.5007H30.7793V0.5Z" fill="white" />
-                                    </mask>
-                                    <g mask="url(#mask1_50_24756)">
-                                       <path d="M18.3168 21.1509L14.9725 19.2206L15.5023 18.3024C15.9902 17.4569 15.7486 16.3871 14.9733 15.8273L15.7075 14.5555C17.1475 12.0622 18.856 10.2346 21.2481 8.62953C21.811 8.25216 22.2689 7.76109 22.6099 7.17055C23.2004 6.14816 23.3568 4.95681 23.0512 3.81678C22.7457 2.67597 22.0139 1.72305 20.9915 1.13251C19.9691 0.541967 18.7778 0.385647 17.6378 0.691181C16.4978 0.996715 15.5441 1.72779 14.9544 2.75018C14.6133 3.34072 14.4175 3.98337 14.3718 4.65996C14.1783 7.53372 13.4497 9.92667 12.0104 12.4207L11.2754 13.6926C10.8807 13.5157 10.4402 13.4794 10.0147 13.5939C9.52676 13.7249 9.1186 14.0368 8.86755 14.4726L8.33781 15.3908L4.99439 13.4604C3.82281 12.7838 2.31886 13.1873 1.64228 14.3589L1.01623 15.4444C0.855967 15.7215 0.814125 16.0452 0.89702 16.3555C0.979914 16.6658 1.17886 16.9247 1.45597 17.085L1.8207 17.295L1.21755 18.3403C0.885967 18.9143 1.08334 19.6501 1.65728 19.9809L14.3394 27.3034C14.5233 27.41 14.7286 27.4645 14.9362 27.4645C15.0412 27.4645 15.1462 27.4503 15.2504 27.4226C15.5607 27.3397 15.8197 27.1408 15.9799 26.8645L16.5839 25.8184L16.9486 26.0292C17.1373 26.1381 17.3433 26.1902 17.547 26.1902C17.9623 26.1902 18.3665 25.9747 18.5891 25.5902L19.216 24.5047C19.5428 23.9386 19.6289 23.2778 19.4583 22.643C19.2878 22.0067 18.8828 21.477 18.3168 21.1509ZM21.5039 2.6136L20.742 3.93363C20.416 4.49812 19.6912 4.69233 19.1268 4.36627C18.5615 4.04021 18.3681 3.31546 18.6941 2.75097L19.456 1.43094C19.846 1.50594 20.2257 1.64489 20.5794 1.84937C20.9331 2.05464 21.2441 2.3128 21.5039 2.6136ZM15.2007 4.71523C15.2378 4.16653 15.3973 3.64467 15.6744 3.16466C16.1536 2.33412 16.9281 1.73963 17.8549 1.49173C18.0783 1.43173 18.3041 1.39462 18.5299 1.37804L17.9757 2.33727C17.4215 3.29809 17.7515 4.53049 18.7123 5.0855C19.0281 5.26787 19.3731 5.35472 19.7141 5.35472C20.4097 5.35472 21.0878 4.99392 21.4597 4.34969L22.0139 3.39046C22.1125 3.59415 22.1931 3.8081 22.2523 4.03153C22.5002 4.9576 22.3731 5.92552 21.8939 6.75686C21.6168 7.23687 21.2441 7.63635 20.7878 7.94267C18.4012 9.54377 16.6644 11.358 15.2023 13.7857L12.9341 12.4759C14.3047 9.99378 15.0073 7.58267 15.2007 4.71523ZM12.5228 13.1944L14.7839 14.5002L14.2612 15.405L12.0002 14.0991L12.5228 13.1944ZM9.58755 14.8871C9.72807 14.6431 9.95702 14.4686 10.2318 14.3944C10.5065 14.321 10.7915 14.3573 11.0354 14.4986L14.3978 16.44C14.9039 16.7321 15.0775 17.3819 14.7854 17.8879L14.2557 18.8061L9.05781 15.8052L9.58755 14.8871ZM15.2623 26.4476C15.2125 26.5329 15.1328 26.5944 15.0365 26.6197C14.9402 26.6458 14.8399 26.6323 14.7547 26.5834L2.07176 19.2616C1.89412 19.159 1.83334 18.9308 1.93518 18.7532L2.53834 17.7079L15.8647 25.4023L15.2623 26.4476ZM18.4968 24.0878L17.8707 25.1734C17.7681 25.351 17.5399 25.4118 17.3623 25.3092L1.87123 16.3658C1.78597 16.316 1.72439 16.2363 1.69912 16.14C1.67307 16.0437 1.68649 15.9434 1.73544 15.8581L2.36228 14.7726C2.66307 14.2523 3.21018 13.961 3.77228 13.961C4.04781 13.961 4.32649 14.0312 4.58228 14.1781L17.9031 21.8693C18.2765 22.0849 18.5449 22.4362 18.6578 22.857C18.7699 23.277 18.7131 23.7144 18.4968 24.0878ZM24.1644 9.51377C20.5612 9.51377 17.6299 12.4452 17.6299 16.0484C17.6299 19.6516 20.5612 22.583 24.1644 22.583C27.7675 22.583 30.6989 19.6516 30.6989 16.0484C30.6989 12.4452 27.7675 9.51377 24.1644 9.51377ZM24.1644 21.7541C21.0183 21.7541 18.4589 19.1945 18.4589 16.0484C18.4589 12.9023 21.0183 10.3427 24.1644 10.3427C27.3104 10.3427 29.8699 12.9023 29.8699 16.0484C29.8699 19.1945 27.3104 21.7541 24.1644 21.7541ZM26.716 12.982C26.3931 12.982 26.0907 13.1067 25.8633 13.3341L23.1436 16.0531L22.6581 15.2115C22.4978 14.9336 22.2373 14.7339 21.9254 14.6502C21.6136 14.5665 21.2891 14.6092 21.0104 14.7702C20.7325 14.9305 20.5328 15.191 20.4499 15.5021C20.3662 15.8139 20.4089 16.1384 20.5691 16.4171L21.7281 18.4248C21.9475 18.8045 22.3075 19.0445 22.7418 19.1022C22.8057 19.1108 22.8689 19.1148 22.932 19.1148C23.2952 19.1148 23.6323 18.975 23.8968 18.7106L27.5678 15.0394C27.7952 14.8121 27.9199 14.5089 27.9199 14.1868C27.9199 13.8647 27.7944 13.5615 27.5678 13.3341C27.3412 13.1067 27.0389 12.982 26.716 12.982ZM26.982 14.4528L23.311 18.124C23.1839 18.2511 23.0291 18.304 22.8507 18.2803C22.6723 18.2566 22.5365 18.1658 22.4465 18.0103L21.2875 16.0026C21.1833 15.8226 21.2457 15.5921 21.4257 15.4886C21.4825 15.4555 21.5465 15.4389 21.612 15.4389C21.6452 15.4389 21.6783 15.4429 21.7115 15.4523C21.8094 15.4784 21.8907 15.5408 21.9404 15.6268L22.696 16.9358C22.7607 17.0471 22.8728 17.1229 23.0007 17.1395C23.1286 17.1568 23.2565 17.1126 23.3473 17.0218L26.4491 13.9207C26.5194 13.8505 26.6141 13.811 26.716 13.811C26.8178 13.811 26.9118 13.8497 26.9828 13.9199C27.0531 13.991 27.0925 14.0849 27.0925 14.1868C27.0918 14.2878 27.0531 14.3826 26.982 14.4528Z" fill="#162842" />
-                                    </g>
-                                 </g>
-                                 <defs>
-                                    <clipPath id="clip0_50_24756">
-                                       <rect width="30" height="27.0007" fill="white" transform="translate(0.777344 0.499512)" />
-                                    </clipPath>
-                                 </defs>
-                              </svg>
-                              Transit
-                           </span>
-                           <i class="bi bi-chevron-right"></i>
-                        </div>
-                     </li>
-
                      <li class="menu-item" data-visa="business-visa">
                         <div class="menu-item_inner d-flex align-items-center justify-content-between">
                            <span>
@@ -210,8 +177,8 @@
                               <div class="wptb-item--icon">
                                  <i class="bi bi-telephone-fill"></i>
                               </div>
-                              <span class="wptb-item--desc">Need Help? Book Lab Visit</span>
-                              <h5 class="wptb-item--number">+234 567 811 99</h5>
+                              <span class="wptb-item--desc">Need Help? Book Appointment/Counselling</span>
+                              <h5 class="wptb-item--number">+91 9879476666</h5>
                            </div>
                         </div>
                      </div>
@@ -228,10 +195,8 @@
                      <h1 class="post-title">Tourist Visa</h1>
                   </div>
                   <div class="fulltext">
-                     <p> We guide our clients through difficult issues, bringing insight and judgment to each situation. Our innovat ive approaches create original solutions to our clients' most complex domestic & multi juristictional deal s and disputes. By thinking on behalf of our clients every day, we anticipate what they want, provide what they need and build lasting relationships. </p>
-                     <h5 class="highlight">Over the last 35 Years we made an impact that is strong & we have long way to go.</h5>
-                     <p>These are the concepts that shape our distinctive culture & differentiate us from others. They true the unique spirit of our Firm guide the behaviors that enable us to deliver the promises we make to our clients and our people.</p>
-
+                     <p> A <b>Tourist Visa</b> is a type of visa that permits individuals to enter a foreign country for the purpose of tourism, sightseeing, or leisure. It typically has a limited duration, ranging from a few days to several months, and may have restrictions on activities such as employment. Applicants usually need to provide proof of travel arrangements, accommodation, financial stability, and sometimes a return ticket. The tourist visa is designed to enhance travel experiences, allowing visitors to explore new destinations while ensuring compliance with the host country's regulations.</p>
+                     
                      <div class="row g-0">
                         <!-- Iconbox -->
                         <div class="col-sm-6 wptb-icon-box2 mb-0 border-1 border-end border-bottom p-5 ps-sm-0 pt-sm-0 wow fadeInLeft">
@@ -249,7 +214,7 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Global Connection</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0"> Global Connection provides comprehensive services for students aspiring to study abroad. We guide you through every step of the process, from selecting the right institution and course to visa applications and pre-departure preparations. Our expertise and personalized support ensure a seamless transition to international education, helping you gain global exposure, academic excellence, and invaluable cultural experiences. Embark on your educational journey with Global Connection and unlock your potential on the world stage.</p>
                               </div>
                            </div>
                         </div>
@@ -297,7 +262,7 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Expertise visa Processing</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0"> At Expertise Visa Processing, we specialize in facilitating your study abroad journey. Our dedicated team offers professional guidance through the intricate visa application process, ensuring all requirements are meticulously met. From selecting the right academic institution to navigating visa regulations, we provide personalized support to make your international education experience seamless and stress-free. Trust us to handle the complexities so you can focus on achieving your academic dreams abroad.</p>
                               </div>
                            </div>
                         </div>
@@ -322,7 +287,7 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Fastest Working Process</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0">Fastest Working Process ensures a swift and efficient pathway to studying abroad. Our streamlined services expedite every step of your application, from selecting the right institution to securing your student visa. With a focus on speed and accuracy, we minimize delays and ensure you meet all deadlines, making your transition to international education smooth and hassle-free. Trust our expertise to get you where you want to be, faster.</p>
                               </div>
                            </div>
                         </div>
@@ -358,113 +323,55 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Expert Support Panel</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0">Our Expert Support Panel offers unparalleled guidance for your study abroad journey. Comprising experienced professionals, our team provides personalized advice and support, from choosing the right academic program to navigating visa applications. With our in-depth knowledge and commitment to your success, we ensure a smooth and informed transition to international education. Rely on our expertise to achieve your global academic aspirations.</p>
                               </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <h4 class="widget-title">Visa Process</h4>
-                     <p>At Seven Countries our culture comes to life through three core values:</p>
-                     <ul class="point-order">
-                        <li>We seize opportunities to innovate and grow</li>
-                        <li>We are one firm with a shared sense of purpose</li>
-                        <li>We care about each other and the world around us</li>
-                     </ul>
-
-                     <div class="row">
-                        <div class="col-lg-6 col-sm-6">
-                           <div class="image-post">
-                              <img src="{{asset('assets/img/services/13.jpg')}}" alt="img">
-                           </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                           <div class="image-post">
-                              <img src="{{asset('assets/img/services/14.jpg')}}" alt="img">
                            </div>
                         </div>
                      </div>
 
                      <div class="wptb-accordion wptb-accordion2 wow fadeInUp">
                         <div class="wptb--item active">
-                           <h6 class="wptb-item-title"><span>Q1. Which is the prerequisites for immigration?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
+                           <h6 class="wptb-item-title"><span>Q1. Which is the prerequisites for immigration??</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
                               Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                              <ul class="point-order">
+                                 <li>Valid Passport</li>
+                                 <li>Visa Application</li>
+                                 <li>Proof of Financial Stability</li>
+                                 <li>Educational and Professional Credentials</li>
+                                 <li>Medical Examination</li>
+                                 <li>Police Clearance Certificate</li>
+                                 <li>Language Proficiency</li>
+                                 <li>Employment Offer</li>
+                                 <li>Proof of Relationship</li>
+                                 <li>Interview</li>
+                                 <li>Biometric Data</li>
+                                 <li>Travel Insurance</li>
+                              </ul>
                            </div>
                         </div>
 
                         <div class="wptb--item">
                            <h6 class="wptb-item-title"><span>Q2. What are the contact address of Seven Countries?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                              Add; 222-224 Prime Shoppers, Opp Safal Square, Vesu. Surat
                            </div>
                         </div>
 
                         <div class="wptb--item">
                            <h6 class="wptb-item-title"><span>Q3. What IELTS Score required for Canada?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                             This typically corresponds to an IELTS score of 6.0 or 6.5 overall, depending on the program.
                            </div>
                         </div>
 
                         <div class="wptb--item">
                            <h6 class="wptb-item-title"><span>Q4. How much time needed for visa renewal?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                              <b>Processing Times:</b> Visa renewal processing times can vary greatly. Some countries may have expedited processing options for certain visa types, while others may have longer standard processing times.
                            </div>
                         </div>
                      </div>
-
-                     <h4 class="widget-title">Service Options</h4>
-                     <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                           <div class="process-step d-flex">
-                              <div class="serial">1</div>
-                              <div class="process-step-content">
-                                 <h5>Documentation List</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">2</div>
-                              <div class="process-step-content">
-                                 <h5>IELTS Score</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">3</div>
-                              <div class="process-step-content">
-                                 <h5>NOC Collection</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
-                           <div class="process-step d-flex">
-                              <div class="serial">4</div>
-                              <div class="process-step-content">
-                                 <h5>Offer Letters</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">5</div>
-                              <div class="process-step-content">
-                                 <h5>CA report Submission</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">6</div>
-                              <div class="process-step-content">
-                                 <h5>Study Permit</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
                   </div>
                </div>
             </div>
@@ -474,9 +381,7 @@
                      <h1 class="post-title">Family Visa</h1>
                   </div>
                   <div class="fulltext">
-                     <p> We guide our clients through difficult issues, bringing insight and judgment to each situation. Our innovat ive approaches create original solutions to our clients' most complex domestic & multi juristictional deal s and disputes. By thinking on behalf of our clients every day, we anticipate what they want, provide what they need and build lasting relationships. </p>
-                     <h5 class="highlight">Over the last 35 Years we made an impact that is strong & we have long way to go.</h5>
-                     <p>These are the concepts that shape our distinctive culture & differentiate us from others. They true the unique spirit of our Firm guide the behaviors that enable us to deliver the promises we make to our clients and our people.</p>
+                     <p>A Family Visa is a type of visa that allows individuals to join family members who are living in a foreign country. This visa is typically issued to spouses, children, parents, or other close relatives of citizens or permanent residents of the host country. Applicants must usually provide proof of the familial relationship, financial support, and sometimes meet health and character requirements. The family visa facilitates family reunification, ensuring that loved ones can live together and support each other while complying with the immigration laws of the host country.</p>
 
                      <div class="row g-0">
                         <!-- Iconbox -->
@@ -495,7 +400,7 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Global Connection</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0"> Global Connection provides comprehensive services for students aspiring to study abroad. We guide you through every step of the process, from selecting the right institution and course to visa applications and pre-departure preparations. Our expertise and personalized support ensure a seamless transition to international education, helping you gain global exposure, academic excellence, and invaluable cultural experiences. Embark on your educational journey with Global Connection and unlock your potential on the world stage.</p>
                               </div>
                            </div>
                         </div>
@@ -543,7 +448,7 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Expertise visa Processing</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0"> At Expertise Visa Processing, we specialize in facilitating your study abroad journey. Our dedicated team offers professional guidance through the intricate visa application process, ensuring all requirements are meticulously met. From selecting the right academic institution to navigating visa regulations, we provide personalized support to make your international education experience seamless and stress-free. Trust us to handle the complexities so you can focus on achieving your academic dreams abroad.</p>
                               </div>
                            </div>
                         </div>
@@ -568,7 +473,7 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Fastest Working Process</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0">Fastest Working Process ensures a swift and efficient pathway to studying abroad. Our streamlined services expedite every step of your application, from selecting the right institution to securing your student visa. With a focus on speed and accuracy, we minimize delays and ensure you meet all deadlines, making your transition to international education smooth and hassle-free. Trust our expertise to get you where you want to be, faster.</p>
                               </div>
                            </div>
                         </div>
@@ -604,113 +509,55 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Expert Support Panel</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0">Our Expert Support Panel offers unparalleled guidance for your study abroad journey. Comprising experienced professionals, our team provides personalized advice and support, from choosing the right academic program to navigating visa applications. With our in-depth knowledge and commitment to your success, we ensure a smooth and informed transition to international education. Rely on our expertise to achieve your global academic aspirations.</p>
                               </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <h4 class="widget-title">Visa Process</h4>
-                     <p>At Seven Countries our culture comes to life through three core values:</p>
-                     <ul class="point-order">
-                        <li>We seize opportunities to innovate and grow</li>
-                        <li>We are one firm with a shared sense of purpose</li>
-                        <li>We care about each other and the world around us</li>
-                     </ul>
-
-                     <div class="row">
-                        <div class="col-lg-6 col-sm-6">
-                           <div class="image-post">
-                              <img src="{{asset('assets/img/services/13.jpg')}}" alt="img">
-                           </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                           <div class="image-post">
-                              <img src="{{asset('assets/img/services/14.jpg')}}" alt="img">
                            </div>
                         </div>
                      </div>
 
                      <div class="wptb-accordion wptb-accordion2 wow fadeInUp">
                         <div class="wptb--item active">
-                           <h6 class="wptb-item-title"><span>Q1. Which is the prerequisites for immigration?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
+                           <h6 class="wptb-item-title"><span>Q1. Which is the prerequisites for immigration??</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
                               Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                              <ul class="point-order">
+                                 <li>Valid Passport</li>
+                                 <li>Visa Application</li>
+                                 <li>Proof of Financial Stability</li>
+                                 <li>Educational and Professional Credentials</li>
+                                 <li>Medical Examination</li>
+                                 <li>Police Clearance Certificate</li>
+                                 <li>Language Proficiency</li>
+                                 <li>Employment Offer</li>
+                                 <li>Proof of Relationship</li>
+                                 <li>Interview</li>
+                                 <li>Biometric Data</li>
+                                 <li>Travel Insurance</li>
+                              </ul>
                            </div>
                         </div>
 
                         <div class="wptb--item">
                            <h6 class="wptb-item-title"><span>Q2. What are the contact address of Seven Countries?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                              Add; 222-224 Prime Shoppers, Opp Safal Square, Vesu. Surat
                            </div>
                         </div>
 
                         <div class="wptb--item">
                            <h6 class="wptb-item-title"><span>Q3. What IELTS Score required for Canada?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                             This typically corresponds to an IELTS score of 6.0 or 6.5 overall, depending on the program.
                            </div>
                         </div>
 
                         <div class="wptb--item">
                            <h6 class="wptb-item-title"><span>Q4. How much time needed for visa renewal?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                              <b>Processing Times:</b> Visa renewal processing times can vary greatly. Some countries may have expedited processing options for certain visa types, while others may have longer standard processing times.
                            </div>
                         </div>
                      </div>
-
-                     <h4 class="widget-title">Service Options</h4>
-                     <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                           <div class="process-step d-flex">
-                              <div class="serial">1</div>
-                              <div class="process-step-content">
-                                 <h5>Documentation List</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">2</div>
-                              <div class="process-step-content">
-                                 <h5>IELTS Score</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">3</div>
-                              <div class="process-step-content">
-                                 <h5>NOC Collection</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
-                           <div class="process-step d-flex">
-                              <div class="serial">4</div>
-                              <div class="process-step-content">
-                                 <h5>Offer Letters</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">5</div>
-                              <div class="process-step-content">
-                                 <h5>CA report Submission</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">6</div>
-                              <div class="process-step-content">
-                                 <h5>Study Permit</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
                   </div>
                </div>
             </div>
@@ -720,10 +567,7 @@
                      <h1 class="post-title">Student Visa</h1>
                   </div>
                   <div class="fulltext">
-                     <p> We guide our clients through difficult issues, bringing insight and judgment to each situation. Our innovat ive approaches create original solutions to our clients' most complex domestic & multi juristictional deal s and disputes. By thinking on behalf of our clients every day, we anticipate what they want, provide what they need and build lasting relationships. </p>
-                     <h5 class="highlight">Over the last 35 Years we made an impact that is strong & we have long way to go.</h5>
-                     <p>These are the concepts that shape our distinctive culture & differentiate us from others. They true the unique spirit of our Firm guide the behaviors that enable us to deliver the promises we make to our clients and our people.</p>
-
+                     <p>A Student Visa is a type of non-immigrant visa issued to individuals who wish to study in a foreign country. It allows students to enrol in academic, vocational, or professional courses at accredited institutions. Typically, applicants must provide proof of acceptance from a recognized educational institution, evidence of sufficient financial support, and meet health and character requirements. The student visa often includes permissions to work part-time during studies, facilitating both education and practical experience in the host country.</p>
                      <div class="row g-0">
                         <!-- Iconbox -->
                         <div class="col-sm-6 wptb-icon-box2 mb-0 border-1 border-end border-bottom p-5 ps-sm-0 pt-sm-0 wow fadeInLeft">
@@ -741,7 +585,7 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Global Connection</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0"> Global Connection provides comprehensive services for students aspiring to study abroad. We guide you through every step of the process, from selecting the right institution and course to visa applications and pre-departure preparations. Our expertise and personalized support ensure a seamless transition to international education, helping you gain global exposure, academic excellence, and invaluable cultural experiences. Embark on your educational journey with Global Connection and unlock your potential on the world stage.</p>
                               </div>
                            </div>
                         </div>
@@ -789,7 +633,7 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Expertise visa Processing</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0"> At Expertise Visa Processing, we specialize in facilitating your study abroad journey. Our dedicated team offers professional guidance through the intricate visa application process, ensuring all requirements are meticulously met. From selecting the right academic institution to navigating visa regulations, we provide personalized support to make your international education experience seamless and stress-free. Trust us to handle the complexities so you can focus on achieving your academic dreams abroad.</p>
                               </div>
                            </div>
                         </div>
@@ -814,7 +658,7 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Fastest Working Process</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0">Fastest Working Process ensures a swift and efficient pathway to studying abroad. Our streamlined services expedite every step of your application, from selecting the right institution to securing your student visa. With a focus on speed and accuracy, we minimize delays and ensure you meet all deadlines, making your transition to international education smooth and hassle-free. Trust our expertise to get you where you want to be, faster.</p>
                               </div>
                            </div>
                         </div>
@@ -850,359 +694,55 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Expert Support Panel</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0">Our Expert Support Panel offers unparalleled guidance for your study abroad journey. Comprising experienced professionals, our team provides personalized advice and support, from choosing the right academic program to navigating visa applications. With our in-depth knowledge and commitment to your success, we ensure a smooth and informed transition to international education. Rely on our expertise to achieve your global academic aspirations.</p>
                               </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <h4 class="widget-title">Visa Process</h4>
-                     <p>At Seven Countries our culture comes to life through three core values:</p>
-                     <ul class="point-order">
-                        <li>We seize opportunities to innovate and grow</li>
-                        <li>We are one firm with a shared sense of purpose</li>
-                        <li>We care about each other and the world around us</li>
-                     </ul>
-
-                     <div class="row">
-                        <div class="col-lg-6 col-sm-6">
-                           <div class="image-post">
-                              <img src="{{asset('assets/img/services/13.jpg')}}" alt="img">
-                           </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                           <div class="image-post">
-                              <img src="{{asset('assets/img/services/14.jpg')}}" alt="img">
                            </div>
                         </div>
                      </div>
 
                      <div class="wptb-accordion wptb-accordion2 wow fadeInUp">
                         <div class="wptb--item active">
-                           <h6 class="wptb-item-title"><span>Q1. Which is the prerequisites for immigration?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
+                           <h6 class="wptb-item-title"><span>Q1. Which is the prerequisites for immigration??</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
                               Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                              <ul class="point-order">
+                                 <li>Valid Passport</li>
+                                 <li>Visa Application</li>
+                                 <li>Proof of Financial Stability</li>
+                                 <li>Educational and Professional Credentials</li>
+                                 <li>Medical Examination</li>
+                                 <li>Police Clearance Certificate</li>
+                                 <li>Language Proficiency</li>
+                                 <li>Employment Offer</li>
+                                 <li>Proof of Relationship</li>
+                                 <li>Interview</li>
+                                 <li>Biometric Data</li>
+                                 <li>Travel Insurance</li>
+                              </ul>
                            </div>
                         </div>
 
                         <div class="wptb--item">
                            <h6 class="wptb-item-title"><span>Q2. What are the contact address of Seven Countries?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                              Add; 222-224 Prime Shoppers, Opp Safal Square, Vesu. Surat
                            </div>
                         </div>
 
                         <div class="wptb--item">
                            <h6 class="wptb-item-title"><span>Q3. What IELTS Score required for Canada?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                             This typically corresponds to an IELTS score of 6.0 or 6.5 overall, depending on the program.
                            </div>
                         </div>
 
                         <div class="wptb--item">
                            <h6 class="wptb-item-title"><span>Q4. How much time needed for visa renewal?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                              <b>Processing Times:</b> Visa renewal processing times can vary greatly. Some countries may have expedited processing options for certain visa types, while others may have longer standard processing times.
                            </div>
                         </div>
                      </div>
-
-                     <h4 class="widget-title">Service Options</h4>
-                     <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                           <div class="process-step d-flex">
-                              <div class="serial">1</div>
-                              <div class="process-step-content">
-                                 <h5>Documentation List</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">2</div>
-                              <div class="process-step-content">
-                                 <h5>IELTS Score</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">3</div>
-                              <div class="process-step-content">
-                                 <h5>NOC Collection</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
-                           <div class="process-step d-flex">
-                              <div class="serial">4</div>
-                              <div class="process-step-content">
-                                 <h5>Offer Letters</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">5</div>
-                              <div class="process-step-content">
-                                 <h5>CA report Submission</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">6</div>
-                              <div class="process-step-content">
-                                 <h5>Study Permit</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-                  </div>
-               </div>
-            </div>
-            <div class="blog-details-inner" data-visa="transit" style="display: none;">
-               <div class="post-content">
-                  <div class="post-header mt-0">
-                     <h1 class="post-title">Transit</h1>
-                  </div>
-                  <div class="fulltext">
-                     <p> We guide our clients through difficult issues, bringing insight and judgment to each situation. Our innovat ive approaches create original solutions to our clients' most complex domestic & multi juristictional deal s and disputes. By thinking on behalf of our clients every day, we anticipate what they want, provide what they need and build lasting relationships. </p>
-                     <h5 class="highlight">Over the last 35 Years we made an impact that is strong & we have long way to go.</h5>
-                     <p>These are the concepts that shape our distinctive culture & differentiate us from others. They true the unique spirit of our Firm guide the behaviors that enable us to deliver the promises we make to our clients and our people.</p>
-
-                     <div class="row g-0">
-                        <!-- Iconbox -->
-                        <div class="col-sm-6 wptb-icon-box2 mb-0 border-1 border-end border-bottom p-5 ps-sm-0 pt-sm-0 wow fadeInLeft">
-                           <div class="wptb-item--inner">
-                              <div class="wptb-item--holder">
-                                 <div class="wptb-item--icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="44" viewBox="0 0 40 44" fill="none">
-                                       <mask id="mask0_46_1597" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="44">
-                                          <path d="M40 0.666992H0V43.3337H40V0.666992Z" fill="white" />
-                                       </mask>
-                                       <g mask="url(#mask0_46_1597)">
-                                          <path d="M37.1578 30.6325C38.9489 27.587 39.8922 24.1192 39.8922 20.5603C39.8922 11.6759 33.7478 3.64477 25.1689 1.34366C23.4878 0.892548 21.7411 0.666992 20 0.666992C9.15669 0.666992 0.106689 9.71588 0.106689 20.5603C0.106689 24.4392 1.22336 28.1992 3.3378 31.4314C6.9478 36.9537 13.4922 40.677 20.1634 40.4514C22.1911 40.4348 24.1889 40.1092 26.0911 39.497L28.41 41.8192C29.2445 42.6537 30.3489 43.1814 31.52 43.3059C33.0622 43.4692 34.63 42.9159 35.7267 41.8192L38.3778 39.1692C39.3545 38.1914 39.8934 36.8925 39.8934 35.5103C39.8934 34.1281 39.3556 32.8292 38.3778 31.8514L37.1578 30.6325ZM24.7389 10.857L21.65 7.77033C21.3878 7.50699 21.2434 7.15921 21.2434 6.78921V2.37699C25.4156 2.65477 29.41 4.39699 32.4578 7.2581L30.2867 9.42921C29.7167 9.99588 29.39 10.7837 29.39 11.5892V13.2614C29.39 14.077 29.7078 14.8425 30.2845 15.4181L32.8811 18.0159C33.1389 18.2737 33.2867 18.6303 33.2867 18.9959V21.8959C33.2867 22.2648 33.1422 22.6125 32.8811 22.8748L31.1411 24.6137L26.0489 19.5214L27.7467 17.8237C27.9845 17.5859 28.0567 17.227 27.9267 16.9159C27.7978 16.6048 27.4945 16.4014 27.1567 16.4014H25.63V13.0159C25.6322 12.2003 25.3156 11.4348 24.7389 10.857ZM35.9378 29.4103L32.3222 25.7914L34.0622 24.0514C34.6389 23.4737 34.9556 22.7081 34.9556 21.8948V18.9948C34.9556 18.1914 34.63 17.4048 34.0611 16.837L31.4645 14.2392C31.2022 13.9781 31.0589 13.6303 31.0589 13.2614V11.5892C31.0589 11.2237 31.2067 10.867 31.4656 10.6092L33.6234 8.45144C36.5978 11.7903 38.2267 16.0581 38.2267 20.5592C38.2267 23.6748 37.4378 26.7125 35.9378 29.4103ZM2.4078 15.7814C3.47336 11.8403 5.89336 8.32032 9.17669 5.89699L12.5 9.22033C12.7378 9.4581 12.8689 9.77477 12.8689 10.1114V16.1514C12.8689 16.4881 12.7378 16.8048 12.5 17.0425L11.0534 18.4892C10.8156 18.7281 10.4989 18.8592 10.1622 18.8592C9.82558 18.8592 9.51002 18.7281 9.27113 18.4892L7.62558 16.8437C7.07224 16.2914 6.33669 15.987 5.55558 15.987H2.35336C2.37113 15.9181 2.38891 15.8503 2.4078 15.7814ZM17.3067 35.5625L18.9811 37.2703C19.1978 37.4914 19.32 37.7959 19.3178 38.1059L19.3111 38.7725C15.64 38.6292 12.0722 37.3792 9.12336 35.1814L12.6256 31.727C12.8478 31.5092 13.1389 31.3903 13.4489 31.3903C13.4534 31.3903 13.4578 31.3903 13.4622 31.3903L15.3389 31.4092C15.9878 31.4148 16.5111 31.9492 16.5045 32.5981L16.4945 33.5437C16.4856 34.2925 16.7822 35.0281 17.3067 35.5625ZM29.5889 40.6414L27.8111 38.8603C29.4234 38.1725 30.9422 37.2681 32.3167 36.1814L33.1811 37.0492C34.2789 38.1459 34.5278 39.8681 33.77 41.227C32.42 41.977 30.6911 41.7437 29.5889 40.6414ZM37.1989 37.9903L35.8711 39.3181C35.82 38.0303 35.2722 36.7825 34.3611 35.8714L30.3078 31.8137C29.9822 31.4881 29.4545 31.4881 29.1289 31.8137C28.8034 32.1392 28.8034 32.667 29.1289 32.9925L31.13 34.9948C31.1267 34.9981 31.1222 35.0003 31.1178 35.0037C28.2011 37.2514 24.66 38.5625 20.9778 38.7603L20.9834 38.1237C20.9911 37.3637 20.7022 36.647 20.17 36.1048L18.4956 34.397C18.2789 34.1759 18.1556 33.8703 18.1589 33.5614L18.1689 32.6159C18.1845 31.047 16.9211 29.7592 15.3534 29.7437L13.4778 29.7259C13.4678 29.7259 13.4567 29.7259 13.4467 29.7259C12.6989 29.7259 11.9945 30.0137 11.4556 30.5414L7.82558 34.1225C6.65002 33.067 5.60669 31.8581 4.73336 30.5214C2.79669 27.5603 1.77447 24.1159 1.77447 20.5614C1.77447 19.5859 1.85336 18.6114 2.00669 17.6559H5.55558C5.88669 17.6559 6.21224 17.7903 6.44669 18.0248L8.09113 19.6692C8.64336 20.2225 9.37891 20.527 10.1611 20.527C10.9434 20.527 11.6778 20.2225 12.2311 19.6692L13.6778 18.2225C14.2311 17.6692 14.5356 16.9348 14.5356 16.1525V10.1114C14.5356 9.32921 14.2311 8.59366 13.6778 8.04144L10.5867 4.95033C13.3022 3.3081 16.3822 2.41255 19.5767 2.33921V6.78921C19.5767 7.60255 19.8934 8.3681 20.47 8.9481L23.5589 12.0359C23.8211 12.2981 23.9645 12.6459 23.9645 13.0159V16.4014H18.4922C18.0322 16.4014 17.6589 16.7748 17.6589 17.2348V25.9003C17.6589 26.6259 18.5678 27.0037 19.0822 26.4892L20.8534 24.7181L23.9422 27.807C24.2634 28.1281 24.8 28.1281 25.1211 27.807C25.4456 27.4814 25.4456 26.9537 25.1211 26.6281L21.4434 22.9503C21.1222 22.6292 20.5867 22.6292 20.2645 22.9503L19.3267 23.8881V18.067H25.1467L24.2822 18.9314C23.9611 19.2525 23.9611 19.7892 24.2822 20.1103L37.1989 33.0314C38.5511 34.3825 38.5511 36.6392 37.1989 37.9903Z" fill="#e13833" />
-                                       </g>
-                                       <path d="M26.9622 28.9914C26.6222 29.0603 26.3555 29.3392 26.3022 29.6814C26.2455 30.0503 26.4477 30.4181 26.7877 30.5703C27.4855 30.8803 28.2066 30.1248 27.8722 29.4414C27.7089 29.107 27.3266 28.9192 26.9622 28.9914Z" fill="#e13833" />
-                                    </svg>
-                                 </div>
-                                 <h3 class="wptb-item--title">Global Connection</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
-                              </div>
-                           </div>
-                        </div>
-
-                        <!-- Iconbox -->
-                        <div class="col-sm-6 wptb-icon-box2 mb-0 border-1 border-bottom p-5 pt-sm-0 pe-sm-0 wow fadeInLeft">
-                           <div class="wptb-item--inner">
-                              <div class="wptb-item--holder">
-                                 <div class="wptb-item--icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="42" viewBox="0 0 38 42" fill="none">
-                                       <g clip-path="url(#clip0_46_1623)">
-                                          <path d="M5.49316 5.84619V12.3934C5.49316 12.8462 5.86066 13.2137 6.31348 13.2137H12.7229C13.1768 13.2137 13.5432 12.8462 13.5432 12.3934V5.84619C13.5432 5.39338 13.1768 5.02588 12.7229 5.02588H6.31348C5.86066 5.02588 5.49316 5.39338 5.49316 5.84619ZM7.13379 6.6665H11.9025V11.5731H7.13379V6.6665Z" fill="#e13833" />
-                                          <path d="M17.1724 6.6665H21.4106C21.8635 6.6665 22.231 6.299 22.231 5.84619C22.231 5.39338 21.8635 5.02588 21.4106 5.02588H17.1724C16.7196 5.02588 16.3521 5.39338 16.3521 5.84619C16.3521 6.299 16.7196 6.6665 17.1724 6.6665Z" fill="#e13833" />
-                                          <path d="M5.49316 17.1665C5.49316 17.6193 5.86066 17.9868 6.31348 17.9868H25.6499C26.1027 17.9868 26.4702 17.6193 26.4702 17.1665C26.4702 16.7137 26.1027 16.3462 25.6499 16.3462H6.31348C5.86066 16.3462 5.49316 16.7126 5.49316 17.1665Z" fill="#e13833" />
-                                          <mask id="mask0_46_1623" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="38" height="42">
-                                             <path d="M37.8125 0H0.1875V42H37.8125V0Z" fill="white" />
-                                          </mask>
-                                          <g mask="url(#mask0_46_1623)">
-                                             <path d="M17.1724 10.4629H21.4106C21.8635 10.4629 22.231 10.0954 22.231 9.64258C22.231 9.18977 21.8635 8.82227 21.4106 8.82227H17.1724C16.7196 8.82227 16.3521 9.18977 16.3521 9.64258C16.3521 10.0954 16.7196 10.4629 17.1724 10.4629Z" fill="#e13833" />
-                                          </g>
-                                          <mask id="mask1_46_1623" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="38" height="42">
-                                             <path d="M37.8125 0H0.1875V42H37.8125V0Z" fill="white" />
-                                          </mask>
-                                          <g mask="url(#mask1_46_1623)">
-                                             <path d="M37.7982 6.70469C37.7982 3.00781 34.7904 0 31.0935 0H18.7287C18.2759 0 17.9084 0.3675 17.9084 0.820312C17.9084 1.27312 18.2759 1.64062 18.7287 1.64062H26.7032C25.2463 2.905 24.3878 4.77531 24.3878 6.70469C24.3878 10.0406 26.9603 12.9544 30.2732 13.3602V38.1052H19.2592C19.1301 37.6348 19.0579 37.1602 19.3718 36.738L21.2454 34.2114H22.1718C25.2824 34.2114 27.8123 31.6805 27.8123 28.5698V27.5516C27.8123 24.4409 25.2813 21.91 22.1718 21.91H20.0456C19.2428 20.9136 18.2234 20.2223 16.8868 20.2814C15.9046 20.3252 15.0428 20.8348 14.5287 21.6595C13.926 21.1597 13.1549 20.8961 12.3718 20.918C11.5078 20.942 10.7246 21.3194 10.1548 21.91H10.0443C8.53822 21.91 7.12072 22.4963 6.05541 23.5627C4.9901 24.628 4.40275 26.0444 4.40275 27.5516V28.5709C4.40275 31.4027 6.50057 33.7531 9.22291 34.1512V38.1063H1.84229V1.64062H11.5099C11.9628 1.64062 12.3303 1.27312 12.3303 0.820312C12.3303 0.3675 11.9628 0 11.5099 0H1.02197C0.568066 0 0.20166 0.3675 0.20166 0.820312V38.9255C0.20166 39.3783 0.568066 39.7458 1.02197 39.7458H9.22291V41.1797C9.22291 41.6325 9.59041 42 10.0432 42C10.496 42 10.8635 41.6325 10.8635 41.1797V24.208C10.8635 23.3548 11.5493 22.5827 12.4178 22.5575C13.3059 22.5345 14.0638 23.2684 14.0638 24.1577V28.7591C14.0638 29.8069 14.9159 30.6589 15.9637 30.6589H17.0738C18.5515 30.6381 19.5424 28.898 18.6237 27.6598L15.9407 24.0341C15.6629 23.6239 15.6334 23.0902 15.8532 22.6472C15.9571 22.4383 16.2732 21.9494 16.959 21.9187C17.5715 21.8925 18.1545 22.178 18.5351 22.6516L22.139 27.1261C22.7198 27.8742 22.9407 29.1583 22.3457 29.9688L18.0528 35.7602C17.4512 36.5717 17.4151 37.5244 17.659 38.4738L18.3721 41.3755C18.4771 41.8064 18.9332 42.082 19.3642 41.977C19.8038 41.8688 20.0729 41.4247 19.9657 40.985L19.6617 39.7469H31.0935C31.5463 39.7469 31.9138 39.3794 31.9138 38.9266V13.358C35.2246 12.9522 37.7982 10.1248 37.7982 6.70469ZM21.3668 23.5506H22.1718C24.3779 23.5506 26.1717 25.3455 26.1717 27.5516V28.5709C26.1717 30.6764 24.5376 32.4067 22.4704 32.5598L23.7895 30.7814C24.7651 29.4645 24.3713 27.3033 23.4231 26.1034L22.4048 24.8391L21.3668 23.5506ZM6.04338 28.5698V27.5505C6.04338 26.4819 6.4601 25.4778 7.21588 24.722C7.78572 24.1511 8.49885 23.7748 9.27432 23.6239C9.24041 23.8153 9.22291 24.0122 9.22291 24.2069V32.4855C7.40947 32.1059 6.04338 30.4937 6.04338 28.5698ZM15.9648 29.0183C15.8215 29.0183 15.7056 28.9023 15.7056 28.7591V26.4742L17.2948 28.6213C17.4042 28.793 17.2773 29.0183 17.0749 29.0183H15.9648ZM31.0935 11.7698C28.3373 11.7698 26.0284 9.45875 26.0284 6.70578C26.0284 3.95172 28.3373 1.64172 31.0935 1.64172C33.8859 1.64172 36.1576 3.91344 36.1576 6.70578C36.1576 9.49813 33.8859 11.7698 31.0935 11.7698Z" fill="#e13833" />
-                                          </g>
-                                          <mask id="mask2_46_1623" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="38" height="42">
-                                             <path d="M37.8125 0H0.1875V42H37.8125V0Z" fill="white" />
-                                          </mask>
-                                          <g mask="url(#mask2_46_1623)">
-                                             <path d="M32.7024 4.6702L30.0621 7.31051L29.279 6.52848C28.9585 6.20801 28.439 6.20801 28.1185 6.52848C27.7981 6.84785 27.7981 7.36738 28.1185 7.68785L29.4813 9.05066C29.6356 9.20488 29.8434 9.29129 30.061 9.29129C30.2787 9.29129 30.4865 9.20488 30.6407 9.05066L33.8607 5.83066C34.1812 5.5102 34.1812 4.99066 33.8607 4.6702C33.5424 4.35082 33.0229 4.35082 32.7024 4.6702Z" fill="#e13833" />
-                                          </g>
-                                          <mask id="mask3_46_1623" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="38" height="42">
-                                             <path d="M37.8125 0H0.1875V42H37.8125V0Z" fill="white" />
-                                          </mask>
-                                          <g mask="url(#mask3_46_1623)">
-                                             <path d="M14.4204 1.13288C14.5833 1.54851 15.0832 1.74648 15.4912 1.57694C15.9046 1.40523 16.1058 0.919601 15.9352 0.506164C15.7646 0.0938199 15.2768 -0.109618 14.8633 0.0631949C14.451 0.234914 14.2476 0.720539 14.4204 1.13288Z" fill="#e13833" />
-                                          </g>
-                                       </g>
-                                       <defs>
-                                          <clipPath id="clip0_46_1623">
-                                             <rect width="37.625" height="42" fill="white" transform="translate(0.1875)" />
-                                          </clipPath>
-                                       </defs>
-                                    </svg>
-                                 </div>
-                                 <h3 class="wptb-item--title">Expertise visa Processing</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
-                              </div>
-                           </div>
-                        </div>
-
-                        <!-- Iconbox -->
-                        <div class="col-sm-6 wptb-icon-box2 mb-0 border-1 border-end p-5 ps-sm-0 pb-sm-0 wow fadeInLeft">
-                           <div class="wptb-item--inner">
-                              <div class="wptb-item--holder">
-                                 <div class="wptb-item--icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="43" viewBox="0 0 48 43" fill="none">
-                                       <g clip-path="url(#clip0_46_1586)">
-                                          <path d="M41.8641 22.8809V10.4985C41.8641 8.36594 40.129 6.63078 37.9952 6.63078H28.5063V3.61486C28.5063 1.79246 27.0244 0.310547 25.2008 0.310547H17.3975C15.5751 0.310547 14.0931 1.79246 14.0931 3.61486V6.63078H4.6031C2.47051 6.63078 0.735352 8.36594 0.735352 10.4985V32.4606C0.735352 34.5944 2.47051 36.3296 4.6031 36.3296H11.734C12.2356 36.3296 12.6427 35.9225 12.6427 35.4208C12.6427 34.9192 12.2356 34.512 11.734 34.512H4.6031C3.47258 34.512 2.5529 33.5924 2.5529 32.4606V10.4985C2.5529 9.36802 3.47258 8.44834 4.6031 8.44834H37.9952C39.1257 8.44834 40.0466 9.36802 40.0466 10.4985V22.1018C39.0396 21.7819 37.9782 21.622 36.9204 21.622C31.2181 21.622 26.5773 26.2604 26.5761 31.9638C26.5761 32.8205 26.6815 33.6808 26.8911 34.5132H19.7276C19.2259 34.5132 18.8188 34.9204 18.8188 35.422C18.8188 35.9237 19.2259 36.3308 19.7276 36.3308H27.5418C29.1909 39.8605 32.7739 42.3118 36.9192 42.3118C42.6226 42.3118 47.2635 37.6709 47.2635 31.9675C47.2647 28.0512 45.0788 24.6379 41.8641 22.8809ZM15.9107 3.61486C15.9107 2.79454 16.5771 2.1281 17.3975 2.1281H25.2008C26.0211 2.1281 26.6888 2.79575 26.6888 3.61486V6.63078H15.9107V3.61486ZM37.8292 40.4445V39.9768C37.8292 39.4752 37.422 39.068 36.9204 39.068C36.4187 39.068 36.0116 39.4752 36.0116 39.9768V40.4445C32.0772 40.0253 28.8589 36.8094 28.4433 32.875H28.9086C29.4103 32.875 29.8174 32.4679 29.8174 31.9663C29.8174 31.4646 29.4103 31.0575 28.9086 31.0575H28.4421C28.865 27.0807 32.0336 23.9121 36.0104 23.4892V23.9557C36.0104 24.4573 36.4175 24.8645 36.9192 24.8645C37.4208 24.8645 37.8279 24.4573 37.8279 23.9557V23.4892C41.7635 23.9072 44.9794 27.1231 45.3974 31.0587H44.9297C44.4281 31.0587 44.021 31.4658 44.021 31.9675C44.021 32.4691 44.4281 32.8762 44.9297 32.8762H45.3974C44.9758 36.8518 41.806 40.0204 37.8292 40.4445Z" fill="#e13833" />
-                                          <path d="M21.4591 30.8856C21.4155 31.409 21.8408 31.8695 22.3667 31.8695C22.8344 31.8695 23.2319 31.5108 23.2718 31.0358C23.5614 27.5268 25.15 24.2733 27.7442 21.8717C29.8586 19.9148 32.4893 18.6716 35.3028 18.2706L34.5637 19.1975C34.2499 19.5901 34.3141 20.162 34.7067 20.4746C35.0932 20.7836 35.6748 20.7182 35.9838 20.3317L38.0158 17.7871C38.3309 17.3933 38.2557 16.7959 37.851 16.493L35.0641 14.4016C34.663 14.0999 34.0935 14.1811 33.7918 14.5821C33.4913 14.9832 33.5713 15.5527 33.9736 15.8544L34.8375 16.5027C31.738 16.9874 28.8445 18.3772 26.5095 20.5377C23.5808 23.247 21.7875 26.9221 21.4591 30.8856Z" fill="#e13833" />
-                                          <path d="M36.9203 26.3599C36.4187 26.3599 36.0115 26.7658 36.0115 27.2686V31.5896L33.6003 34.0009C33.2452 34.3559 33.2452 34.9314 33.6003 35.2865C33.9504 35.6367 34.5357 35.6367 34.8859 35.2865L37.5625 32.6086C37.7334 32.4378 37.8291 32.2075 37.8291 31.9664V27.2686C37.8291 26.767 37.422 26.3599 36.9203 26.3599Z" fill="#e13833" />
-                                          <path d="M16.633 35.073C16.4839 34.7156 16.1144 34.4866 15.7266 34.5157C15.3473 34.5435 15.0202 34.8125 14.9184 35.1785C14.6991 35.9661 15.5982 36.6204 16.2816 36.1866C16.6511 35.9527 16.7978 35.4753 16.633 35.073Z" fill="#e13833" />
-                                       </g>
-                                       <defs>
-                                          <clipPath id="clip0_46_1586">
-                                             <rect width="46.5293" height="42" fill="white" transform="translate(0.735352 0.310547)" />
-                                          </clipPath>
-                                       </defs>
-                                    </svg>
-                                 </div>
-                                 <h3 class="wptb-item--title">Fastest Working Process</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
-                              </div>
-                           </div>
-                        </div>
-
-                        <!-- Iconbox -->
-                        <div class="col-sm-6 wptb-icon-box2 mb-0 p-5 pe-sm-0 pb-sm-0 wow fadeInLeft">
-                           <div class="wptb-item--inner">
-                              <div class="wptb-item--holder">
-                                 <div class="wptb-item--icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
-                                       <g clip-path="url(#clip0_46_1651)">
-                                          <mask id="mask0_46_1651" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="42" height="42">
-                                             <path d="M42 0H0V42H42V0Z" fill="white" />
-                                          </mask>
-                                          <g mask="url(#mask0_46_1651)">
-                                             <path d="M20.6359 21.166H21.8357C22.2886 21.166 22.6561 20.7985 22.6561 20.3457C22.6561 19.8929 22.2886 19.5254 21.8357 19.5254H21.4562L21.9375 18.1134C22.084 17.6846 21.8543 17.2187 21.4256 17.0721C20.9968 16.9267 20.5309 17.1552 20.3843 17.584L19.6384 19.7715C19.4098 20.4442 19.9282 21.166 20.6359 21.166Z" fill="#e13833" />
-                                          </g>
-                                          <mask id="mask1_46_1651" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="42" height="42">
-                                             <path d="M42 0H0V42H42V0Z" fill="white" />
-                                          </mask>
-                                          <g mask="url(#mask1_46_1651)">
-                                             <path d="M37.5353 30.3395C39.0447 27.7845 39.8497 24.7756 39.9777 21.8203H41.1808C41.6336 21.8203 42.0011 21.4528 42.0011 21C42.0011 20.5472 41.6336 20.1797 41.1808 20.1797H39.9798C39.842 16.9739 38.8992 13.8589 37.2323 11.1245C36.9961 10.7373 36.4919 10.6148 36.1047 10.8511C35.7186 11.0873 35.595 11.5916 35.8312 11.9787C37.3417 14.4572 38.2014 17.2758 38.337 20.1797H37.1219C36.6691 20.1797 36.3016 20.5472 36.3016 21C36.3016 21.4528 36.6691 21.8203 37.1219 21.8203H38.3348C38.2222 24.2025 37.6206 26.5453 36.5717 28.6737C35.28 26.5191 32.0414 26.5475 30.7825 28.7186C30.0278 28.6464 29.2348 28.6092 28.4189 28.6092H26.2073L25.7053 25.4538C26.1297 25.1683 26.5311 24.8423 26.9041 24.4759C28.443 22.9644 29.3333 20.9584 29.4098 18.8267C29.4098 18.8169 29.4109 18.807 29.4109 18.7972V15.5859H29.4525C29.5203 15.6034 29.5914 15.6133 29.6592 15.6133C30.1842 15.6133 30.5616 15.1091 30.4598 14.6038C30.3997 14.1138 30.2116 13.0113 29.6636 11.9033C28.8575 10.2758 27.5898 9.26297 25.9831 8.95562C25.4198 8.26984 23.8569 6.87859 20.5483 7.07656C16.683 7.30844 14.5381 9.35375 13.4192 11.0283C12.2205 12.8231 11.9306 14.5622 11.9197 14.6355C11.8409 15.1266 12.2314 15.5859 12.7302 15.5859H12.8297V18.7961C12.8297 18.8059 12.8297 18.8158 12.8297 18.8256C12.9292 21.5873 14.4134 24.0275 16.5878 25.4723L16.0858 28.6092H13.9212C11.2339 28.6092 8.76641 29.5619 7.00328 31.2528C5.04328 28.5852 3.82703 25.3378 3.66188 21.8214H4.87812C5.33094 21.8214 5.69844 21.4539 5.69844 21.0011C5.69844 20.5483 5.33094 20.1808 4.87812 20.1808H3.66297C4.07969 11.2602 11.2602 4.07969 20.1797 3.66297V4.87812C20.1797 5.33094 20.5472 5.69844 21 5.69844C21.4528 5.69844 21.8203 5.33094 21.8203 4.87812V3.66297C25.1978 3.81938 28.4123 4.93937 31.1609 6.92781C31.5284 7.19359 32.0403 7.11156 32.3061 6.74406C32.5719 6.37656 32.4898 5.86469 32.1223 5.59891C29.0916 3.40703 25.5456 2.17766 21.8203 2.02016V0.820312C21.8203 0.3675 21.4528 0 21 0C20.5472 0 20.1797 0.3675 20.1797 0.820312V2.02125C15.4131 2.2225 10.9605 4.17266 7.56656 7.56656C4.17266 10.9616 2.2225 15.4131 2.02125 20.1797H0.820312C0.3675 20.1797 0 20.5472 0 21C0 21.4528 0.3675 21.8203 0.820312 21.8203H2.02125C2.33734 29.2961 7.19797 36.0588 14.1848 38.7428C16.0989 39.4778 18.1322 39.8934 20.1808 39.9787V41.1797C20.1808 41.6325 20.5483 42 21.0011 42C21.4539 42 21.8214 41.6325 21.8214 41.1797V39.9831C23.1055 39.9339 24.395 39.7545 25.6736 39.4494C26.0498 40.9358 27.4039 42 28.9373 42H38.4464C40.985 42 42.6322 39.1661 41.3569 36.9589L37.5353 30.3395ZM28.6694 13.9442H26.2752C25.6484 13.9442 25.3564 13.2562 25.2459 12.7411L26.0389 10.6564C27.7047 11.1759 28.3927 12.8406 28.6694 13.9442ZM14.7831 11.9383C16.1098 9.95094 18.083 8.86594 20.6467 8.71281C23.0333 8.56953 24.162 9.39969 24.5908 9.84813L23.6414 12.3452C23.3177 13.1381 22.7927 13.9453 21.8345 13.9453H13.7966C13.9825 13.3973 14.2909 12.6755 14.7831 11.9383ZM14.4692 18.7797V15.5848H21.8334C22.7609 15.5848 23.6239 15.1878 24.2484 14.5053C24.7231 15.1769 25.4439 15.5848 26.2741 15.5848H27.7692V18.7797C27.6806 21.1028 26.3353 23.2597 24.3042 24.3863C22.2939 25.5019 19.8789 25.4439 17.8795 24.3447C15.9261 23.2313 14.56 21.1542 14.4692 18.7797ZM18.4592 26.4009C20.3088 27.0397 22.3563 26.9927 24.1741 26.2642L24.6313 29.1419C22.6942 30.9422 19.5956 30.9422 17.6619 29.1419L18.1202 26.2741C18.2317 26.32 18.3455 26.3616 18.4592 26.4009ZM13.9223 30.2487H16.4434C19.0356 32.7469 23.2662 32.7513 25.8497 30.2487H28.42C28.9166 30.2487 29.4022 30.263 29.8747 30.2914L26.0258 36.9578C25.8694 37.1919 25.7655 37.4828 25.6911 37.753C25.4013 37.8284 25.1103 37.8973 24.8161 37.9586C23.8219 38.1675 22.8113 38.2966 21.8203 38.3392V37.1219C21.8203 36.6691 21.4539 36.3016 21 36.3016C20.5472 36.3016 20.1797 36.6691 20.1797 37.1219V38.337C15.5433 38.1194 11.1267 35.9975 8.04125 32.5325C9.50578 31.0734 11.6102 30.2487 13.9223 30.2487ZM39.9361 39.4997C39.6255 40.0378 39.0677 40.3594 38.4453 40.3594H28.9362C27.638 40.3594 26.7947 38.908 27.4466 37.7792L32.2011 29.5444C32.8519 28.4167 34.5297 28.4167 35.1805 29.5444L39.935 37.7792C40.2456 38.3173 40.2456 38.9605 39.9361 39.4997Z" fill="#e13833" />
-                                          </g>
-                                          <path d="M33.6907 30.6919C33.2379 30.6919 32.8704 31.0594 32.8704 31.5122V35.2528C32.8704 35.7056 33.2379 36.0731 33.6907 36.0731C34.1435 36.0731 34.511 35.7056 34.511 35.2528V31.5122C34.511 31.0594 34.1435 30.6919 33.6907 30.6919Z" fill="#e13833" />
-                                          <path d="M34.4476 37.6818C34.1665 37.0058 33.1668 37.0266 32.9185 37.7189C32.8004 38.0482 32.9109 38.4277 33.1865 38.6421C33.4534 38.8488 33.8263 38.8718 34.1162 38.6968C34.4574 38.49 34.6018 38.0503 34.4476 37.6818Z" fill="#e13833" />
-                                          <path d="M33.6305 9.02024C33.7651 9.34289 34.0998 9.5518 34.4487 9.52445C34.7976 9.49711 35.0973 9.24555 35.1837 8.90539C35.3598 8.20867 34.5799 7.63774 33.9663 8.00195C33.6229 8.20758 33.4774 8.65055 33.6305 9.02024Z" fill="#e13833" />
-                                       </g>
-                                       <defs>
-                                          <clipPath id="clip0_46_1651">
-                                             <rect width="42" height="42" fill="white" />
-                                          </clipPath>
-                                       </defs>
-                                    </svg>
-                                 </div>
-                                 <h3 class="wptb-item--title">Expert Support Panel</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <h4 class="widget-title">Visa Process</h4>
-                     <p>At Seven Countries our culture comes to life through three core values:</p>
-                     <ul class="point-order">
-                        <li>We seize opportunities to innovate and grow</li>
-                        <li>We are one firm with a shared sense of purpose</li>
-                        <li>We care about each other and the world around us</li>
-                     </ul>
-
-                     <div class="row">
-                        <div class="col-lg-6 col-sm-6">
-                           <div class="image-post">
-                              <img src="{{asset('assets/img/services/13.jpg')}}" alt="img">
-                           </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                           <div class="image-post">
-                              <img src="{{asset('assets/img/services/14.jpg')}}" alt="img">
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="wptb-accordion wptb-accordion2 wow fadeInUp">
-                        <div class="wptb--item active">
-                           <h6 class="wptb-item-title"><span>Q1. Which is the prerequisites for immigration?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
-                           <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
-                           </div>
-                        </div>
-
-                        <div class="wptb--item">
-                           <h6 class="wptb-item-title"><span>Q2. What are the contact address of Seven Countries?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
-                           <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
-                           </div>
-                        </div>
-
-                        <div class="wptb--item">
-                           <h6 class="wptb-item-title"><span>Q3. What IELTS Score required for Canada?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
-                           <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
-                           </div>
-                        </div>
-
-                        <div class="wptb--item">
-                           <h6 class="wptb-item-title"><span>Q4. How much time needed for visa renewal?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
-                           <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
-                           </div>
-                        </div>
-                     </div>
-
-                     <h4 class="widget-title">Service Options</h4>
-                     <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                           <div class="process-step d-flex">
-                              <div class="serial">1</div>
-                              <div class="process-step-content">
-                                 <h5>Documentation List</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">2</div>
-                              <div class="process-step-content">
-                                 <h5>IELTS Score</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">3</div>
-                              <div class="process-step-content">
-                                 <h5>NOC Collection</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
-                           <div class="process-step d-flex">
-                              <div class="serial">4</div>
-                              <div class="process-step-content">
-                                 <h5>Offer Letters</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">5</div>
-                              <div class="process-step-content">
-                                 <h5>CA report Submission</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">6</div>
-                              <div class="process-step-content">
-                                 <h5>Study Permit</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
                   </div>
                </div>
             </div>
@@ -1212,10 +752,7 @@
                      <h1 class="post-title">Business Visa</h1>
                   </div>
                   <div class="fulltext">
-                     <p> We guide our clients through difficult issues, bringing insight and judgment to each situation. Our innovat ive approaches create original solutions to our clients' most complex domestic & multi juristictional deal s and disputes. By thinking on behalf of our clients every day, we anticipate what they want, provide what they need and build lasting relationships. </p>
-                     <h5 class="highlight">Over the last 35 Years we made an impact that is strong & we have long way to go.</h5>
-                     <p>These are the concepts that shape our distinctive culture & differentiate us from others. They true the unique spirit of our Firm guide the behaviors that enable us to deliver the promises we make to our clients and our people.</p>
-
+                     <p>A Business Visa is a type of visa that allows individuals to enter a foreign country for business-related activities. These activities can include attending meetings, conferences, negotiations, training sessions, and exploring business opportunities. Applicants typically need to provide proof of their business purpose, such as invitation letters from companies, details of the planned business activities, and evidence of sufficient financial support. The business visa facilitates international commerce and professional networking, enabling business travellers to conduct essential business activities while adhering to the host country's immigration regulations.</p>
                      <div class="row g-0">
                         <!-- Iconbox -->
                         <div class="col-sm-6 wptb-icon-box2 mb-0 border-1 border-end border-bottom p-5 ps-sm-0 pt-sm-0 wow fadeInLeft">
@@ -1233,7 +770,7 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Global Connection</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0"> Global Connection provides comprehensive services for students aspiring to study abroad. We guide you through every step of the process, from selecting the right institution and course to visa applications and pre-departure preparations. Our expertise and personalized support ensure a seamless transition to international education, helping you gain global exposure, academic excellence, and invaluable cultural experiences. Embark on your educational journey with Global Connection and unlock your potential on the world stage.</p>
                               </div>
                            </div>
                         </div>
@@ -1281,7 +818,7 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Expertise visa Processing</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0"> At Expertise Visa Processing, we specialize in facilitating your study abroad journey. Our dedicated team offers professional guidance through the intricate visa application process, ensuring all requirements are meticulously met. From selecting the right academic institution to navigating visa regulations, we provide personalized support to make your international education experience seamless and stress-free. Trust us to handle the complexities so you can focus on achieving your academic dreams abroad.</p>
                               </div>
                            </div>
                         </div>
@@ -1306,7 +843,7 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Fastest Working Process</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0">Fastest Working Process ensures a swift and efficient pathway to studying abroad. Our streamlined services expedite every step of your application, from selecting the right institution to securing your student visa. With a focus on speed and accuracy, we minimize delays and ensure you meet all deadlines, making your transition to international education smooth and hassle-free. Trust our expertise to get you where you want to be, faster.</p>
                               </div>
                            </div>
                         </div>
@@ -1342,113 +879,55 @@
                                     </svg>
                                  </div>
                                  <h3 class="wptb-item--title">Expert Support Panel</h3>
-                                 <p class="wptb-item--description mb-0"> Broad term that can refer to various aspects of interconnectedness and communication on a global scale.</p>
+                                 <p class="wptb-item--description mb-0">Our Expert Support Panel offers unparalleled guidance for your study abroad journey. Comprising experienced professionals, our team provides personalized advice and support, from choosing the right academic program to navigating visa applications. With our in-depth knowledge and commitment to your success, we ensure a smooth and informed transition to international education. Rely on our expertise to achieve your global academic aspirations.</p>
                               </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <h4 class="widget-title">Visa Process</h4>
-                     <p>At Seven Countries our culture comes to life through three core values:</p>
-                     <ul class="point-order">
-                        <li>We seize opportunities to innovate and grow</li>
-                        <li>We are one firm with a shared sense of purpose</li>
-                        <li>We care about each other and the world around us</li>
-                     </ul>
-
-                     <div class="row">
-                        <div class="col-lg-6 col-sm-6">
-                           <div class="image-post">
-                              <img src="{{asset('assets/img/services/13.jpg')}}" alt="img">
-                           </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                           <div class="image-post">
-                              <img src="{{asset('assets/img/services/14.jpg')}}" alt="img">
                            </div>
                         </div>
                      </div>
 
                      <div class="wptb-accordion wptb-accordion2 wow fadeInUp">
                         <div class="wptb--item active">
-                           <h6 class="wptb-item-title"><span>Q1. Which is the prerequisites for immigration?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
+                           <h6 class="wptb-item-title"><span>Q1. Which is the prerequisites for immigration??</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
                               Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                              <ul class="point-order">
+                                 <li>Valid Passport</li>
+                                 <li>Visa Application</li>
+                                 <li>Proof of Financial Stability</li>
+                                 <li>Educational and Professional Credentials</li>
+                                 <li>Medical Examination</li>
+                                 <li>Police Clearance Certificate</li>
+                                 <li>Language Proficiency</li>
+                                 <li>Employment Offer</li>
+                                 <li>Proof of Relationship</li>
+                                 <li>Interview</li>
+                                 <li>Biometric Data</li>
+                                 <li>Travel Insurance</li>
+                              </ul>
                            </div>
                         </div>
 
                         <div class="wptb--item">
                            <h6 class="wptb-item-title"><span>Q2. What are the contact address of Seven Countries?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                              Add; 222-224 Prime Shoppers, Opp Safal Square, Vesu. Surat
                            </div>
                         </div>
 
                         <div class="wptb--item">
                            <h6 class="wptb-item-title"><span>Q3. What IELTS Score required for Canada?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                             This typically corresponds to an IELTS score of 6.0 or 6.5 overall, depending on the program.
                            </div>
                         </div>
 
                         <div class="wptb--item">
                            <h6 class="wptb-item-title"><span>Q4. How much time needed for visa renewal?</span> <i class="plus bi bi-plus"></i> <i class="minus bi bi-dash"></i></h6>
                            <div class="wptb-item--content">
-                              Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                              <b>Processing Times:</b> Visa renewal processing times can vary greatly. Some countries may have expedited processing options for certain visa types, while others may have longer standard processing times.
                            </div>
                         </div>
                      </div>
-
-                     <h4 class="widget-title">Service Options</h4>
-                     <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                           <div class="process-step d-flex">
-                              <div class="serial">1</div>
-                              <div class="process-step-content">
-                                 <h5>Documentation List</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">2</div>
-                              <div class="process-step-content">
-                                 <h5>IELTS Score</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">3</div>
-                              <div class="process-step-content">
-                                 <h5>NOC Collection</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
-                           <div class="process-step d-flex">
-                              <div class="serial">4</div>
-                              <div class="process-step-content">
-                                 <h5>Offer Letters</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">5</div>
-                              <div class="process-step-content">
-                                 <h5>CA report Submission</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                           <div class="process-step d-flex">
-                              <div class="serial">6</div>
-                              <div class="process-step-content">
-                                 <h5>Study Permit</h5>
-                                 <p>These are the concepts that shape our distinctive culture & differentiate us from others.</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
                   </div>
                </div>
             </div>

@@ -1,0 +1,20 @@
+[30-Apr-2025 10:28:57 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[30-Apr-2025 10:28:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/sevenstepsschool/public_html/sevencountriesvisa.com/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sevenstepsschool/public_html/sevencountriesvisa.com/routes/api.php on line 17
+[30-Apr-2025 10:28:58 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[30-Apr-2025 10:28:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Broadcast" not found in /home/sevenstepsschool/public_html/sevencountriesvisa.com/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/sevenstepsschool/public_html/sevencountriesvisa.com/routes/channels.php on line 16
+[30-Apr-2025 10:29:01 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[30-Apr-2025 10:29:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/sevenstepsschool/public_html/sevencountriesvisa.com/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sevenstepsschool/public_html/sevencountriesvisa.com/routes/console.php on line 17
+[30-Apr-2025 10:29:02 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[30-Apr-2025 10:29:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/sevenstepsschool/public_html/sevencountriesvisa.com/routes/web.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/sevenstepsschool/public_html/sevencountriesvisa.com/routes/web.php on line 24
