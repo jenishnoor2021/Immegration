@@ -85,7 +85,7 @@ $countnewenqiry = Enquirey::where('is_show', 0)->count();
    @yield('style')
 </head>
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini fixed">
    <div class="wrapper">
       <header class="main-header">
          <!-- Logo -->
