@@ -3,10 +3,15 @@
 use App\Models\Testomonial;
 use App\Models\Contact;
 use App\Models\Enquirey;
+use App\Models\VisaEnrollment;
+use Illuminate\Support\Facades\Schema;
 
 $countnew = Testomonial::where('is_approved', 0)->count();
 $countnewcontact = Contact::where('is_show', 0)->count();
 $countnewenqiry = Enquirey::where('is_show', 0)->count();
+$countnewvisaenrollments = Schema::hasTable('visa_enrollments')
+   ? VisaEnrollment::where('is_show', 0)->count()
+   : 0;
 ?>
 
 <!DOCTYPE html>
@@ -176,6 +181,7 @@ $countnewenqiry = Enquirey::where('is_show', 0)->count();
                <li class="{{ (request()->segment(2) == 'testomonial') ? 'active' : '' }}"><a href="/admin/testomonial"><i class="fa fa-dashboard"></i> <span>Testomonial</span></a></li>
                <li class="{{ (request()->segment(2) == 'team') ? 'active' : '' }}"><a href="/admin/team"><i class="fa fa-dashboard"></i> <span>Team</span></a></li>
                <li class="{{ (request()->segment(2) == 'enquirey') ? 'active' : '' }}"><a href="/admin/enquirey"><i class="fa fa-dashboard"></i> <span>Enquiry</span></a></li>
+               <li class="{{ (request()->segment(2) == 'visa-enrollments') ? 'active' : '' }}"><a href="{{ route('admin.visa-enrollment') }}"><i class="fa fa-graduation-cap"></i> <span>Visa Enrollments @if($countnewvisaenrollments > 0)<small class="label pull-right bg-red">{{ $countnewvisaenrollments }}</small>@endif</span></a></li>
                <li class="{{ (request()->segment(2) == 'branch') ? 'active' : '' }}"><a href="/admin/branch"><i class="fa fa-dashboard"></i> <span>Branches</span></a></li>
                <!-- <li class="{{ (request()->segment(2) == 'quatation') ? 'active' : '' }}"><a href="/admin/quatation"><i class="fa fa-dashboard"></i> <span>Quatation</span></a></li> -->
                <li class="{{ (request()->segment(2) == 'contact') ? 'active' : '' }}"><a href="/admin/contact"><i class="fa fa-dashboard"></i> <span>Contact</span></a></li>

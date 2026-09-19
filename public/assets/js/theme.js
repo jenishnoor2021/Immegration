@@ -13,9 +13,12 @@ Description: Immigway - Immigration & Visa Solutions Template
 	jQuery(document).ready(function () {
 
         // Preloader
-        setTimeout(function() {
-            $('#preloader').addClass('hide');
-        }, 1000);
+        function hidePreloader() {
+            $('#xb-loadding').stop(true, true).addClass('hide');
+        }
+
+        $(window).on('load', hidePreloader);
+        setTimeout(hidePreloader, 1500);
 
         // Add Menu Item Current Class Auto
         function dynamicCurrentMenuClass(selector) {

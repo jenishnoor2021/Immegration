@@ -37,9 +37,27 @@ class AdminAppointmentController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-        
+
+        $input['country'] = $request->input('country');
+        $input['service'] = $request->input('service');
+        $input['name'] = $request->input('name');
+        $input['email'] = $request->input('email');
+        $input['phone'] = $request->input('phone');
+        $input['s_date'] = $request->input('s_date');
+        $input['time'] = $request->input('time');
+        $input['address'] = $request->input('address');
+        $input['message'] = $request->input('message');
+
         Appointment::create($input);
-        return redirect()->back()->with('alert', 'Appoinment request send Successfully');
+
+        if ($request->ajax() || $request->wantsJson()) {
+            return response()->json([
+                'success' => true,
+                'message' => 'Your appointment request has been submitted successfully.'
+            ]);
+        }
+
+        return redirect()->back()->with('alert', 'Appointment request sent successfully');
     }
 
     /**

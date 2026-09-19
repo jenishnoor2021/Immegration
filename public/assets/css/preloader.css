@@ -1,114 +1,94 @@
-#preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-two);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -webkit-transition: all 1s ease;
+#xb-loadding {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 999999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+#xb-loadding.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#xb-loadding .loader {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url('/website-static/images/bg-img.png') center center / cover no-repeat;
+}
+
+#xb-loadding .loader::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-color: rgb(29 58 122 / 90%);
+}
+
+#xb-loadding .plane {
+  position: absolute;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+#xb-loadding .plane-img {
+  display: block;
+  animation: preloader-plane-spin 2.5s linear infinite;
+}
+
+#xb-loadding .earth-wrapper {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#xb-loadding .earth {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  border: 1px solid #cdd1d3;
+  border-radius: 50%;
+  background: #fff url('/website-static/images/preloader.png') 0 0 / 340px auto;
+  animation: preloader-earth-spin 12s linear infinite;
+}
+
+@keyframes preloader-earth-spin {
+  from {
+    background-position-x: 0;
   }
-  
-  #preloader.hide {
-    opacity: 0;
-    visibility: hidden;
-    width: 0%;
+  to {
+    background-position-x: -340px;
   }
-  
-  .preloader-inner {
-    position: absolute;
-    z-index: 100;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+}
+
+@keyframes preloader-plane-spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  /* Spinner Loading */
-  .preloader-inner .spinner {
-    animation: spinner 1s infinite linear;
-    border-radius: 50%;
-    border: 3px solid var(--color-white);
-    border-top-color: var(--color-primary);
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 3.5em auto;
+  to {
+    transform: rotate(360deg);
   }
-  
-  /* Loading text */
-  .preloader-inner .loading-text {
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 60px;
-    text-align: center;
-    user-select: none;
+}
+
+@media screen and (max-width: 575px) {
+  #xb-loadding .earth {
+    width: 130px;
+    height: 130px;
+    background-size: 276px auto;
   }
-  
-  .preloader-inner .loading-text .characters {
-    position: relative;
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.2);
+
+  #xb-loadding .plane-img {
+    max-width: 88px;
   }
-  
-  .preloader-inner .loading-text .characters:before {
-    content: attr(data-preloader-text);
-    position: absolute;
-    left: 0;
-    top: 0px;
-    opacity: 0;
-    transform: rotateY(-90deg);
-    color: white;
-    animation: characters 4s infinite;
-  }
-  
-  .preloader-inner .loading-text .characters:nth-child(2):before {
-    animation-delay: 0.2s;
-  }
-  
-  .preloader-inner .loading-text .characters:nth-child(3):before {
-    animation-delay: 0.4s;
-  }
-  
-  .preloader-inner .loading-text .characters:nth-child(4):before {
-    animation-delay: 0.6s;
-  }
-  
-  .preloader-inner .loading-text .characters:nth-child(5):before {
-    animation-delay: 0.8s;
-  }
-  
-  .preloader-inner .loading-text .characters:nth-child(6):before {
-    animation-delay: 1s;
-  }
-  
-  .preloader-inner .loading-text .characters:nth-child(7):before {
-    animation-delay: 1.2s;
-  }
-  
-  /* Animation of the preloader */
-  @keyframes spinner {
-    to {
-      transform: rotateZ(360deg);
-    }
-  }
-  
-  /* Animation of letters loading from the preloader */
-  @keyframes characters {
-    0%,
-    75%,
-    100% {
-      opacity: 0;
-      transform: rotateY(-90deg);
-    }
-    25%,
-    50% {
-      opacity: 1;
-      transform: rotateY(0deg);
-    }
-  }
+}

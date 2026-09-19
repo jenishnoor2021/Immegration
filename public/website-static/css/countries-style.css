@@ -1,0 +1,2069 @@
+/******************************
+
+    00 - Home
+    01 - Inner Page
+		01 - About Us
+		02 - Coaching Details
+		03 - Service Single
+        04 - Portfolio Single 
+        05 - Blog Detail
+             Sidebar Right
+             Blog Classic
+             Blog Single
+        06 - Team Single
+        07 - Contact Us
+        08 - Comment Form
+    
+******************************/
+.countries-pagess{
+	padding:10px 0;
+}
+.countries-pagess .container{
+	padding: 5px !important;
+}
+.country-title-bar{
+	min-height: 100px;
+}
+.countries-pagess .all-cities-title{text-align: center;}
+
+/*----------------------------------------*/
+/*  00 - Home
+/*----------------------------------------*/
+	/* #page{
+		overflow: hidden;
+		position: relative;
+	} */
+	
+	body {
+		counter-reset: pbmitbox1 pbmitbox2 pbmitbox3;
+	} 
+	.font-script {
+     /*  font-family: 'Kalam', 'Caveat', cursive; */
+    }
+
+    .font-heading {
+      /* font-family: 'Sora', sans-serif; */
+    }
+
+    /* PURE CSS TAB CONTROLS */
+    
+    /* =================================================== */
+    /* THE EXACT "WHY CHOOSE THE USA?" COMPONENT LAYOUT    */
+    /* =================================================== */
+    .why-usa-section-card {
+      background-color: #ffffff;
+      /* border-radius: 12px; */
+      padding: 10px;
+      box-shadow: var(--card-shadow);
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      /* border: 1px solid #e8edf3; */
+    }
+
+    @media (min-width: 768px) {
+      .why-usa-section-card {
+        padding: 10px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .why-usa-section-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        min-height: auto;
+      }
+    }
+
+    /* Left Text Column */
+    .why-usa-text-col {
+      position: relative;
+      z-index: 5;
+    }
+
+    @media (min-width: 1024px) {
+      .why-usa-text-col {
+        width: 44%;
+        max-width: 100%;
+        padding-right: 20px;
+      }
+    }
+
+    /* Red Accent Bar above heading */
+    .red-accent-bar {
+      width: 42px;
+      height: 3.5px;
+      background-color: #e63946;
+      border-radius: 2px;
+      margin-bottom: 18px;
+    }
+
+    /* Heading 1: Why Choose the USA? */
+    .why-usa-title {
+      /* font-family: 'Sora', sans-serif; */
+      font-size: 28px;
+      line-height: 1.22;
+      font-weight: 700;
+      color: #190099;
+      margin: 0 0 8px 0;
+      letter-spacing: -0.4px;
+    }
+
+    @media (min-width: 640px) {
+      .why-usa-title {
+        font-size: 34px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .why-usa-title {
+        font-size: 37px;
+      }
+    }
+
+    /* Subtitle: Endless Opportunities. A Brighter Future. */
+    .why-usa-subtitle {
+      /* font-family: 'Plus Jakarta Sans', sans-serif; */
+      font-size: 17px;
+      line-height: 1.35;
+      font-weight: 700;
+      color: #0f3562;
+      margin: 0 0 18px 0;
+      letter-spacing: -0.2px;
+    }
+
+    @media (min-width: 640px) {
+      .why-usa-subtitle {
+        font-size: 19px;
+      }
+    }
+
+    /* Body Paragraph */
+    .why-usa-desc {
+      font-size: 14.5px;
+      line-height: 1.72;
+      color: #4b5563;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    @media (min-width: 640px) {
+      .why-usa-desc {
+        font-size: 18px;
+      }
+    }
+
+    /* Right Visual Column (Polaroid Gallery + US Flag + Flight Route) */
+    .why-usa-visual-col {
+      position: relative;
+      margin-top: 40px;
+      width: 100%;
+    }
+
+    @media (min-width: 1024px) {
+      .why-usa-visual-col {
+        margin-top: 0;
+        width: 55%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+
+    /* Top Graphics Area: Grunge US Flag, Flight Path, Map Pin, Plane */
+    .top-journey-graphics {
+      position: relative;
+      width: 100%;
+      height: 60px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    @media (min-width: 1024px) {
+      .top-journey-graphics {
+        position: absolute;
+        top: -6px;
+        right: 0;
+        width: 380px;
+        height: 65px;
+        z-index: 10;
+        margin-bottom: 0;
+      }
+    }
+
+    /* Polaroid Cards Wrapper */
+    .polaroid-gallery-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+    }
+
+    @media (min-width: 640px) {
+      .polaroid-gallery-wrapper {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .polaroid-gallery-wrapper {
+        position: relative;
+        height: 310px;
+        width: 540px;
+        display: block;
+        margin-top: 36px;
+      }
+    }
+
+    /* Polaroid Card Base */
+    .polaroid-card {
+      background-color: #ffffff;
+      padding: 9px 9px 12px 9px;
+      border-radius: 4px;
+      box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.22), 0 3px 10px rgba(15, 23, 42, 0.1);
+      border: 1px solid rgba(226, 232, 240, 0.85);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+      position: relative;
+      width: 240px;
+      cursor: default;
+    }
+
+    .polaroid-card:hover {
+      box-shadow: 0 20px 35px -8px rgba(15, 23, 42, 0.3), 0 8px 16px rgba(15, 23, 42, 0.15);
+      z-index: 40 !important;
+    }
+
+    @media (min-width: 640px) {
+      .polaroid-card {
+        width: 185px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .polaroid-card {
+        position: absolute;
+        width: 195px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .polaroid-card {
+        width: 205px;
+      }
+    }
+
+    /* Polaroid Inner Photo Container */
+    .polaroid-photo {
+      width: 100%;
+      height: 160px;
+      overflow: hidden;
+      border-radius: 2px;
+      background-color: #cbd5e1;
+      position: relative;
+    }
+
+    @media (min-width: 640px) {
+      .polaroid-photo {
+        height: 140px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .polaroid-photo {
+        height: 150px;
+      }
+    }
+
+    .polaroid-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .polaroid-card:hover .polaroid-photo img {
+      transform: scale(1.05);
+    }
+
+    /* Polaroid Caption (Handwritten Script in Blue Ink) */
+    .polaroid-caption {
+      /* font-family: 'Kalam', 'Caveat', cursive; */
+      font-size: 21px;
+      font-weight: 700;
+      color: #104c8f;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 2px;
+      letter-spacing: 0.3px;
+      line-height: 1.1;
+      user-select: none;
+    }
+
+    /* SPECIFIC POLAROID POSITIONING & ROTATIONS MATCHING IMAGE */
+
+    /* 1. San Francisco (Left Card, tilted counter-clockwise) */
+    .card-san-francisco {
+      transform: rotate(-6deg);
+      z-index: 10;
+    }
+
+    .card-san-francisco:hover {
+      transform: rotate(-3deg) scale(1.04);
+    }
+
+    @media (min-width: 1024px) {
+      .card-san-francisco {
+        left: 0px;
+        top: 25px;
+        transform: rotate(-7deg);
+      }
+      .card-san-francisco:hover {
+        transform: rotate(-4deg) scale(1.05);
+      }
+    }
+
+    /* Blue Painterly Splash Accent behind San Francisco Polaroid */
+    .blue-splash-accent {
+      position: absolute;
+      top: -14px;
+      right: -24px;
+      width: 85px;
+      height: 40px;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* 2. New York (Center Card, slight tilt, overlapping) */
+    .card-new-york {
+      transform: rotate(-2deg);
+      z-index: 20;
+    }
+
+    .card-new-york:hover {
+      transform: rotate(0deg) scale(1.04);
+    }
+
+    @media (min-width: 1024px) {
+      .card-new-york {
+        left: 172px;
+        top: 10px;
+        transform: rotate(-2.5deg);
+      }
+      .card-new-york:hover {
+        transform: rotate(0deg) scale(1.05);
+      }
+    }
+
+    /* 3. Las Vegas (Right Card, tilted slightly clockwise or upright) */
+    .card-las-vegas {
+      transform: rotate(3deg);
+      z-index: 30;
+    }
+
+    .card-las-vegas:hover {
+      transform: rotate(1deg) scale(1.04);
+    }
+
+    @media (min-width: 1024px) {
+      .card-las-vegas {
+        left: 342px;
+        top: 20px;
+        transform: rotate(3deg);
+      }
+      .card-las-vegas:hover {
+        transform: rotate(1deg) scale(1.05);
+      }
+    }
+
+    /* Airplane subtle animation */
+    @keyframes airplaneFloat {
+      0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+      50% {
+        transform: translate(3px, -3px) rotate(1deg);
+      }
+    }
+
+    .animated-plane {
+      animation: airplaneFloat 3.5s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    /* Viewport Resizer Transition */
+    .card-viewport-frame {
+      transition: max-width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Pre code block style */
+    pre code {
+      /* font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
+      font-size: 13px;
+      line-height: 1.6;
+    }
+	
+/*---------------------------------------------------------------*/
+	 .container {
+      /* max-width: 1200px;
+      width: 100%;
+      text-align: center; */
+    }
+	
+ /* Header Section */
+    .section-title {
+      position: relative;
+      font-size: 32px;
+      font-weight: 800;
+      color: #190099;
+      margin-bottom: 12px;
+    }
+
+    .section-title::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 3px;
+      background-color: #e53935;
+      margin: 0 auto 5px auto;
+      border-radius: 2px;
+    }
+
+    .section-subtitle {
+      color: #556070;
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+
+    /* Cards Grid Layout */
+    .cards-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      flex: 1 1 200px;
+      max-width: 100%;
+      padding: 35px 20px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Bottom Border Bar */
+    .card::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+    }
+
+    /* Icon Styling */
+    .icon-box {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    /* Content Styling */
+    .card-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #0b1c3f;
+      margin-bottom: 15px;
+	      line-height: 1.2;
+    }
+
+    .card-description {
+      font-size: 16px;
+      color: #667085;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      flex-grow: 1;
+    }
+
+    .learn-more {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: opacity 0.2s ease;
+    }
+
+    .learn-more:hover {
+      opacity: 0.8;
+    }
+
+    /* Card Specific Colors */
+    /* Blue Card */
+    .card-blue::after { background-color: #0d47a1; }
+    .card-blue .icon-box { background-color: #0d47a1; }
+    .card-blue .learn-more { color: #0d47a1; }
+
+    /* Red Card */
+    .card-red::after { background-color: #e53935; }
+    .card-red .icon-box { background-color: #e53935; }
+    .card-red .learn-more { color: #e53935; }
+
+    /* Green Card */
+    .card-green::after { background-color: #2e7d32; }
+    .card-green .icon-box { background-color: #2e7d32; }
+    .card-green .learn-more { color: #2e7d32; }
+
+    /* Purple Card */
+    .card-purple::after { background-color: #8e24aa; }
+    .card-purple .icon-box { background-color: #8e24aa; }
+    .card-purple .learn-more { color: #8e24aa; }
+
+    /* Orange Card */
+    .card-orange::after { background-color: #fb8c00; }
+    .card-orange .icon-box { background-color: #fb8c00; }
+    .card-orange .learn-more { color: #fb8c00; }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .cards-grid {
+        gap: 15px;
+      }
+      .card {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+	.choose-visa-page{
+		background-color: #f7f9fc;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100%;
+		padding: 40px 20px;
+		
+		background: url("../images/page/choose-visa-bg.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom;
+		background-attachment: fixed;
+	}
+		.choose-visa-page .section-title,
+		.choose-visa-page .section-subtitle{
+			text-align:center;
+		}
+	
+	/*\---------------------------------------------------------*/
+	 .header-accent {
+            width: 28px;
+            height: 3px;
+            background-color: #e63946;
+            margin: 0 auto 12px auto;
+            border-radius: 2px;
+        }
+
+        .section-title {
+			 color: #190099;
+			font-size: 32px;
+			font-weight: 700;
+			letter-spacing: -0.5px;
+			margin-bottom: 0;
+			padding: 30px 0 0;
+        }
+
+        .section-subtitle {
+            color: #5d6d7e;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        .cities-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 18px;
+			margin-bottom:55px;
+        }
+		.europe-city-list .cities-grid {
+			grid-template-columns: repeat(6, 1fr);
+		}
+
+        .city-card {
+            background: #ffffff;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(11, 26, 62, 0.05);
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .city-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 30px rgba(11, 26, 62, 0.1);
+        }
+
+        .card-image-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 80%; /* 5:4 aspect ratio to match design */
+            overflow: hidden;
+            background-color: #e2e8f0;
+        }
+
+        .card-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .city-card:hover .card-image {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 20px 18px 24px 18px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .city-name {
+            color: #00247a;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.3px;
+			line-height: 1.5;
+        }
+
+        .city-description {
+            color: #64748b;
+            font-size: 17px;
+            line-height: 1.55;
+            font-weight: 400;
+        }
+		
+		.explore-city{
+		    background: url("../images/page/city-bg-img.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom;
+			background-attachment: fixed;	
+		}
+
+        @media (max-width: 1100px) {
+            .cities-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+
+            .section-subtitle {
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+
+            .cities-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cities-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+		
+		
+		
+		
+		/*--------------------------------------------------------*/
+		/* THE MAIN UK VISA JOURNEY CARD COMPONENT */
+    .uk-visa-journey-card {
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 16px 40px -10px rgba(11, 37, 69, 0.13), 0 0 0 1px #e2e8f0;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    @media (min-width: 992px) {
+      .uk-visa-journey-card {
+        flex-direction: row;
+        min-height: 480px;
+      }
+    }
+
+    /* LEFT HALF: London Visual Panel */
+    .uk-journey-visual-panel {
+      position: relative;
+      /* background-color: #dbeafe;
+      background-image: 
+        linear-gradient(to right, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 40%, rgba(235, 245, 255, 0.1) 100%),
+        url('../images/page/uk/guid-professionally.png');
+      background-size: cover;
+      background-position: 28% bottom;
+      overflow: hidden;
+      min-height: 380px; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+	.uk-journey-visual-panel img{
+		    min-height: 530px;
+	}
+
+    @media (min-width: 992px) {
+      .uk-journey-visual-panel {
+        width: 50%;
+        min-height: 510px;
+      }
+    }
+
+    /* Sky atmosphere overlay */
+    .sky-gradient-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(235, 245, 255, 0.78) 0%, rgba(255, 255, 255, 0.4) 45%, rgba(255, 255, 255, 0.05) 75%);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* Warm golden hour sunset wash over Parliament */
+    .warmth-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 65% 75%, rgba(254, 180, 76, 0.28) 0%, rgba(255, 140, 0, 0.1) 40%, transparent 70%);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* Handwritten Cursive Title in Upper Left */
+    .script-title-box {
+      position: relative;
+      z-index: 10;
+      padding: 30px 24px 0 32px;
+      transform: rotate(-2.2deg);
+      transform-origin: top left;
+      user-select: none;
+    }
+
+    .script-title-text {
+      /* font-family: 'Caveat', cursive; */
+      font-size: 34px;
+      line-height: 1.14;
+      font-weight: 700;
+      color: #0b3765;
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.85), 0 2px 10px rgba(11, 55, 101, 0.08);
+      letter-spacing: -0.3px;
+      display: block;
+    }
+
+    @media (min-width: 640px) {
+      .script-title-text {
+        font-size: 40px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .script-title-text {
+        font-size: 43px;
+		font-family: "Brush Script MT", "Snell Roundhand", "URW Chancery L", cursive;
+      }
+    }
+
+    /* Illustrated UK Map Graphics Layer in the Sky */
+    .uk-map-graphics-layer {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 250px;
+      height: 240px;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    @media (min-width: 640px) {
+      .uk-map-graphics-layer {
+        top: 20px;
+        right: 22px;
+        width: 290px;
+        height: 260px;
+      }
+    }
+
+    /* Airplane flight float animation */
+    @keyframes planeFlightFloat {
+      0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+      50% {
+        transform: translate(3px, -4px) rotate(1.5deg);
+      }
+    }
+
+    .animated-flight-plane {
+      animation: planeFlightFloat 4s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    /* Traveler in Foreground (Woman with straw fedora hat and backpack) */
+    .traveler-foreground {
+      position: absolute;
+      bottom: -6px;
+      left: 36%;
+      transform: translateX(-50%);
+      width: 240px;
+      height: 230px;
+      z-index: 8;
+      pointer-events: none;
+    }
+
+    @media (min-width: 640px) {
+      .traveler-foreground {
+        left: 40%;
+        width: 275px;
+        height: 260px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .traveler-foreground {
+        left: 42%;
+        width: 295px;
+        height: 280px;
+      }
+    }
+
+    /* RIGHT HALF: Guidance Steps List */
+    .uk-journey-content-panel {
+      background-color: #ffffff;
+      padding: 28px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media (min-width: 640px) {
+      .uk-journey-content-panel {
+        padding: 36px 32px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .uk-journey-content-panel {
+        width: 50%;
+        padding: 34px 40px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .uk-journey-content-panel {
+        padding: 38px 48px;
+      }
+    }
+
+    /* Step Item Row */
+    .guidance-step-item {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 9px 12px;
+      margin-bottom: 2px;
+      border-radius: 12px;
+      transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      cursor: default;
+    }
+
+    .guidance-step-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .guidance-step-item:hover {
+      background-color: #f8fafc;
+      transform: translateX(4px);
+    }
+
+    /* Circle Icon Badge with Soft Emboss */
+    .guidance-icon-badge {
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      border-radius: 50%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 
+        0 4px 14px rgba(11, 37, 69, 0.08), 
+        0 1px 3px rgba(11, 37, 69, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.95);
+      border: 1.5px solid #edf2f7;
+      color: #0b2545;
+      transition: all 0.25s ease;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .guidance-step-item:hover .guidance-icon-badge {
+      border-color: #cbd5e1;
+      box-shadow: 
+        0 6px 18px rgba(11, 37, 69, 0.14),
+        0 2px 5px rgba(11, 37, 69, 0.06);
+      transform: scale(1.05);
+      color: #1e40af;
+    }
+
+    /* Step Content */
+    .guidance-step-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .guidance-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0b2545;
+      margin: 0 0 2px 0;
+      line-height: 1.32;
+      letter-spacing: -0.15px;
+      transition: color 0.2s ease;
+    }
+
+    .guidance-step-item:hover .guidance-title {
+      color: #1e40af;
+    }
+
+    .guidance-desc {
+      font-size: 13.5px;
+      color: #556987;
+      margin: 0;
+      line-height: 1.44;
+      font-weight: 400;
+    }
+
+    @media (min-width: 1200px) {
+      .guidance-icon-badge {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+      }
+      .guidance-title {
+        font-size: 16.5px;
+      }
+      .guidance-desc {
+        font-size: 14px;
+      }
+    }
+
+    /* Viewport Resizer Transition */
+    .card-viewport-frame {
+      transition: max-width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+	
+	/*_________________________________________*/
+	
+	  .process-section {
+            max-width: 1240px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .red-line-accent {
+            width: 36px;
+            height: 3px;
+            background-color: #e50914;
+            margin: 0 auto 12px auto;
+            border-radius: 2px;
+        }
+
+        .section-title {
+            color: #190099;
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 5px;
+        }
+
+        .section-subtitle {
+            color: #52607d;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .process-card {
+            background-color: #ffffff;
+            border-radius: 24px;
+            padding: 45px 35px 30px 35px;
+            box-shadow: 0 10px 30px rgba(13, 27, 62, 0.04);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Continuous Horizontal Connecting Line across step icons */
+        .process-steps-wrapper {
+            position: relative;
+        }
+
+        .horizontal-connecting-line {
+            position: absolute;
+            top: 31px;
+            left: 5%;
+            right: 5%;
+            height: 1px;
+            border-top: 1px dashed #cbd5e1;
+            z-index: 1;
+        }
+
+        /* 7 Steps Horizontal Grid */
+        .process-steps-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 35px;
+        }
+
+        .step-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding: 0 6px;
+        }
+
+        /* Vertical Divider Line between Steps */
+        .step-item:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 5%;
+			height: 60%;
+            width: 1px;
+            background-color: #e2e8f0;
+        }
+
+        .step-arrow-container {
+            position: absolute;
+            right: 0px;
+            top: 24px;
+            transform: translateX(50%);
+            z-index: 3;
+            background-color: #ffffff;
+            padding: 2px 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .step-arrow-container i {
+            color: #2563eb;
+            font-size: 13px;
+        }
+
+        /* Circular Icon Styling */
+        .icon-circle {
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            background-color: #081448;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            box-shadow: 0 6px 16px rgba(8, 20, 72, 0.25);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            position: relative;
+            z-index: 3;
+        }
+
+        .step-item:hover .icon-circle {
+            transform: translateY(-4px);
+            background-color: #1a2b72;
+        }
+
+        .icon-circle i {
+            color: #ffffff;
+            font-size: 22px;
+        }
+
+        .step-number {
+            color: #0d1b3e;
+            font-size: 15px;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .step-title {
+            color: #0d1b3e;
+            font-size: 13.5px;
+            font-weight: 700;
+            line-height: 1.35;
+            max-width: 100%;
+        }
+
+        .disclaimer-note {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding-top: 20px;
+            border-top: 1px dashed #e2e8f0;
+            color: #64748b;
+            font-size: 12px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .disclaimer-note i {
+            color: #1e3a8a;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 1024px) {
+            .horizontal-connecting-line {
+                display: none;
+            }
+
+            .process-steps-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 30px 10px;
+            }
+
+            .step-item:not(:last-child)::after {
+                /* display: none; */
+            }
+
+            .step-arrow-container {
+               /*  display: none; */
+            }
+
+            .disclaimer-note {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .process-steps-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+
+            .process-card {
+                padding: 30px 20px 20px 20px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .process-steps-container {
+                grid-template-columns: 1fr;
+            }
+        }
+		
+		
+/*---------------------------------------------------------------------------------------*/
+		.where-to-go.destination-section {
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .map-banner {
+            flex: 1 1 38%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 380px;
+            padding: 20px;
+        }
+		
+
+        /* UK Map Graphic Container */
+        .map-container {
+            position: relative;
+            width: 100%;
+            max-width: 380px;
+            height: 420px;
+        }
+
+        .map-container img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .germany-map .map-container img{
+          top: 0;
+        }
+		
+        .uk-map-svg {
+            width: 85%;
+            height: auto;
+            display: block;
+            filter: drop-shadow(0px 8px 15px rgba(21, 66, 132, 0.15));
+        }
+
+        /* Map Location Pin Marker */
+        .map-pin {
+            position: absolute;
+            top: 54%;
+            left: 36%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+            animation: pulse-pin 2s infinite ease-in-out;
+        }
+
+        .pin-outer {
+            width: 32px;
+            height: 32px;
+            background-color: #e50914;
+            border-radius: 50% 50% 50% 0;
+            transform: rotate(-45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(229, 9, 20, 0.4);
+            border: 2px solid #ffffff;
+        }
+
+        .pin-inner {
+            width: 12px;
+            height: 12px;
+            background-color: #ffffff;
+            border-radius: 50%;
+        }
+
+        @keyframes pulse-pin {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.1); }
+        }
+
+        /* Handwritten Cursive Title Banner */
+        .cursive-title {
+            position: absolute;
+            top: 15%;
+            right: 0%;
+            /* font-family: 'Caveat', cursive; */
+            font-size: 38px;
+            font-weight: 700;
+            color: #1e3a8a;
+            line-height: 1.1;
+            text-align: center;
+            transform: rotate(-4deg);
+            z-index: 4;
+            white-space: nowrap;
+        }
+		.germany-map .cursive-title{
+			color: #e50914;
+		}
+
+        /* Flight Path SVG Line & Airplane Icon */
+        .flight-path-svg {
+            position: absolute;
+            top: 32%;
+            right: 2%;
+            width: 220px;
+            height: 110px;
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        .plane-icon {
+            position: absolute;
+            top: 40%;
+            right: 2%;
+            color: #1e3a8a;
+            font-size: 24px;
+            transform: rotate(15deg);
+            z-index: 4;
+        }
+		
+		.germany-map .plane-icon{
+			color: #e50914;
+		}
+
+        .where-to-go .cards-grid {
+            flex: 1 1 62%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        /* Individual Destination Card */
+        .where-to-go .card {
+            background-color: #ffffff;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(11, 26, 62, 0.05);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+			padding: 0;
+        }
+
+        .where-to-go .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 32px rgba(11, 26, 62, 0.1);
+        }
+
+        /* Top Image Box */
+        .where-to-go .card-image-box {
+            position: relative;
+            width: 100%;
+            height: 135px;
+            overflow: hidden;
+        }
+
+        .where-to-go .card-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .where-to-go .card:hover .card-image-box img {
+            transform: scale(1.08);
+        }
+
+        /* Country Name Tag/Label */
+        .where-to-go .card-label {
+            display: inline-block;
+            padding: 8px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #ffffff;
+            border-radius: 0 10px 10px 0;
+            margin-top: -14px;
+            position: relative;
+            z-index: 2;
+            align-self: flex-start;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Unique Tag Colors for Countries */
+        .label-england { background-color: #e50914; }
+        .label-scotland { background-color: #007bff; }
+        .label-wales { background-color: #10b981; }
+        .label-ni { background-color: #8b5cf6; }
+
+        .where-to-go .card-body {
+            padding: 18px 16px 22px 18px;
+            flex-grow: 1;
+			    align-items: flex-start;
+			text-align: left;
+			width: 100%;
+        }
+
+        .where-to-go .city-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .where-to-go .city-list li {
+            position: relative;
+            padding-left: 14px;
+            color: #4b5563;
+            font-size: 13.5px;
+            font-weight: 600;
+            line-height: 1.8;
+        }
+
+        /* Subtle Bullet Point Indicator */
+        .where-to-go .city-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        @media (max-width: 1100px) {
+            .where-to-go.destination-section {
+                flex-direction: column;
+                gap: 40px;
+				margin-bottom: 15px;
+            }
+
+            .map-banner {
+                width: 100%;
+                max-width: 500px;
+            }
+
+            .map-container {
+                height: 380px;
+            }
+
+            .where-to-go .cards-grid {
+                width: 100%;
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .where-to-go .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .where-to-go .card-image-box {
+                height: 160px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .where-to-go .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cursive-title {
+                font-size: 30px;
+                right: -5%;
+            }
+
+            .flight-path-svg {
+                width: 170px;
+            }
+        }
+		
+		
+		
+/**----------------------------------------------------------------**/
+		.cta-banner {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            background: 
+                /* Left-to-right dark blue gradient overlay */
+                linear-gradient(90deg, rgba(8, 28, 62, 0.1) 0%, rgba(11, 37, 78, 0.1) 35%, rgba(13, 27, 62, 0.1) 70%, rgba(13, 27, 62, 0.2) 100%),
+                /* London Twilight Background Image */
+                url('../images/page/uk/uk-footer-img.png') center center / cover no-repeat;
+            box-shadow: 0 15px 35px rgba(11, 37, 78, 0.2);
+            padding: 60px 70px;
+            min-height: 630px;
+            display: flex;
+            align-items: center;
+        }
+		.usa-journey .cta-banner{
+			 background: 
+                linear-gradient(90deg, rgba(8, 28, 62, 0.1) 0%, rgba(11, 37, 78, 0.1) 35%, rgba(13, 27, 62, 0.1) 70%, rgba(13, 27, 62, 0.2) 100%),
+                url('../images/page/usa/footer-usa.png') center center / cover no-repeat;
+		}
+		.canada-journey .cta-banner{
+			 background: 
+                linear-gradient(90deg, rgba(8, 28, 62, 0.1) 0%, rgba(11, 37, 78, 0.1) 35%, rgba(13, 27, 62, 0.1) 70%, rgba(13, 27, 62, 0.2) 100%),
+                url('../images/page/canada/footer-canada.png') center center / cover no-repeat;
+		}
+		.germany-journey .cta-banner{
+			 background: 
+                linear-gradient(90deg, rgba(8, 28, 62, 0.1) 0%, rgba(11, 37, 78, 0.1) 35%, rgba(13, 27, 62, 0.1) 70%, rgba(13, 27, 62, 0.2) 100%),
+                url('../images/page/germany/footer-germany.png') center center / cover no-repeat;
+		}
+		.australia-journey .cta-banner{
+			 background: 
+                linear-gradient(90deg, rgba(8, 28, 62, 0.1) 0%, rgba(11, 37, 78, 0.1) 35%, rgba(13, 27, 62, 0.1) 70%, rgba(13, 27, 62, 0.2) 100%),
+                url('../images/page/australia/footer-austrelia.png') center center / cover no-repeat;
+			min-height: 990px;
+		}
+		.new-zealand-journey .cta-banner{
+			 background: 
+                linear-gradient(90deg, rgba(8, 28, 62, 0.1) 0%, rgba(11, 37, 78, 0.1) 35%, rgba(13, 27, 62, 0.1) 70%, rgba(13, 27, 62, 0.2) 100%),
+                url('../images/page/new-zealand/footer-new-zealand.png') center center / cover no-repeat;
+		}
+		
+		.europe-journey .cta-banner{
+			 background: 
+                linear-gradient(90deg, rgba(8, 28, 62, 0.1) 0%, rgba(11, 37, 78, 0.1) 35%, rgba(13, 27, 62, 0.1) 70%, rgba(13, 27, 62, 0.2) 100%),
+                url('../images/page/europe/footer-europe.png') center center / cover no-repeat;
+		}
+
+        .cta-content-grid {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            width: 100%;
+            gap: 40px;
+            position: relative;
+            z-index: 3;
+        }
+
+        /* Left Column Content */
+        .cta-left-content {
+            max-width: 600px;
+            color: #ffffff;
+        }
+
+        .cta-script-title {
+            /* font-family: 'Caveat', cursive; */
+            font-size: 38px;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.1;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-main-title {
+            font-size: 42px;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.15;
+            margin-bottom: 18px;
+            letter-spacing: -0.5px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .cta-description {
+            font-size: 15.5px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 400;
+            max-width: 540px;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Right Column Buttons */
+        .cta-right-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            min-width: 260px;
+            align-items: flex-start;
+        }
+
+        /* Primary Red Pill Button */
+        .btn-primary-red {
+            background-color: #e50914;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 15px 15px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            width: 100%;
+            box-shadow: 0 6px 20px rgba(229, 9, 20, 0.35);
+            transition: all 0.3s ease;
+            border: 2px solid #e50914;
+        }
+
+        .btn-primary-red:hover {
+            background-color: #cc0812;
+            border-color: #cc0812;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(229, 9, 20, 0.5);
+        }
+
+        .btn-primary-red .btn-icon-left {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+        }
+
+        .btn-primary-red .btn-text {
+            flex-grow: 1;
+            text-align: left;
+            padding-left: 6px;
+        }
+
+        .btn-primary-red .btn-arrow {
+            font-size: 16px;
+            transition: transform 0.2s ease;
+        }
+
+        .btn-primary-red:hover .btn-arrow {
+            transform: translateX(4px);
+        }
+
+        /* Secondary Outline Button */
+        .btn-secondary-outline {
+            background-color: rgba(11, 37, 78, 0.35);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 14px 28px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 14px;
+            width: 100%;
+            border: 1.5px solid rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(4px);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary-outline:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary-outline i {
+            font-size: 15px;
+        }
+
+        .uk-flag-corner {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            width: 220px;
+            height: 140px;
+            z-index: 2;
+            pointer-events: none;
+            transform: rotate(-12deg);
+            opacity: 0.95;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+        }
+
+        /* SVG Flag Vector */
+        .uk-flag-svg {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+        }
+		
+		
+
+        /* Responsive Breakpoints */
+		@media (min-width: 1600px) and (max-width: 1800px){
+			.cta-banner{
+				min-height: 520px;
+			}
+			.australia-journey .cta-banner{
+				 min-height: 840px;
+			}
+		}
+		@media (min-width: 1200px) and (max-width: 1600px){
+			.cta-banner{
+				min-height: 400px;
+			}
+			.australia-journey .cta-banner{
+				min-height: 660px;
+			}
+		}
+		@media (min-width: 993px) and (max-width: 1199px){
+			.cta-banner{
+				min-height: 400px;
+			}
+			.australia-journey .cta-banner{
+				min-height: 500px;
+			}
+		}
+		@media (min-width: 768px) and (max-width: 992px){
+			.cta-banner{
+				min-height: 260px;
+			}
+			.australia-journey .cta-banner{
+				min-height: 410px;
+			}
+		}
+		
+        @media (max-width: 992px) {
+            .cta-banner {
+                padding: 50px 40px;
+            }
+
+            .cta-content-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .cta-right-buttons {
+                align-items: flex-end;
+                max-width: 280px;
+				justify-content: flex-end;
+				margin-left: auto;
+            }
+
+            .cta-main-title {
+                font-size: 36px;
+            }
+
+            .uk-flag-corner {
+                width: 170px;
+                height: 110px;
+                right: -15px;
+                bottom: -15px;
+            }
+        }
+		@media (max-width: 767px) {
+			.cta-banner{
+/* 				min-height: 260px;
+				Background-size: contain;
+				padding: 0;
+				border-radius: 16px;
+				min-height: 100%;  */
+			}
+			.uk-journey-visual-panel img{
+				min-height: 100%;
+			}
+			.cta-banner {
+                padding: 0;
+				border-radius: 16px;
+				background: none;
+				min-height: auto;
+                border-radius: 16px;
+            }
+			.cta-right-buttons {
+				 align-items: flex-start;
+				max-width: max-content;
+				justify-content: flex-start;
+				flex-direction: row;
+				display: contents;
+				gap: 10px;
+				width: 100%;
+            }
+			.cta-left-content {
+				max-width: none;
+				color: #ffffff;
+				display: none;
+			}
+			.cta-content-grid {
+				display: flex;
+				grid-template-columns: 1fr auto;
+				align-items: center;
+				width: 100%;
+				gap: 10px;
+				position: relative;
+				z-index: 3;
+			}
+			.res-journey-img img{
+				box-shadow: 0 15px 35px rgba(11, 37, 78, 0.2);
+				border-radius: 20px;
+				position: relative;
+				width: 100%;
+				max-width: 100%;
+				margin-bottom:10px;
+			}
+		}
+	
+		@media (min-width: 768px) {
+			.res-journey-img{display:none;}
+		}
+	
+		@media (min-width: 575px) and (max-width: 767px) {
+			.cta-banner{
+				
+			}
+		}
+
+        @media (max-width: 576px) {
+            .cta-banner {
+                padding: 0;
+				border-radius: 16px;
+				background: none;
+				min-height: auto;
+                border-radius: 16px;
+            }
+
+            .cta-script-title {
+                font-size: 32px;
+            }
+
+            .cta-main-title {
+                font-size: 30px;
+            }
+
+            .cta-description {
+                font-size: 14px;
+            }
+
+            .cta-right-buttons {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .uk-flag-corner {
+                width: 130px;
+                height: 85px;
+                opacity: 0.6;
+            }
+			.cta-right-buttons{
+				min-width: auto;
+			}
+			.cta-right-buttons a{
+				margin-bottom: 10px;
+			}
+			.cta-content-grid{
+				display: inline-block;
+				margin: 10px;
+			}
+        }
+		
+/*----------------------------------------*/
+		.btn-custom-red {
+            background-color: #e62335;
+            color: #ffffff;
+            font-weight: 700;
+            padding: 10px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: 2px solid var(--accent-red);
+            transition: var(--transition);
+            text-decoration: none !important;
+        }
+
+        .btn-custom-red:hover {
+            background-color: #c81828;
+            border-color: #c81828;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .btn-custom-outline {
+            background-color: #89000021;
+            color: #ffffff;
+            font-weight: 700;
+            padding: 10px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            transition: var(--transition);
+            text-decoration: none !important;
+			
+        }
+
+        .btn-custom-outline:hover {
+            background-color: #ffffff;
+            color: #0b1f3a;
+            transform: translateY(-2px);
+        }
+
+        .hero-banner.bottom-banner {
+           /*  position: relative;
+            background: linear-gradient(135deg, rgba(11, 31, 58, 0.85) 0%, rgba(11, 31, 58, 0.5) 100%), 
+                        url('../images/page/uk/uk-header-img.png') center/cover no-repeat;
+            padding: 120px 0 160px 0;
+            color: #ffffff;
+            overflow: hidden; */
+        }
+
+        .bottom-banner .hero-flag-badge {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 220px;
+            height: 220px;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .bottom-banner .hero-title-logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+
+        .uk-flag-text {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg') center/cover;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 5rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            display: inline-block;
+        }
+
+        .bottom-banner .hero-subtitle {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .bottom-banner .hero-description {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 650px;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+		
+		.uk-head-buttom{
+		    position: absolute;
+			height: 100%;
+			width: auto;
+			display: inline-block;
+			left: 5%;
+			top: 86%;
+		}
+		
+		@media (max-width: 1200px) {
+			.country-title-bar {
+				min-height: 95px;
+			}
+		}
+		
+		@media (max-width: 991px) {
+            .bottom-banner .hero-title-logo { font-size: 2.5rem; }
+            .uk-flag-text { font-size: 3.8rem; }
+            .bottom-banner .hero-subtitle { font-size: 1.8rem; }
+            .collage-container { margin-top: 40px; }
+            .process-step { margin-bottom: 25px; }
+			.btn-custom-red {
+				width: 212px;
+				line-height: 15px;
+				position: absolute;
+				top: 0%;
+				left: 3px;
+				font-size: 15px;
+			}
+			.btn-custom-outline {
+				width: 203px;
+				line-height: 12px;
+				position: absolute;
+				top: 0%;
+				left: 232px;
+				font-size: 15px;
+			}
+        }
+		
+		
+		
+		@media (max-width: 767px) {
+			.btn-custom-red {font-size: 9px; padding: 5px;gap: 4px; width:132px;}
+			.btn-custom-outline {font-size: 9px;padding: 5px;gap: 4px; width: 133px; left: 142px;}
+		}
+		
+		@media (max-width: 425px) {
+			.uk-head-buttom{
+				position: relative;
+				height: 100%;
+				width: auto;
+				display: inline-block;
+				left: auto;
+				top: auto;
+			}
+			.countries-pagess .hero-banner .uk-head-buttom .gap-3 {
+				gap: 1px !important;
+			}
+			.btn-custom-red{
+				margin-top:10px;
+			}
+			.btn-custom-red, .btn-custom-outline{
+				width: auto;
+				position: relative;
+				top: 0px;
+				left: auto;
+				font-size: 15px;
+				display: inline-block;
+				margin-top: 10px;
+			}
+			.btn-custom-outline{
+				border: 2px solid #e50914;
+				color: #e50914;
+			}
+		}
+		
+		@media (min-width: 425px) {
+			.uk-head-img{
+				min-height: 200px;
+				width: 100%;
+			}
+		}
+		
+		@media (max-width: 1130px) and (min-width: 910px){
+			.card{
+				flex: 1 1 258px;
+			}
+		}
+		
+		.uk-journey-content-panel svg{
+		width: 80%;
+		height: 80%;
+		fill: none;
+		stroke: currentColor;
+		stroke-width: 2;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+		}

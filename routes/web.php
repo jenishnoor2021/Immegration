@@ -33,23 +33,44 @@ Route::get('/', [App\Http\Controllers\AdminController::class, 'homePage']);
 // });
 // Auth::routes();
 
-Route::get('/aboutus', [App\Http\Controllers\AdminController::class, 'aboutUs'])->name('aboutUs');
+Route::redirect('/aboutus', '/about-us')->name('aboutUs');
+Route::redirect('/contactus', '/contact-us')->name('contactUs');
+Route::redirect('/country-list', '/visa-list')->name('country-list');
+Route::redirect('/country-details', '/uk')->name('country-details');
+Route::redirect('/case', '/')->name('case');
+Route::redirect('/case-details', '/')->name('case-details');
+Route::redirect('/appointments', '/appointment')->name('appointments');
+Route::redirect('/work-process', '/about-us')->name('work-process');
+Route::redirect('/tourist-visa', '/tourist-visa-page')->name('tourist-visa');
+Route::redirect('/services', '/coaching')->name('services');
 
-Route::get('contactus', [App\Http\Controllers\AdminController::class, 'contactUs'])->name('contactUs');
+Route::redirect('/page1', '/chairman-message')->name('page1');
+Route::redirect('/page2', '/coaching')->name('page2');
 
-Route::get('/country-list', [App\Http\Controllers\AdminController::class, 'countryList'])->name('country-list');
-Route::get('/country-details', [App\Http\Controllers\AdminController::class, 'countryDetails'])->name('country-details');
-Route::get('/case', [App\Http\Controllers\AdminController::class, 'case'])->name('case');
-Route::get('/case-details', [App\Http\Controllers\AdminController::class, 'caseDetails'])->name('case-details');
-Route::get('/team', [App\Http\Controllers\AdminController::class, 'team'])->name('team');
-Route::get('/appointments', [App\Http\Controllers\AdminController::class, 'appointments'])->name('appointments');
-Route::get('/work-process', [App\Http\Controllers\AdminController::class, 'workProcess'])->name('work-process');
-Route::get('/visa-list', [App\Http\Controllers\AdminController::class, 'visaList'])->name('visa-list');
-Route::get('/tourist-visa', [App\Http\Controllers\AdminController::class, 'touristVisa'])->name('tourist-visa');
-Route::get('/services', [App\Http\Controllers\AdminController::class, 'services'])->name('services');
+Route::view('/visa-list', 'frontend.static.visa_list')->name('website.visa-list');
 
-Route::get('/page1', [App\Http\Controllers\AdminController::class, 'page1'])->name('services');
-Route::get('/page2', [App\Http\Controllers\AdminController::class, 'page2'])->name('services');
+// Static pages from the new frontend design. These will be made dynamic in the next phase.
+Route::view('/about-us', 'frontend.static.about_us')->name('website.about-us');
+Route::view('/admin-message', 'frontend.static.admin_message')->name('website.admin-message');
+Route::view('/appointment', 'frontend.static.appointment')->name('website.appointment');
+Route::view('/australia', 'frontend.static.australia')->name('website.australia');
+Route::view('/business-visa', 'frontend.static.business_visa')->name('website.business-visa');
+Route::view('/canada', 'frontend.static.canada')->name('website.canada');
+Route::view('/chairman-message', 'frontend.static.chairman_message')->name('website.chairman-message');
+Route::view('/coaching', 'frontend.static.coaching')->name('website.coaching');
+Route::view('/contact-us', 'frontend.static.contact_us')->name('website.contact-us');
+Route::view('/europe', 'frontend.static.europe')->name('website.europe');
+Route::view('/germany', 'frontend.static.germany')->name('website.germany');
+Route::view('/new-zealand', 'frontend.static.new_zealand')->name('website.new-zealand');
+Route::view('/spouse-visa', 'frontend.static.spouse_visa')->name('website.spouse-visa');
+Route::view('/student-visa', 'frontend.static.student_visa')->name('website.student-visa');
+Route::view('/team', 'frontend.static.team')->name('website.team');
+Route::view('/tourist-visa-page', 'frontend.static.tourist_visa')->name('website.tourist-visa');
+Route::view('/uk', 'frontend.static.uk')->name('website.uk');
+Route::view('/usa', 'frontend.static.usa')->name('website.usa');
+Route::view('/visa-enroll-form', 'frontend.static.visa_enroll_form')->name('website.visa-enroll-form');
+Route::post('/visa-enroll-form', [App\Http\Controllers\VisaEnrollmentController::class, 'store'])->name('website.visa-enroll-form.store');
+Route::view('/visitor-visa', 'frontend.static.visitor_visa')->name('website.visitor-visa');
 
 
 
@@ -57,7 +78,7 @@ Route::post('/inquireystore', [App\Http\Controllers\AdminController::class, 'sto
 
 Route::post('/contactstore', [App\Http\Controllers\AdminController::class, 'storeContact'])->name('storeContact');
 
-Route::post('/testomonialstore', [App\Http\Controllers\AdminTestominalController::class, 'storeTestomonial'])->name('storeContact');
+Route::post('/testomonialstore', [App\Http\Controllers\AdminTestominalController::class, 'storeTestomonial'])->name('storeTestomonial');
 
 Route::post('/quatationstore', [App\Http\Controllers\AdminController::class, 'storeQuatation'])->name('storequatation');
 
@@ -101,6 +122,9 @@ Route::group(['middleware' => ['auth', 'usersession']], function () {
     Route::patch('admin/enquirey/update/{id}', [App\Http\Controllers\AdminEnquireyController::class, 'update'])->name('admin.enquirey.update');
     Route::get('admin/enquirey/destroy/{id}', [App\Http\Controllers\AdminEnquireyController::class, 'destroy'])->name('admin.enquirey.destroy');
 
+    Route::get('admin/visa-enrollments', [App\Http\Controllers\AdminVisaEnrollmentController::class, 'index'])->name('admin.visa-enrollment');
+    Route::get('admin/visa-enrollments/destroy/{id}', [App\Http\Controllers\AdminVisaEnrollmentController::class, 'destroy'])->name('admin.visa-enrollment.destroy');
+
     Route::get('admin/appointment', [App\Http\Controllers\AdminAppointmentController::class, 'index'])->name('admin.appointment');
     // Route::get('admin/appointment/create', [App\Http\Controllers\AdminAppointmentController::class, 'create'])->name('admin.appointment.create');
     // Route::post('admin/appointment/store', [App\Http\Controllers\AdminAppointmentController::class, 'store'])->name('admin.appointment.store');
@@ -118,7 +142,7 @@ Route::group(['middleware' => ['auth', 'usersession']], function () {
     Route::get("admin/team/searchtestompnial", [AdminTeamController::class, 'searchteam'])->name('admin.team.search');
     Route::get('admin/team/statusupdate/{id}', [AdminTeamController::class, 'statusUpdate'])->name('admin.team.status');
     Route::post('admin/team/reorder', [AdminTeamController::class, 'reorder'])->name('admin.team.reorder');
-    
+
     Route::get("admin/branch", [AdminBranchsController::class, 'index'])->name('admin.branch.index');
     Route::get('admin/branch/create', [AdminBranchsController::class, 'create'])->name('admin.branch.create');
     Route::post('admin/branch/store', [AdminBranchsController::class, 'store'])->name('admin.branch.store');

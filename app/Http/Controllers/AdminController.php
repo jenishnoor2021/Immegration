@@ -94,12 +94,12 @@ class AdminController extends Controller
 
     public function aboutUs(Request $request)
     {
-        return view('frontend.about');
+        return view('frontend.static.about_us');
     }
 
     public function contactUs(Request $request)
     {
-        return view('frontend.contact');
+        return view('frontend.static.contact_us');
     }
 
 
@@ -121,12 +121,12 @@ class AdminController extends Controller
     }
     public function team(Request $request)
     {
-        return view('frontend.team');
+        return view('frontend.static.team');
     }
 
     public function appointments(Request $request)
     {
-        return view('frontend.appointments');
+        return view('frontend.static.appointment');
     }
 
     public function workProcess(Request $request)
@@ -136,12 +136,12 @@ class AdminController extends Controller
 
     public function visaList(Request $request)
     {
-        return view('frontend.visa_list');
+        return view('frontend.static.visa_list');
     }
 
     public function touristVisa(Request $request)
     {
-        return view('frontend.tourist_visa');
+        return view('frontend.static.tourist_visa');
     }
 
     public function services(Request $request)
@@ -151,18 +151,18 @@ class AdminController extends Controller
 
     public function page1(Request $request)
     {
-        return view('frontend.page1');
+        return view('frontend.static.chairman_message');
     }
 
     public function page2(Request $request)
     {
-        return view('frontend.page2');
+        return view('frontend.static.coaching');
     }
 
     public function storeInquiry(Request $request)
     {
         $input = $request->all();
-        
+
         Enquirey::create($input);
         return redirect()->back()->with('alert', 'Enquiry send Successfully');
     }
@@ -170,10 +170,23 @@ class AdminController extends Controller
     public function storeContact(Request $request)
     {
         $input = $request->all();
-        
+
+        $input['username'] = $request->input('name', $request->input('username'));
+        $input['fname'] = $request->input('city', $request->input('fname'));
+        $input['fdetail'] = $request->input('message', $request->input('fdetail'));
+
+        unset($input['name'], $input['city'], $input['message']);
+
         Contact::create($input);
-        // return redirect()->back();
-        return redirect()->back()->with('alert', 'Messange send Successfully');
+
+        if ($request->ajax() || $request->wantsJson()) {
+            return response()->json([
+                'success' => true,
+                'message' => 'Your message has been submitted successfully.'
+            ]);
+        }
+
+        return redirect()->back()->with('alert', 'Message sent successfully');
     }
 
 
@@ -190,18 +203,14 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-    }
+    public function index() {}
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-    }
+    public function create() {}
 
     /**
      * Store a newly created resource in storage.
@@ -209,9 +218,7 @@ class AdminController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-    }
+    public function store(Request $request) {}
 
     /**
      * Display the specified resource.
@@ -230,9 +237,7 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-    }
+    public function edit($id) {}
 
     /**
      * Update the specified resource in storage.
@@ -241,9 +246,7 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-    }
+    public function update(Request $request, $id) {}
 
     /**
      * Remove the specified resource from storage.
@@ -251,7 +254,5 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-    }
+    public function destroy($id) {}
 }

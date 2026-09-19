@@ -724,12 +724,112 @@ body.left_menu .mr_menu {
 
 /* Header Style 2 */
 .header.style2 .header-top {
-  background-color: var(--color-white);
-  max-height: 120px;
-  padding: 23px 0px;
+  background-color: #ffa43d;
+  max-height: none;
+  padding: 12px 0px;
 }
-.header.style2 .logo {
+@media screen and (min-width: 1200px) {
+  .header.style2 .header-top > .container,
+  .header.style2 .header-inner > .container {
+    width: calc(100% - 32px);
+    max-width: 1600px;
+  }
+}
+.header.style2 .header-contact-strip {
+  gap: 28px;
+}
+.header.style2 .header-contact-item,
+.header.style2 .header-socials a {
+  color: #06233f;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.header.style2 .header-contact-item i {
+  margin-right: 8px;
+}
+.header.style2 .header-address {
+  margin-right: auto;
+}
+.header.style2 .header-socials {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.header.style2 .header-socials a {
+  font-size: 22px;
+}
+.header.style2 .header-inner {
+  background-color: var(--color-white);
+  border-radius: 0 0 48px 48px;
+  padding: 20px 0 24px;
+}
+.header.style2 .header-inner .logo {
   position: relative;
+  flex: 0 0 205px;
+  left: auto;
+  top: auto;
+  z-index: 1;
+}
+.header.style2 .header-inner .logo a {
+  display: block;
+}
+.header.style2 .header-inner .logo a img {
+  width: 205px;
+}
+.header.style2 .mainnav {
+  margin-left: 44px;
+}
+.header.style2 .mainnav ul.main-menu > li > a {
+  color: #06233f;
+  padding: 24px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.header.style2 .mainnav ul.main-menu > li + li {
+  margin-left: 34px;
+}
+.header.style2 .mainnav ul.main-menu > li > a:hover,
+.header.style2 .mainnav ul.main-menu > li.active > a {
+  color: #ffa43d;
+}
+.header.style2 .header_right_part {
+  gap: 24px;
+}
+.header.style2 .wptb-icon-box1.live-chat {
+  margin-left: 0;
+  padding: 8px 18px;
+  border-radius: 40px;
+  background: #0aa5dc;
+  border: 6px solid #dfe2e5;
+}
+.header.style2 .wptb-icon-box1.live-chat .wptb-item--icon img {
+  width: 42px;
+}
+.header.style2 .wptb-icon-box1.live-chat .wptb-item--description {
+  font-size: 20px;
+  white-space: nowrap;
+}
+.header.style2 .header-appointment {
+  margin-left: 0;
+}
+.header.style2 .header-appointment .btn {
+  min-width: 290px;
+  padding: 18px 32px;
+  border-radius: 34px;
+  background: #ffa43d;
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 700;
+}
+.header.style2 .header-appointment .btn i {
+  margin-left: 8px;
+}
+.header.style2 .header-appointment .btn::before {
+  background: #0aa5dc;
+}
+.header.style2 .header-appointment .btn:hover {
+  color: var(--color-white);
 }
 .header.style2 .logo a {
   background: transparent;

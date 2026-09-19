@@ -1,34 +1,10 @@
-<div id="preloader">
-  <div class="preloader-inner">
-    <div class="spinner"></div>
-    <div class="loading-text">
-      <span data-preloader-text="S" class="characters">S</span>
-
-      <span data-preloader-text="E" class="characters">E</span>
-
-      <span data-preloader-text="V" class="characters">V</span>
-
-      <span data-preloader-text="E" class="characters">E</span>
-
-      <span data-preloader-text="N" class="characters">N</span>
-
-      <span data-preloader-text="C" class="characters">C</span>
-
-      <span data-preloader-text="O" class="characters">O</span>
-
-      <span data-preloader-text="U" class="characters">U</span>
-
-      <span data-preloader-text="N" class="characters">N</span>
-
-      <span data-preloader-text="T" class="characters">T</span>
-
-      <span data-preloader-text="R" class="characters">R</span>
-
-      <span data-preloader-text="I" class="characters">I</span>
-
-      <span data-preloader-text="E" class="characters">E</span>
-
-      <span data-preloader-text="S" class="characters">S</span>
+<div id="xb-loadding" role="status" aria-label="Loading">
+  <div class="loader">
+    <div class="plane">
+      <img class="plane-img" src="{{ asset('website-static/images/plane.png') }}" alt="Immigration">
+    </div>
+    <div class="earth-wrapper">
+      <div class="earth"></div>
     </div>
   </div>
 </div>
