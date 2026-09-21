@@ -83,6 +83,14 @@ $countnewvisaenrollments = Schema::hasTable('visa_enrollments')
       .error {
          color: red;
       }
+
+      input[type="checkbox"]#master, input[type="checkbox"].sub_chk {
+         cursor: pointer;
+         width: 17px;
+         height: 17px;
+         margin: 0;
+         vertical-align: middle;
+      }
    </style>
    <!-- read more button in database -->
 
@@ -232,88 +240,6 @@ $countnewvisaenrollments = Schema::hasTable('visa_enrollments')
          }
       });
    </script>
-   <script type="text/javascript">
-      $(document).ready(function() {
-         $('#master').on('click', function(e) {
-            if ($(this).is(':checked', true)) {
-               $(".sub_chk").prop('checked', true);
-            } else {
-               $(".sub_chk").prop('checked', false);
-            }
-         });
-         $('.delete_all').on('click', function(e) {
-            var allVals = [];
-            $(".sub_chk:checked").each(function() {
-               allVals.push($(this).attr('data-id'));
-            });
-            if (allVals.length <= 0) {
-               alert("Please select row.");
-            } else {
-               var check = confirm("Are you sure you want to delete this row?");
-               if (check == true) {
-                  var join_selected_values = allVals.join(",");
-                  $.ajax({
-                     url: $(this).data('url'),
-                     type: 'DELETE',
-                     headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                     },
-                     data: 'ids=' + join_selected_values,
-                     success: function(data) {
-                        if (data['success']) {
-                           $(".sub_chk:checked").each(function() {
-                              $(this).parents("tr").remove();
-                           });
-                           alert(data['success']);
-                        } else if (data['error']) {
-                           alert(data['error']);
-                        } else {
-                           alert('Whoops Something went wrong!!');
-                        }
-                     },
-                     error: function(data) {
-                        alert(data.responseText);
-                     }
-                  });
-                  $.each(allVals, function(index, value) {
-                     $('table tr').filter("[data-row-id='" + value + "']").remove();
-                  });
-               }
-            }
-         });
-         $('[data-toggle=confirmation]').confirmation({
-            rootSelector: '[data-toggle=confirmation]',
-            onConfirm: function(event, element) {
-               element.trigger('confirm');
-            }
-         });
-         $(document).on('confirm', function(e) {
-            var ele = e.target;
-            e.preventDefault();
-            $.ajax({
-               url: ele.href,
-               type: 'DELETE',
-               headers: {
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-               },
-               success: function(data) {
-                  if (data['success']) {
-                     $("#" + data['tr']).slideUp("slow");
-                     alert(data['success']);
-                  } else if (data['error']) {
-                     alert(data['error']);
-                  } else {
-                     alert('Whoops Something went wrong!!');
-                  }
-               },
-               error: function(data) {
-                  alert(data.responseText);
-               }
-            });
-            return false;
-         });
-      });
-   </script>
    <!-- jQuery 3 -->
    <script src="{{asset('bower_components/jquery/dist/jquery.min.js')}}"></script>
    <!-- jQuery UI 1.11.4 -->
@@ -356,6 +282,174 @@ $countnewvisaenrollments = Schema::hasTable('visa_enrollments')
    <script src="{{asset('js/demo.js')}}"></script>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+   <!-- SweetAlert2 -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script type="text/javascript">
+      $(document).ready(function() {
+         $.ajaxSetup({
+            headers: {
+               'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+         });
+
+         // Master checkbox toggle
+         $(document).on('click', '#master', function() {
+            var isChecked = $(this).is(':checked');
+            $('.sub_chk').prop('checked', isChecked);
+         });
+
+         // Check if all sub_chk are checked to update master checkbox
+         $(document).on('change', '.sub_chk', function() {
+            var total = $('.sub_chk').length;
+            var checked = $('.sub_chk:checked').length;
+            if (total > 0 && total === checked) {
+               $('#master').prop('checked', true);
+            } else {
+               $('#master').prop('checked', false);
+            }
+         });
+
+         // Bulk delete action with proper validation alerts
+         $(document).on('click', '.delete_all', function(e) {
+            e.preventDefault();
+            var $button = $(this);
+            var deleteUrl = $button.data('url');
+            var allVals = [];
+
+            $('.sub_chk:checked').each(function() {
+               var id = $(this).attr('data-id');
+               if (id) {
+                  allVals.push(id);
+               }
+            });
+
+            // Validation: No rows selected
+            if (allVals.length <= 0) {
+               if (typeof Swal !== 'undefined') {
+                  Swal.fire({
+                     icon: 'warning',
+                     title: 'No Records Selected',
+                     text: 'Please select at least one record using the checkbox to delete.',
+                     confirmButtonColor: '#3c8dbc'
+                  });
+               } else {
+                  alert('Please select at least one record to delete.');
+               }
+               return;
+            }
+
+            // Confirmation message with item count
+            var count = allVals.length;
+            var confirmText = 'Are you sure you want to delete ' + count + ' selected record' + (count > 1 ? 's' : '') + '? This action cannot be undone.';
+
+            var performDelete = function() {
+               var join_selected_values = allVals.join(',');
+               var token = $('meta[name="csrf-token"]').attr('content');
+
+               $.ajax({
+                  url: deleteUrl,
+                  type: 'DELETE',
+                  headers: {
+                     'X-CSRF-TOKEN': token
+                  },
+                  data: {
+                     ids: join_selected_values,
+                     _token: token
+                  },
+                  success: function(data) {
+                     if (data && data.success) {
+                        var refreshTable = function() {
+                           var url = new URL(window.location.href);
+                           var page = parseInt(url.searchParams.get('page'));
+                           var isAllOnPageSelected = ($('.sub_chk:checked').length >= $('.sub_chk').length && $('.sub_chk').length > 0);
+                           if (isAllOnPageSelected && page && page > 1) {
+                              url.searchParams.set('page', page - 1);
+                              window.location.href = url.toString();
+                           } else {
+                              window.location.reload();
+                           }
+                        };
+
+                        if (typeof Swal !== 'undefined') {
+                           Swal.fire({
+                              icon: 'success',
+                              title: 'Deleted!',
+                              text: data.success,
+                              timer: 1500,
+                              showConfirmButton: false
+                           }).then(function() {
+                              refreshTable();
+                           });
+                        } else {
+                           alert(data.success);
+                           refreshTable();
+                        }
+                     } else if (data && data.error) {
+                        if (typeof Swal !== 'undefined') {
+                           Swal.fire({
+                              icon: 'error',
+                              title: 'Error',
+                              text: data.error
+                           });
+                        } else {
+                           alert(data.error);
+                        }
+                     } else {
+                        var defaultMsg = 'Something went wrong while deleting records.';
+                        if (typeof Swal !== 'undefined') {
+                           Swal.fire({
+                              icon: 'error',
+                              title: 'Error',
+                              text: defaultMsg
+                           });
+                        } else {
+                           alert(defaultMsg);
+                        }
+                     }
+                  },
+                  error: function(xhr) {
+                     var errorMsg = 'Failed to delete records. Please try again.';
+                     if (xhr.responseJSON && xhr.responseJSON.error) {
+                        errorMsg = xhr.responseJSON.error;
+                     } else if (xhr.responseJSON && xhr.responseJSON.message) {
+                        errorMsg = xhr.responseJSON.message;
+                     }
+                     if (typeof Swal !== 'undefined') {
+                        Swal.fire({
+                           icon: 'error',
+                           title: 'Error',
+                           text: errorMsg
+                        });
+                     } else {
+                        alert(errorMsg);
+                     }
+                  }
+               });
+            };
+
+            if (typeof Swal !== 'undefined') {
+               Swal.fire({
+                  title: 'Are you sure?',
+                  text: confirmText,
+                  icon: 'warning',
+                  showCancelButton: true,
+                  confirmButtonColor: '#d9534f',
+                  cancelButtonColor: '#6c757d',
+                  confirmButtonText: 'Yes, delete selected!',
+                  cancelButtonText: 'Cancel'
+               }).then(function(result) {
+                  if (result.isConfirmed) {
+                     performDelete();
+                  }
+               });
+            } else {
+               if (confirm(confirmText)) {
+                  performDelete();
+               }
+            }
+         });
+      });
+   </script>
 </body>
 
 </html>

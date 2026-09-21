@@ -97,4 +97,16 @@ class AdminQuatationController extends Controller
         $adslink->delete(); 
         return redirect('admin/quatation');
     }
+
+    public function deleteAll(Request $request)
+    {
+        $ids = $request->ids;
+        if (empty($ids)) {
+            return response()->json(['error' => 'Please select at least one record to delete.'], 400);
+        }
+        $idsArray = is_array($ids) ? $ids : explode(',', $ids);
+        $idsArray = array_filter($idsArray);
+        quatation::whereIn('id', $idsArray)->delete();
+        return response()->json(['success' => 'Selected quotations deleted successfully.']);
+    }
 }

@@ -121,9 +121,11 @@ Route::group(['middleware' => ['auth', 'usersession']], function () {
     Route::get('admin/enquirey/edit/{id}', [App\Http\Controllers\AdminEnquireyController::class, 'edit'])->name('admin.enquirey.edit');
     Route::patch('admin/enquirey/update/{id}', [App\Http\Controllers\AdminEnquireyController::class, 'update'])->name('admin.enquirey.update');
     Route::get('admin/enquirey/destroy/{id}', [App\Http\Controllers\AdminEnquireyController::class, 'destroy'])->name('admin.enquirey.destroy');
+    Route::delete('/myenquireyDeleteAll', [App\Http\Controllers\AdminEnquireyController::class, 'deleteAll'])->name('admin.enquirey.deleteAll');
 
     Route::get('admin/visa-enrollments', [App\Http\Controllers\AdminVisaEnrollmentController::class, 'index'])->name('admin.visa-enrollment');
     Route::get('admin/visa-enrollments/destroy/{id}', [App\Http\Controllers\AdminVisaEnrollmentController::class, 'destroy'])->name('admin.visa-enrollment.destroy');
+    Route::delete('/myvisaenrollmentDeleteAll', [App\Http\Controllers\AdminVisaEnrollmentController::class, 'deleteAll'])->name('admin.visa-enrollment.deleteAll');
 
     Route::get('admin/appointment', [App\Http\Controllers\AdminAppointmentController::class, 'index'])->name('admin.appointment');
     // Route::get('admin/appointment/create', [App\Http\Controllers\AdminAppointmentController::class, 'create'])->name('admin.appointment.create');
@@ -131,6 +133,7 @@ Route::group(['middleware' => ['auth', 'usersession']], function () {
     // Route::get('admin/appointment/edit/{id}', [App\Http\Controllers\AdminAppointmentController::class, 'edit'])->name('admin.appointment.edit');
     // Route::patch('admin/appointment/update/{id}', [App\Http\Controllers\AdminAppointmentController::class, 'update'])->name('admin.appointment.update');
     Route::get('admin/appointment/destroy/{id}', [App\Http\Controllers\AdminAppointmentController::class, 'destroy'])->name('admin.appointment.destroy');
+    Route::delete('/myappointmentDeleteAll', [App\Http\Controllers\AdminAppointmentController::class, 'deleteAll'])->name('admin.appointment.deleteAll');
 
     Route::get("admin/team", [AdminTeamController::class, 'index'])->name('admin.team.index');
     Route::get('admin/team/create', [AdminTeamController::class, 'create'])->name('admin.team.create');
@@ -150,6 +153,7 @@ Route::group(['middleware' => ['auth', 'usersession']], function () {
     Route::patch('admin/branch/update/{id}', [AdminBranchsController::class, 'update'])->name('admin.branch.update');
     Route::get('admin/branch/destroy/{id}', [AdminBranchsController::class, 'destroy'])->name('admin.branch.destroy');
     Route::get('admin/branch/statusupdate/{id}', [AdminBranchsController::class, 'statusUpdate'])->name('admin.branch.status');
+    Route::delete('/mybranchDeleteAll', [AdminBranchsController::class, 'deleteAll'])->name('admin.branch.deleteAll');
 
 
     Route::get('admin/quatation', [App\Http\Controllers\AdminQuatationController::class, 'index'])->name('admin.quatation');
@@ -158,6 +162,7 @@ Route::group(['middleware' => ['auth', 'usersession']], function () {
     Route::get('admin/quatation/edit/{id}', [App\Http\Controllers\AdminQuatationController::class, 'edit'])->name('admin.quatation.edit');
     Route::patch('admin/quatation/update/{id}', [App\Http\Controllers\AdminQuatationController::class, 'update'])->name('admin.quatation.update');
     Route::get('admin/quatation/destroy/{id}', [App\Http\Controllers\AdminQuatationController::class, 'destroy'])->name('admin.quatation.destroy');
+    Route::delete('/myquatationDeleteAll', [App\Http\Controllers\AdminQuatationController::class, 'deleteAll'])->name('admin.quatation.deleteAll');
 });
 
 //Clear Cache facade value:

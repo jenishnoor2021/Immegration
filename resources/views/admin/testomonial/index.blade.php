@@ -23,6 +23,7 @@
                <div class="row">
                   <div class="col-md-9">
                      <a href="{{route('admin.testomonial.create')}}" class="bg-primary text-white text-decoration-none" style="padding:12px 12px;margin-left:20px"><i class="fa fa-plus editable" style="font-size:15px;">&nbsp;ADD</i></a>
+                     <button style="padding:10px 20px;margin-left:10px;" class="btn btn-danger text-white delete_all" data-url="{{ route('deletetestomonialAll') }}"><i class="fa fa-trash"></i> Delete Selected</button>
                   </div>
                   <div class="col-md-3">
                      {!! Form::open(['method'=>'GET', 'action'=> 'AdminTestominalController@searchTestomonial','files'=>true,'class'=>'form-horizontal']) !!}
@@ -38,6 +39,7 @@
                   <table id="example1" class="table table-bordered table-striped">
                      <thead>
                         <tr>
+                           <th width="50px" style="text-align: center;"><input type="checkbox" id="master"></th>
                            <th>Action</th>
                            <th>Name</th>
                            <th>Image</th>
@@ -49,7 +51,8 @@
                      </thead>
                      <tbody>
                         @foreach($testomonial as $emp)
-                        <tr id="tr_{{$emp->id}}">
+                        <tr id="tr_{{$emp->id}}" data-id="{{$emp->id}}">
+                           <td style="text-align: center;"><input type="checkbox" class="sub_chk" data-id="{{$emp->id}}"></td>
                            <td>
                               <a href="{{route('admin.testomonial.edit', $emp->id)}}"><i class="fa fa-edit" style="color:white;font-size:15px;background-color:#0275d8;padding:8px;border-radius:200px;"></i></a>
                               <a href="{{route('admin.testomonial.destroy', $emp->id)}}" onclick="return confirm('Sure ! You want to delete this ?');"><i class="fa fa-trash" style="color:white;font-size:15px;background-color:red;padding:8px;border-radius:200px;"></i></a>

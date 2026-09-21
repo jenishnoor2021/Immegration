@@ -63,7 +63,7 @@
                </div>
                <div class="row">
                   <div class="col-md-9">
-                     <button style="padding:10px 20px;margin-left:10px;" class="btn btn-danger text-white delete_all" data-url="{{ url('mysliderDeleteAll') }}">Delete</button>
+                     <button style="padding:10px 20px;margin-left:10px;" class="btn btn-danger text-white delete_all" data-url="{{ url('mysliderDeleteAll') }}"><i class="fa fa-trash"></i> Delete Selected</button>
                   </div>
                </div>
                <!-- /.box-header -->
@@ -71,7 +71,7 @@
                   <table id="example1" class="table table-bordered table-striped">
                      <thead class="bg-primary">
                         <tr>
-                           <th width="50px"><input type="checkbox" id="master"></th>
+                           <th width="50px" style="text-align: center;"><input type="checkbox" id="master"></th>
                            <th>Action</th>
                            <th>Gallery Image</th>
                            <th>show</th>
@@ -79,8 +79,8 @@
                      </thead>
                      <tbody>
                         @foreach($gallerys as $gallery)
-                        <tr id="tr_{{$gallery->id}}">
-                           <td><input type="checkbox" class="sub_chk" data-id="{{$gallery->id}}"></td>
+                        <tr id="tr_{{$gallery->id}}" data-id="{{$gallery->id}}">
+                           <td style="text-align: center;"><input type="checkbox" class="sub_chk" data-id="{{$gallery->id}}"></td>
                            <td>
                               <!-- <a href="{{route('admin.slider.edit', $gallery->id)}}"><i class="fa fa-edit" style="color:white;font-size:15px;background-color:#0275d8;padding:8px;border-radius:200px;"></i></a> -->
                               <a href="{{route('admin.slider.destroy', $gallery->id)}}" onclick="return confirm('Sure ! You want to delete ?');"><i class="fa fa-trash" style="color:white;font-size:15px;background-color:red;padding:8px;border-radius:200px;"></i></a>

@@ -13,13 +13,21 @@
     <div class="row">
       <div class="col-xs-12">
         <div class="box">
-          <div class="box-body" style="overflow-x:auto;margin-top:15px">
+          <div class="row" style="margin-top: 15px; margin-bottom: 5px;">
+            <div class="col-md-12">
+              <button style="padding: 10px 20px; margin-left: 20px;" class="btn btn-danger text-white delete_all" data-url="{{ route('admin.visa-enrollment.deleteAll') }}">
+                <i class="fa fa-trash"></i> Delete Selected
+              </button>
+            </div>
+          </div>
+          <div class="box-body" style="overflow-x:auto;">
             @if(session('message'))
             <div class="alert alert-success">{{ session('message') }}</div>
             @endif
             <table class="table table-bordered table-striped">
               <thead>
                 <tr>
+                  <th width="50px" style="text-align: center;"><input type="checkbox" id="master"></th>
                   <th>Action</th>
                   <th>Name</th>
                   <th>Email</th>
@@ -33,7 +41,8 @@
               </thead>
               <tbody>
                 @forelse($enrollments as $enrollment)
-                <tr>
+                <tr id="tr_{{ $enrollment->id }}" data-id="{{ $enrollment->id }}">
+                  <td style="text-align: center;"><input type="checkbox" class="sub_chk" data-id="{{ $enrollment->id }}"></td>
                   <td>
                     <a href="{{ route('admin.visa-enrollment.destroy', $enrollment->id) }}" onclick="return confirm('Sure! You want to delete this enrollment?');">
                       <i class="fa fa-trash" style="color:white;font-size:15px;background-color:red;padding:8px;border-radius:200px;"></i>
@@ -50,7 +59,7 @@
                 </tr>
                 @empty
                 <tr>
-                  <td colspan="9" class="text-center">No visa enrollments found.</td>
+                  <td colspan="10" class="text-center">No visa enrollments found.</td>
                 </tr>
                 @endforelse
               </tbody>

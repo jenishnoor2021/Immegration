@@ -148,4 +148,16 @@ class AdminBranchsController extends Controller
         $token->save();
         return Redirect::back();
     }
+
+    public function deleteAll(Request $request)
+    {
+        $ids = $request->ids;
+        if (empty($ids)) {
+            return response()->json(['error' => 'Please select at least one record to delete.'], 400);
+        }
+        $idsArray = is_array($ids) ? $ids : explode(',', $ids);
+        $idsArray = array_filter($idsArray);
+        branch::whereIn('id', $idsArray)->delete();
+        return response()->json(['success' => 'Selected branches deleted successfully.']);
+    }
 }

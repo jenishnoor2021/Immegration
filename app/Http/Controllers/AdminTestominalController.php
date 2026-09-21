@@ -218,4 +218,22 @@ class AdminTestominalController extends Controller
         // return redirect('/');
         return redirect()->back()->with('alert', 'Client Review send successfully');
     }
+
+    public function deleteTestomonialAll(Request $request)
+    {
+        $ids = $request->ids;
+        if (empty($ids)) {
+            return response()->json(['error' => 'Please select at least one record to delete.'], 400);
+        }
+        $idsArray = is_array($ids) ? $ids : explode(',', $ids);
+        $idsArray = array_filter($idsArray);
+        $items = Testomonial::whereIn('id', $idsArray)->get();
+        foreach ($items as $item) {
+            if ($item->file && $item->file != '/testomonialimg/' && file_exists(public_path() . $item->file)) {
+                @unlink(public_path() . $item->file);
+            }
+            $item->delete();
+        }
+        return response()->json(['success' => 'Selected testimonials deleted successfully.']);
+    }
 }

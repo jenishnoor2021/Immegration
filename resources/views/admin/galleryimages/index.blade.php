@@ -23,7 +23,7 @@
                <div class="row">
                   <div class="col-md-9">
                      <a href="{{route('admin.galleryimage.create')}}" class="bg-primary text-white text-decoration-none" style="padding:12px 12px;margin-left:20px"><i class="fa fa-plus editable" style="font-size:15px;">&nbsp;ADD</i></a>
-                     <button style="padding:10px 20px;margin-left:10px;" class="btn btn-danger text-white delete_all" data-url="{{ url('mygalleryimageDeleteAll') }}">Delete</button>
+                     <button style="padding:10px 20px;margin-left:10px;" class="btn btn-danger text-white delete_all" data-url="{{ url('mygalleryimageDeleteAll') }}"><i class="fa fa-trash"></i> Delete Selected</button>
                   </div>
                </div>
                <!-- /.box-header -->
@@ -31,7 +31,7 @@
                   <table id="example1" class="table table-bordered table-striped">
                      <thead>
                         <tr>
-                           <th width="50px"><input type="checkbox" id="master"></th>
+                           <th width="50px" style="text-align: center;"><input type="checkbox" id="master"></th>
                            <th>Action</th>
                            <th>Text</th>
                            <th>Gallery Image</th>
@@ -39,8 +39,8 @@
                      </thead>
                      <tbody>
                         @foreach($gallerys as $gallery)
-                        <tr id="tr_{{$gallery->id}}">
-                           <td><input type="checkbox" class="sub_chk" data-id="{{$gallery->id}}"></td>
+                        <tr id="tr_{{$gallery->id}}" data-id="{{$gallery->id}}">
+                           <td style="text-align: center;"><input type="checkbox" class="sub_chk" data-id="{{$gallery->id}}"></td>
                            <td>
                               <a href="{{route('admin.galleryimage.edit', $gallery->id)}}"><i class="fa fa-edit" style="color:white;font-size:15px;background-color:#0275d8;padding:8px;border-radius:200px;"></i></a>
                               <a href="{{route('admin.galleryimage.destroy', $gallery->id)}}" onclick="return confirm('Sure ! You want to delete ?');"><i class="fa fa-trash" style="color:white;font-size:15px;background-color:red;padding:8px;border-radius:200px;"></i></a>

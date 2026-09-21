@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\VisaEnrollment;
+use Illuminate\Http\Request;
 
 class AdminVisaEnrollmentController extends Controller
 {
@@ -23,5 +24,17 @@ class AdminVisaEnrollmentController extends Controller
     VisaEnrollment::findOrFail($id)->delete();
 
     return redirect()->route('admin.visa-enrollment')->with('message', 'Enrollment deleted successfully.');
+  }
+
+  public function deleteAll(Request $request)
+  {
+    $ids = $request->ids;
+    if (empty($ids)) {
+      return response()->json(['error' => 'Please select at least one record to delete.'], 400);
+    }
+    $idsArray = is_array($ids) ? $ids : explode(',', $ids);
+    $idsArray = array_filter($idsArray);
+    VisaEnrollment::whereIn('id', $idsArray)->delete();
+    return response()->json(['success' => 'Selected visa enrollments deleted successfully.']);
   }
 }

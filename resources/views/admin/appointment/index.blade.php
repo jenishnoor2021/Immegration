@@ -20,11 +20,19 @@
                <div class="box-header">
                   <!-- <h3 class="box-title">Data Table With Full Features</h3> -->
                </div>
+               <div class="row" style="margin-bottom: 10px;">
+                  <div class="col-md-12">
+                     <button style="padding: 10px 20px; margin-left: 20px;" class="btn btn-danger text-white delete_all" data-url="{{ route('admin.appointment.deleteAll') }}">
+                        <i class="fa fa-trash"></i> Delete Selected
+                     </button>
+                  </div>
+               </div>
                <!-- /.box-header -->
                <div class="box-body" style="overflow-x:auto;margin-top:15px">
                   <table id="example1" class="table table-bordered table-striped">
                      <thead>
                         <tr>
+                           <th width="50px" style="text-align: center;"><input type="checkbox" id="master"></th>
                            <th>Action</th>
                            <th>Country</th>
                            <th>Visa Type</th>
@@ -39,7 +47,8 @@
                      </thead>
                      <tbody>
                         @foreach($appointments as $appointment)
-                        <tr id="tr_{{$appointment->id}}">
+                        <tr id="tr_{{$appointment->id}}" data-id="{{$appointment->id}}">
+                           <td style="text-align: center;"><input type="checkbox" class="sub_chk" data-id="{{$appointment->id}}"></td>
                            <td>
                               <a href="{{route('admin.appointment.destroy', $appointment->id)}}" onclick="return confirm('Sure ! You want to delete ?');"><i class="fa fa-trash" style="color:white;font-size:15px;background-color:red;padding:8px;border-radius:200px;"></i></a>
                            </td>
@@ -78,7 +87,7 @@
                   </table>
                   <div class="row mt-4">
                      <div class="col-sm-12" style="display:flex;justify-content:center;">
-
+                        {{$appointments->links('pagination::bootstrap-4')}}
                      </div>
                   </div>
                </div>

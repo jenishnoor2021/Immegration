@@ -101,14 +101,13 @@ class AdminContactController extends Controller
 
     public function mycontactDeleteAll(Request $request)
     {
-
         $ids = $request->ids;
-        $single_id = explode(",",$ids);
-       foreach($single_id as $id){
-        $i = Contact::findOrFail($id);
-        $i->delete();
-       }
-        return response()->json(['success'=>"Deleted successfully."]);
+        if (empty($ids)) {
+            return response()->json(['error' => 'Please select at least one record to delete.'], 400);
+        }
+        $idsArray = is_array($ids) ? $ids : explode(',', $ids);
+        $idsArray = array_filter($idsArray);
+        Contact::whereIn('id', $idsArray)->delete();
+        return response()->json(['success' => 'Selected contacts deleted successfully.']);
     }
-
 }
